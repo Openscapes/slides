@@ -67,8 +67,19 @@ So much so that over the past six years I have been moving away from doing my ow
 Throughout this I've learned several lessons, and I want to share them up front: 
 
 ---
-class: inverse
-### Or: have feedback loop. 
+```{r loop-wtext, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
+```
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)   
+]
+
+???
+
+This is my (Openscapes) mindset; this is where I'm coming from when I talk about better science in less time. It's this beautiful feedback loop. It's the idea that there are really powerful open data science tools and practices that exist (here on the left) and that having shared tools and workflows enables you to collaborate more easily with others and think as a team (on the right). And also, If you work with others and have a team mindset, you're more able or nimble to engage with new software and practices. 
+
 Start off: R for BSILT. Really about open data science more broadly. And how there are really powerful tools that exist, that we can use for science. But also, they are most powerful when we use them as a team. 
 
 <!---
@@ -201,23 +212,22 @@ For me, I didn't fully feel the power of R until I finished graduate school and 
 transition: So I'll talk today about 
 ---
 class: inverse
-### Better science in less time 
+# Better science in less time 
 
-- What does it look like
-- Open data science as a mindset
-- Reimagine science communication (Twitter, open publishing)
+**What does it look like: Ocean Health Index**
+### Open data science as a mindset
+### Reimagine collaboration & communication 
 
-<!---  - data science is a discipline
-The internet as a reimagined communications
-The internet as an underleveraged tool for science --->
+# How to supercharge your research 
 
-### How to supercharge your research 
+### Think as a team: Openscapes
+### Talk about data
+### Identify and address needs
+### Think ahead for Future You and Future Us
 
-Think as a team
+???
 
-- overlapping skillsets, roles, 
-Talk about data
-Identify and address needs
+Team: overlapping skillsets, roles, 
 
 ---
 # 2 narratives: 
@@ -240,6 +250,34 @@ What it looks like, the tools involved, the communities involved, the mindset in
 class: inverse, center, middle
 # What does it look like
 
+---
+.pull-left[
+```{r luke2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-luke.png")
+```
+
+### `data_final_v3.xls`
+### `paper_with_figures_v3.doc`
+### `Re: FWD: data question`
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)
+]
+]
+
+--
+
+.pull-right[
+```{r yoda2, out.width = '95%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-yoda.png")
+```
+
+### `data/species_by_site.csv`
+### `R/species_model.Rmd`
+### `Issue #20: Species modeling by site`
+]
+
+???
 ---
 class: middle, center
 ```{r fig 1-whiteout, out.width = '80%'}
@@ -361,7 +399,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-class: center, middle
+## RStudio for R, text editing, Github sync, & more
 ```{r workflow-ex-repro-wtext, out.width = '100%'}
 knitr::include_graphics("img/workflow-ex-repro-wtext.png")
 ```
@@ -373,7 +411,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-class: center, middle
+## GitHub for archiving and bookkeeping
 ```{r workflow-ex-collab-wtext, out.width = '100%'}
 knitr::include_graphics("img/workflow-ex-collab-wtext.png")
 ```
@@ -385,7 +423,19 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-class: center, middle
+## Github for discussion & project mgmt
+```{r workflow-ex-collab2-wtext, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/workflow-ex-collab2-wtext.png")
+```
+
+.footnote[
+source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
+]
+
+???
+
+---
+## R + Github for docs & publishing
 ```{r workflow-ex-comm-wtext, out.width = '100%'}
 knitr::include_graphics("img/workflow-ex-comm-wtext.png")
 ```
@@ -631,7 +681,27 @@ knitr::include_graphics("img/ods-community-logos.png")
 
 Community was really my entry way into open science. 
 
-What does this look like? Twitter. 
+Take a moment to say a few things
+
+---
+# rOpenSci - software catalogue
+
+---
+# RStudio
+
+---
+# Carpentries
+
+---
+# RLadies
+
+---
+# Moz
+
+???
+
+And I connect with all of thesee through Twitter
+
 
 ---
 # Twitter. Allison figure, also rnoaa example. 
@@ -653,7 +723,7 @@ transition: But For a lot of people, science communication still largely occurs 
 
 ???
 
-I I've talked about tools and about teamwork and it's amazing that it's in this feedback loop
+
 
 ---
 # Better science in less time 
@@ -681,10 +751,14 @@ class: inverse, center, middle
 # Supercharge your research
 
 
+**Normalize data discussions**: talk about data with your research group and colleagues
+
+**Identify and address shared needs**: developing vocabulary around data challenges can help you find solutions and engage with the broader open data science community
+
+**Think ahead for Future You and Future Us**: always consider how to make it easier for others to understand and build from your work – especially when it is most likely to be ~you~ or someone in your research group.
 
 
 ???
-
 
 ---
 # Share knowledge
