@@ -380,24 +380,25 @@ knitr::include_graphics("img/horst-starwars-yoda.png")
 ---
 .pull-left[
 
-```{r yoda32, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/horst-starwars-yoda.png")
+```{r luke-smaller, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-luke.png")
 ```
-
 
 ```{r teucher1, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/teucher1.png")
 ```
 
 .footnote[
-[Andy Teucher](https://github.com/ateucher/vic-geogeeks-2018-01-30)
+art: [@allison_horst](https://twitter.com/allison_horst), graphics: [Andy Teucher](https://github.com/ateucher/vic-geogeeks-2018-01-30)
 ]
 ]
 
 .pull-right[
-<br>
-<br>
-<br>
+
+```{r yoda-smaller, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-yoda.png")
+```
+
 ```{r teucher2, out.width = '95%', fig.align='center'}
 knitr::include_graphics("img/teucher2.png")
 ```
@@ -637,9 +638,17 @@ But remember, I said these tools are really most powerful with teams.
 ---
 # Leaderful teams
  
-```{r team, out.width = '100%', fig.align='center'}
+```{r team, out.width = '70%', fig.align='center'}
 knitr::include_graphics("img/ohi-team-2018b-crop.jpeg") 
 ```
+
+**Horizontal leadership** •  **Trust** • **Overlapping skillsets** • **Seaside Chats**
+
+Resilience. Skillsharing. Mindset open to learning from anyone 
+
+Onboarding and offboarding plans. 
+
+TODO: add Cherevuil 
 
 ???
 
@@ -716,7 +725,8 @@ Collaborators and community (redefined) as a way to learn
 The internet as an underleveraged tool for science
 
 ---
-<br>
+# Data science is a discipline
+### "the discipline of turning raw data into understanding"
 <br>
 
 ```{r data-science-r4ds, out.width = '90%', fig.align='center'}
@@ -725,13 +735,6 @@ knitr::include_graphics("img/r4ds_data-science.png")
 
 .footnote[
 <br>
-[Wickham & Grolemund, 2016](https://r4ds.had.co.nz/)
-]  
-
---
-
-.footnote[
-### "Data science is the discipline of turning raw data into understanding" <br>
 [Wickham & Grolemund, 2016](https://r4ds.had.co.nz/)
 ]  
 
@@ -750,17 +753,31 @@ The idea of tidying your data first and then being streamlined with the tools yo
 transition So expecting there is a better way is a big part of a shifting mindset towards open data science. And along with it comes
 
 ---
-## TODO: tidyverse screenshot
+# Data science is a discipline
+### "the discipline of turning raw data into understanding"
+<br>
+
+```{r data-science-r4ds-tidy, out.width = '90%', fig.align='center'}
+knitr::include_graphics("img/r4ds_data-science-redbox.png")
+```
+
+.footnote[
+<br>
+[Wickham & Grolemund, 2016](https://r4ds.had.co.nz/)
+]  
+
+
+---
+# Open data science tools match theory
 <br>
 <br>
 
 ```{r tidyverse, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/r4ds_data-science.png")
+knitr::include_graphics("img/r4ds_data-science-tidyverse.png")
 ```
   
 .footnote[
-<!---### "Data science is the discipline of turning raw data into understanding" <br> --->
-[Wickham & Grolemund, 2016](https://r4ds.had.co.nz/)
+[Hadley Wickham, 2019](https://speakerdeck.com/hadley/welcome-to-the-tidyverse?slide=28)
 ]  
 
 ???
