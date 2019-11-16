@@ -57,6 +57,7 @@ background-position: bottom left
 ???
 
 ---
+exclude: TRUE
 ```{r loop-wtext, out.width = '100%'}
 knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
 # https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
@@ -201,11 +202,10 @@ background-position: bottom left
 ### Open data science as a mindset (team)
 ### How to supercharge your research (you)
 
-<br>
-<br>
-<br>
-<br>
-<br>
+.pull-right[
+
+###  <img src="img/openscapes-hex.png" alt="" style="float:right;width:100px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:100px;"/>
+]
 
 ???
 
@@ -219,14 +219,30 @@ For me, I didn't fully feel the power of R until I finished graduate school and 
 
 transition: So I'll talk today about 
 
-
 ---
-```{r OHI hex, out.width = '55%', fig.align='center'}
-knitr::include_graphics("img/OHI-hex.png")
+<br>
+```{r OHI hex, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/OHI-banner-hex.png")
 ```
+
+<br>
+
+.pull-left[
+**A scientific method, tool, and community for channeling the best available scientific information into marine policy.**  
+<br>
+**Global assessments annually 2012-**  
+**Independent assessment2 20+**
 
 .footnote[
 web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
+]
+]
+
+.pull-right[
+```{r teamx, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ohi-team-2018b-crop.jpeg") 
+```
+
 ]
 
 ???
@@ -237,42 +253,24 @@ It is being used by the United Nations and by 20 groups around the world.
 
 There is a lot to it but what is relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team.
 
-But we are marine scientists, and we were never trained to work responsibly with data. 
-
-So we found out the hard way that our default approaches were not reproducible by even ourselves. 
-
-Getting through this involved quite a reckoning, but when we got through it, we knew we had a story to tell. 
-
----
-## Ocean Health Index team
-```{r teamx, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ohi-team-2018b-crop.jpeg") 
-```
-
-<!---
-.pull-right[
-<br>
-
-####  <img src="img/openscapes-hex.png" alt="" style="float:right;width:100px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:100px;"/>
-]
-
---->
-
-???
-
 ---
 ```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_grassland_1500px-text.png")
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
 ```
 
-<br>
 
 .pull-left[
-### Welcome and empower scientists as labs
+**A mentorship program for research teams to help build mindsets and habits around open data science.**  
+<br>
+**Remote cohorts 2019-**  
+**Workshops upcoming 2020-**  
 ]
 
 .pull-right[
-### Increase visibility and value by amplifying labs
+```{r zoom, out.width = '85%', fig.align='center'}
+knitr::include_graphics("img/Cohort1_zoom.png") 
+```
+
 ]
 
 
@@ -286,18 +284,6 @@ web: [openscapes.org](https://openscapes.org)
 welcome and empower scientists as research groups
 
 increase visibility and valuee by amplifying labs and creating more examples of how powerful open data science can be for environmental science
-
----
-## Openscapes team
-```{r zoom, out.width = '70%', fig.align='center'}
-knitr::include_graphics("img/Cohort1_zoom.png") 
-```
-
-.footnote[
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/28/introducing-champions-program/)
-]
-
-???
 
 ---
 ```{r rey-toc-look-like}
@@ -327,6 +313,19 @@ background-position: bottom left
 ---
 ## OHI background
 
+First global assessment in 2012, big deal. after 4 years work to develop the models workflow, find and process and model data. 
+
+---
+```{r ohi-workflow, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ohi-workflow.png")
+```
+
+---
+```{r ohi-workflow-repeat, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ohi-workflow-repeat.png")
+```
+
+
 ---
 .pull-left[
 ```{r luke-smaller, out.width = '60%', fig.align='center'}
@@ -341,6 +340,8 @@ knitr::include_graphics("img/teucher1.png")
 art: [@allison_horst](https://twitter.com/allison_horst), graphics: [Andy Teucher](https://github.com/ateucher/vic-geogeeks-2018-01-30)
 ]
 ]
+
+--
 
 .pull-right[
 
@@ -357,6 +358,8 @@ knitr::include_graphics("img/teucher2.png")
 ]
 
 ???
+
+But when we actually went to repeat it, it was a bummer. Because of our workflow.
 
 ---
 ```{r ods-software, out.width = '65%', fig.align='center'}
@@ -440,6 +443,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
+exclude: TRUE
 class: center, middle
 ```{r lowndes-table1, out.width = '100%'}
 knitr::include_graphics("img/lowndes-nature-table1.png")
@@ -714,6 +718,8 @@ knitr::include_graphics("img/r4ds_data-science-redbox.png")
 [Wickham & Grolemund, 2016](https://r4ds.had.co.nz/)
 ]  
 
+???
+OHI: It actually took us a long time to realize that this was discrete, separate thing. 
 
 ---
 # Data science is a discipline
