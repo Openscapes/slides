@@ -56,16 +56,6 @@ background-position: bottom left
 
 ???
 
-If there is one take home message, it's that open data science is not only tools, it's a mindset. It is within reach, but you need teamwork. (blarg). Maybe put 
-
-Well thank you so much, I am so excited to be here with all of you and I want to thank the organizers for this invitation. 
-
-I am a marine scientist and R as a language and as a community has been game-changing for my science, and my life. 
-
-So much so that over the past six years I have been moving away from doing my own research so I can pay forward what I've learned and focus on enabling other scientists to better science in less time, together. 
-
-Throughout this I've learned several lessons, and I want to share them up front: 
-
 ---
 ```{r loop-wtext, out.width = '100%'}
 knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
@@ -77,6 +67,14 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 ]
 
 ???
+
+I'm here really to talk about teams big and small. But something that I've found too is that many people feel like they are not a part of a team at all, that they are a team of one
+If there is one take home message, it's that open data science is not only tools, it's a mindset. It is within reach, but you need teamwork. (blarg). Maybe put 
+
+
+I am a marine scientist and R as a language and as a community has been game-changing for my science, and my life. 
+
+
 
 This is my (Openscapes) mindset; this is where I'm coming from when I talk about better science in less time. It's this beautiful feedback loop. It's the idea that there are really powerful open data science tools and practices that exist (here on the left) and that having shared tools and workflows enables you to collaborate more easily with others and think as a team (on the right). And also, If you work with others and have a team mindset, you're more able or nimble to engage with new software and practices. 
 
@@ -199,9 +197,9 @@ background-position: bottom left
 
 # Better science in less time 
 
-### What does it look like
-### Open data science as a mindset
-### How to supercharge your research 
+### What does it look like (tools)
+### Open data science as a mindset (team)
+### How to supercharge your research (you)
 
 <br>
 <br>
@@ -290,7 +288,7 @@ welcome and empower scientists as research groups
 increase visibility and valuee by amplifying labs and creating more examples of how powerful open data science can be for environmental science
 
 ---
-## Openscapes cohort
+## Openscapes team
 ```{r zoom, out.width = '70%', fig.align='center'}
 knitr::include_graphics("img/Cohort1_zoom.png") 
 ```
@@ -313,9 +311,10 @@ background-position: bottom left
 # Better science in less time 
 
 ### What does it look like
-<br>
-<br>
-<br>
+
+**Ocean Health Index background**  
+**Tools and workflow**  
+**Reimagine communication & publishing**  
 <br>
 <br>
 <br>
@@ -326,38 +325,10 @@ background-position: bottom left
 ???
 
 ---
-exclude: TRUE
-.pull-left[
-```{r luke2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst-starwars-luke.png")
-```
-
-### `data_final_v3.xls`
-### `paper_with_figures_v3.doc`
-### `Re: FWD: data question`
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst)
-]
-]
-
---
-
-.pull-right[
-```{r yoda2, out.width = '95%', fig.align='center'}
-knitr::include_graphics("img/horst-starwars-yoda.png")
-```
-
-### `data/species_by_site.csv`
-### `R/species_model.Rmd`
-### `Issue #20: Species modeling by site`
-]
-
-???
+## OHI background
 
 ---
 .pull-left[
-
 ```{r luke-smaller, out.width = '60%', fig.align='center'}
 knitr::include_graphics("img/horst-starwars-luke.png")
 ```
@@ -386,6 +357,20 @@ knitr::include_graphics("img/teucher2.png")
 ]
 
 ???
+
+---
+```{r ods-software, out.width = '65%', fig.align='center'}
+knitr::include_graphics("img/screenshot-paur-talk-ods.png") 
+```
+
+.footnote[
+source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLtj9u5E9wMxtYuP0T_HxoDnyKw/edit?usp=sharing)
+]
+
+???
+
+So this is how we work: the tools we use
+
 
 
 ---
@@ -431,33 +416,6 @@ Having all of this coding infrastructure in place is what enables those 20 indep
 
 
 ---
-```{r ods-software, out.width = '65%', fig.align='center'}
-knitr::include_graphics("img/screenshot-paur-talk-ods.png") 
-```
-
-.footnote[
-source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLtj9u5E9wMxtYuP0T_HxoDnyKw/edit?usp=sharing)
-]
-
-???
-
-So this is how we work: the tools we use
-
-
----
-class: center, middle
-```{r lowndes-table1, out.width = '100%'}
-knitr::include_graphics("img/lowndes-nature-table1.png")
-```
-
-.footnote[
-source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160)
-]
-
-???
-
-
----
 class: center, middle
 ```{r workflow-repro-wtext, out.width = '100%'}
 knitr::include_graphics("img/workflow-repro-wtext.png")
@@ -480,6 +438,20 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ]
 
 ???
+
+---
+class: center, middle
+```{r lowndes-table1, out.width = '100%'}
+knitr::include_graphics("img/lowndes-nature-table1.png")
+```
+
+.footnote[
+source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160)
+]
+
+???
+
+We have it in the table but let me show you. 
 
 ---
 ## RStudio for R, text editing, Github sync, & more
@@ -529,16 +501,15 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 
 ???
 
-
 ---
-# screenshot Rmd Garrett
+## Reimagine communication and publishing
+```{r rmd-reimagine, out.width = '50%', fig.align='center'}
+knitr::include_graphics("img/rmarkdownWebsite2-cropped.png")
+```
 
-???
-
-Also R code for publishing. And mixed with GH, lets you publish. 
-
-
-
+.footnote[
+source: [RStudio](http://www.robbyshaver.com/rmarkdownGen/lesson-11.html)
+]
 
 ---
 class: center, middle
@@ -555,6 +526,33 @@ web (simple RMarkdown): [ohi-science.org/ohi-global](http://ohi-science.org/ohi-
 We also can spin up lighter-weight websites that will render with the most recent information we have 
 
 This is not only useful for us, but for our colleagues leading their own assessments on their coastlines. 
+
+---
+```{r ohi-esw, out.width = '80%', fig.align='center'}
+knitr::include_graphics("img/ohi-esw-web.png") 
+```
+
+.footnote[
+web (simple RMarkdown): [ohi-science.org/esw](http://ohi-science.org/esw)
+]
+
+???
+Another way science communication has changed is that  
+
+---
+class: center, middle
+```{r toolbox-training, out.width = '80%'}
+knitr::include_graphics("img/ohi-toolbox-training.png")
+```
+
+.footnote[
+web: [ohi-science.org/toolbox-training](http://ohi-science.org/toolbox-training/)
+]
+
+???
+
+We can create really nicely formatted guides and documentation also using these same tools. 
+
 
 ---
 <br>
@@ -601,6 +599,8 @@ And for fun, for creating talks at useR
 
 transition: 
 
+--->
+
 ---
 ```{r loop-wtext2, out.width = '100%'}
 knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
@@ -616,42 +616,8 @@ But remember, I said these tools are really most powerful with teams.
 
 
 ---
-# Leaderful teams
- 
-```{r team, out.width = '70%', fig.align='center'}
-knitr::include_graphics("img/ohi-team-2018b-crop.jpeg") 
-```
-
-**Horizontal leadership** •  **Trust** • **Overlapping skillsets** • **Seaside Chats**
-
-Add Star Wars Hands
-
-Resilience. Skillsharing. Mindset open to learning from anyone 
-
-Onboarding and offboarding plans. 
-
-TODO: add Cherevuil 
-
-???
-
-
-Teams to me mean rings of people you respect, innovate with, and can rely upon. It does not have to be limited to a certain deliverable, location, discipline or anything else really. 
-
-Teamwork is critical in science because no one it can do it all. And for the sake for innovation as well as for emotional well-being we need to shed the expectation that we should be able to. Instead, we need to value teamwork. 
-We as an OHI team have spent years building up trust with each other, and that makes us be able to do our best work. 
-
-This trust really centers on respect for each other and also kindness.
-
-But on an individual level, we all have had to get comfortable with sharing things before they are perfect and being vulnerable to critique, which gets easier when you can assume the best intentions from anyone's feedback. 
-
-But this has resulted in a really positive team culture, where we are comfortable with trying new things & learning from failure, and we are comfortable asking for help. 
-
----
-## OHI+ teams
-
-
----
-```{r rey-toc-minset-header}
+exclude: TRUE
+```{r rey-toc-mindset-header}
 ```
 class: title-slide, right, bottom
 background-image: url(img/horst-starwars-rey.png)
@@ -686,9 +652,9 @@ background-position: bottom left
 
 Data science as a discipline  
 Open as a way to work  
-Lab members as a team  
 Collaborators and community (redefined) as a way to learn  
 The internet as an underleveraged tool for science  
+Lab members as a team  
 <br>
 <br>
 <br>
@@ -751,7 +717,7 @@ knitr::include_graphics("img/r4ds_data-science-redbox.png")
 
 ---
 # Data science is a discipline
-### Open data science tools match theory
+### Tools to operationalize theory
 ```{r tidyverse, out.width = '60%', fig.align='center'}
 knitr::include_graphics("img/r4ds_data-science-tidyverse.png")
 ```
@@ -798,7 +764,7 @@ We also practice working openly with their own teams, even if it is within a pri
 transition: and these 2 pieces really trigger you to reimagine what data science and open science can do for communication
 
 ---
-class: center, middle
+### Collaborators and community (redefined) as a way to learn
 ```{r community-logos, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/ods-community-logos.png")
 ```
@@ -853,6 +819,26 @@ tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/10859908335710208
 Halley has a big science follwing already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
 
 
+---
+```{r rladies-sydney, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/tweet-apreshill-rladies-sydney.png")
+```
+
+.footnote[
+twitter: [@apreshill](https://twitter.com/apreshill/status/1184660994007519232); 
+web: [RLadies Sydney](https://rladiessydney.org/courses/ryouwithme/)
+]
+
+???
+
+https://twitter.com/WeAreRLadies/status/1087741684618809346
+https://twitter.com/frau_dr_barber/status/1127189812308369408
+
+```{r tweet-maybe, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
+# https://twitter.com/danidlsa/status/1192773907088064512
+```
+
 
 ---
 ### \#rstats Twitter
@@ -867,22 +853,13 @@ blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code
 
 ???
 
-
-
 ---
-## Twitter. Follow:
-
-Twitter for learning 
-Follow selectively, listen & learn, e.g.:
-#rstats, @hadleywickham, @JennyBryan, @WeAreRLadies
-@openscapes, @nceas, @OHIscience, @EcoDataScience
-@pinskylab, @ntherk, @DocFroehlich, @AdrianStier, @allison_horst, @DrChelseaLWood
-
----
-```{r reprise, out.width = '100%'}
-knitr::include_graphics("img/horst-eco-r4ds.png") 
+```{r horst-eco-r4ds}
 ```
-
+name: environ-comm-r4ds
+class: center, middle
+background-image: url(img/horst-eco-r4ds.png) 
+background-size: contain
 
 .footnote[
 .left[
@@ -896,11 +873,14 @@ updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
 
 So all of this together makes a possible for env science
 
----
-```{r reprise-env, out.width = '100%'}
-knitr::include_graphics("img/horst-eco-r4ds-env-only.png") 
-```
 
+---
+```{r horst-eco-r4ds-env-comm-only}
+```
+name: environ-comm-r4ds
+class: center, middle
+background-image: url(img/horst-eco-r4ds-env-comm-only.png) 
+background-size: contain
 
 .footnote[
 .left[
@@ -914,7 +894,6 @@ updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
 
 But this is where we are. And why is that? It's because we don't have the skills because we're never trained, but we aslso don't have the accompanying mindset and teamwork. 
 
-
 ---
 ```{r loop-wtext3, out.width = '100%'}
 knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
@@ -927,9 +906,33 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 ???
 
+We're missing this feedback loop. Or maybe it encompasses the whole idea. 
+
 Coming back to this feedback loop: 
 The biggest things that I've learned are that science teams — research groups, labs — don't necessarily think like a team or work like a team when it comes to data. Shouldn't be surprising from my own experience in my PhD lab; we worked like a team when it came to science. but not data.  
 
+
+---
+class: center
+```{r team-hands, out.width = '70%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-hands.png") 
+```
+
+--
+
+**trust** • **shared values** • **resilience** • **overlapping skillsets & interoperability** • **horizontal leadership**
+
+???
+
+Team mindset. Overlapping skillsets
+
+Our story started with us not working like a team. Having one person who knew how to code. Very inefficient, very brittle. 
+
+See this in OHI+ as well: hire one person to code, no decision making, no creativity, no domain knowledge. 
+
+What you really want in a team. 
+
+Ben enabled us to become leaders. horizontal leadership: evolve with the softwarescape
 
 
 ---
@@ -943,11 +946,9 @@ background-position: bottom left
 
 # Better science in less time 
 
-### Supercharge your research
-
-**Normalize data discussions**  
-**Identify and address shared needs**  
-**Think ahead for Future You and Future Us**  
+### How to supercharge your research
+Lessons from Openscapes  
+How to supercharge science
 <br>
 <br>
 <br>
@@ -959,6 +960,137 @@ background-position: bottom left
 I'm really going to focus on the mindset part here; there are we also have 10 weeks of recommendations. 
 
 ---
+### How to supercharge your research
+```{r horst-seaside-chats, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-seaside-chats.png") 
+```
+
+**"This isn’t just about coding and GitHub, this is about changing how we do science"**   
+— [Dr. Malin Pinsky, Marine Ecologist at Rutgers & Openscapes Champion](https://www.openscapes.org/blog/2019/04/08/summit-reflections1/)
+
+---
+```{r careers-screenshot, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/nature-careers-supercharge.png") 
+```
+
+???
+
+written as group leads, but the idea is to enable a team, whether it's vertical leadership or horizontal leadership. 
+
+---
+# Normalize data discussions
+```{r openscapesing, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/openscapesing-6thfloor.jpg") 
+```
+
+???
+
+10-week plan. 
+
+---
+exclude: TRUE
+# Normalize data discussions
+```{r seaside-chat, out.width = '80%', fig.align='center'}
+knitr::include_graphics("img/seaside-chats-wood.png") 
+```
+
+.footnote[
+blog: [openscapes.org](https://www.openscapes.org/blog/2019/03/10/seaside-chats/); [Wood lab](https://github.com/wood-lab/wood-lab-resources#wood-lab-resources)
+]
+
+???
+[Sea]side chats & hackathons
+
+---
+# Identify and address shared needs
+
+```{r clippy, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif") 
+```
+
+
+???
+**On/offboarding documents**  
+**Codes of Conduct**  
+<br>
+**Coding clubs**  
+**University courses**
+<br>
+**Champion open data science**
+
+---
+# Think ahead: Future You & Future Us
+
+???
+
+Need quote from paper. 
+
+
+---
+# Enable and support leaderful teams
+.pull-left[
+### Qualities
+**Resilience**  
+**Horizontal leadership**  
+**Trust**  
+**Overlapping skillsets & skillsharing**  
+]
+
+--
+
+.pull-right[
+### Strategies
+**Seaside Chats**  
+
+]
+
+???
+
+ Mindset open to learning from anyone 
+
+eco-data-science
+allison
+s course
+
+TODO: add Cherevuil 
+
+???
+
+
+Teams to me mean rings of people you respect, innovate with, and can rely upon. It does not have to be limited to a certain deliverable, location, discipline or anything else really. 
+
+Teamwork is critical in science because no one it can do it all. And for the sake for innovation as well as for emotional well-being we need to shed the expectation that we should be able to. Instead, we need to value teamwork. 
+We as an OHI team have spent years building up trust with each other, and that makes us be able to do our best work. 
+
+This trust really centers on respect for each other and also kindness.
+
+But on an individual level, we all have had to get comfortable with sharing things before they are perfect and being vulnerable to critique, which gets easier when you can assume the best intentions from anyone's feedback. 
+
+But this has resulted in a really positive team culture, where we are comfortable with trying new things & learning from failure, and we are comfortable asking for help. 
+
+---
+class: center, middle
+```{r allisonhorst-github-io, out.width = '60%'}
+knitr::include_graphics("img/allisonhorst-github-io.png")
+knitr::include_graphics("img/allisonhorst-github-io2.png")
+```
+ 
+.footnote[
+web: [allisonhorst.github.io](https://allisonhorst.github.io/) 
+]
+
+???
+
+One of the cool things she did to give back to the community is she created this website for her classes and posted all course materials and homeworks online. 
+
+This is now a resource for Allison's students but also for anyone else wanting to learn on their own, or teach their own course.
+
+I mentioned that Michelle is going to teach a new open data science course; she is going to use Allison's lessons.
+
+transition: Those are just some stories of the teamwork, leadership, and community involvement that the Openscapes champions have been engaged in.
+
+
+---
 # Share knowledge
 ```{r efficiency-tips, out.width = '70%', fig.align='center'}
 knitr::include_graphics("img/openscapes-efficiency-tip.png") 
@@ -967,7 +1099,7 @@ knitr::include_graphics("img/openscapes-efficiency-tip.png")
 ???
 
 ---
-### Use Twitter to learn
+### Use Twitter for learning
 .pull-left[
 ```{r welcome-rstats2, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
@@ -982,16 +1114,29 @@ blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code
 .pull-right[
 **Follow selectively, listen & learn**
 
-#rstats, @hadleywickham, @JennyBryan, @WeAreRLadies
+\#rstats, @hadleywickham, @JennyBryan, @WeAreRLadies  
 
-@openscapes, @nceas, @OHIscience, @EcoDataScience
+@openscapes, @nceas, @OHIscience, @EcoDataScience  
 
 @pinskylab, @ntherk, @DocFroehlich, @AdrianStier, @allison_horst, @DrChelseaLWood
 
 ]
 
 
-Twitter for learning 
+---
+# Get involved
+
+### Follow us on Twitter @openscapes
+
+### Join our mailing list
+
+### Talk with your colleagues
+
+### Amplify through media and events
+
+### Book or sponsor Champions Cohorts and Workshops
+
+### Email us with your ideas
 
 
 ---
@@ -1030,16 +1175,6 @@ This includes a deliberate focus on creating a safe and welcoming space, and is 
 Participants get more comfortable talking about open data science topics, and then their homework is to bring these conversations back to their larger lab groups. 
 
 ---
-# [Sea]side chats & hackathons
-<br>
-```{r seaside-chat, out.width = '80%', fig.align='center'}
-knitr::include_graphics("img/seaside-chats-wood.png") 
-```
-
-.footnote[
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/03/10/seaside-chats/); [Wood lab](https://github.com/wood-lab/wood-lab-resources#wood-lab-resources)
-]
-
 ???
 
 We call these conversations Seaside Chats, or Bayside, Bluffside or Fishbowl chats. They are specific times and places to talk about reproducible research, discuss coding issues, and learn about cool new packages relevant for research. 
@@ -1290,23 +1425,6 @@ Prior to conversations like these, I had never stopped to think that there were 
 
 transition: And that might sound crazy, but before twitter, this is the closest I'd ever come to interacting with software:
 
----
-class:middle, inverse, center
-```{r clippy}
-```
-
-![](https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif)
-
-<!---![](https://media.giphy.com/media/Law8cmreIvpMQ/giphy.gif) --->
-???
-
-I'm not kidding. 
-
-But seriously, realizing that software developers went well beyond Clippy here was really a defining point in my life. 
-
-This is was that turning point when I really became the person I am today — that person who never stops talking about how awesome R is and how it will change your life
-
-transition: Even back in 2016 my 4 year old niece knew about ggplot and dplyr
 
 ---
 class: center, middle
@@ -1378,21 +1496,6 @@ This was such a cool event. I mean I had really high expections about how awesom
 
 The summit not only this give them an opportunity to build trust and become allies science and Openscapes. But I think by meeting Sean and Christie they really felt what I feel here in this community.
 
----
-class: middle
-.whisper[This isn’t just about coding and GitHub, this is about changing how we do science <br>— Malin Pinsky]
-
-.footnote[
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/04/08/summit-reflections1/)
-]
-
-???
-
-So Malin said that this isn’t just about coding and GitHub, this is about changing how we do science. 
-
-I'm just so excited that they feel this way, because mindset change comes from truly feeling it
-
-transition: There are many more communities that I love but I'm going to talk about one more right now, and that's RLadies
 
 ---
 # RLadies
@@ -1429,26 +1532,6 @@ Allison Horst and her student Gracie started in an in-person tidytuesday hacky h
 
 You probably recognize her name from all the beautiful artwork in this talk. 
 
----
-class: center, middle
-```{r allisonhorst-github-io, out.width = '60%'}
-knitr::include_graphics("img/allisonhorst-github-io.png")
-knitr::include_graphics("img/allisonhorst-github-io2.png")
-```
- 
-.footnote[
-web: [allisonhorst.github.io](https://allisonhorst.github.io/) 
-]
-
-???
-
-One of the cool things she did to give back to the community is she created this website for her classes and posted all course materials and homeworks online. 
-
-This is now a resource for Allison's students but also for anyone else wanting to learn on their own, or teach their own course.
-
-I mentioned that Michelle is going to teach a new open data science course; she is going to use Allison's lessons.
-
-transition: Those are just some stories of the teamwork, leadership, and community involvement that the Openscapes champions have been engaged in.
 
 ---
 ```{r openscapes-arctic, out.width = '100%', fig.align='center'}
@@ -1505,20 +1588,6 @@ Learning and using similar software promotes and streamlines teammwork. And also
 transition: This is a loop that feeds back on itself. For me, and likely for a lot of us in this room, this becomes difficult to differentiate and tease apart. 
 
 ---
-
-```{r hex-wall-oz, out.width = '70%', fig.align='center'}
-knitr::include_graphics("img/useR-oz-hex-wall.jpg") 
-```
-
-.footnote[
-tweet: [@dataandme](https://twitter.com/dataandme/status/1017117835821244416)
-]
-
-???
-
-I mean, just look at our hex stickers, which are a combination of tools and communities
-
----
 class: middle, center
 ```{r loop2, out.width = '100%'}
 knitr::include_graphics("img/horst-lowndes-loop.png")
@@ -1538,69 +1607,8 @@ So with Openscapes I'm trying to reduce the time it takes to discover this feedb
 
 transition: Because welcome is a powerful thing.
 
----
-class:inverse, center, middle
-# Harness the power of welcome
 
-???
 
-Welcome is a powerful thing because it is so simple: it means being nice to people. 
-
-It means being empathetic and friendly, realizing that even though someone might be an expert in their field and doing amazing science, they but might be intimidated by open data science and you welcoming them could be exactly what they need. 
-
----
-<br>
-<br>
-```{r value-welcome, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/ropensci-butland-welcome.png")
-```
-
-.footnote[
-blog: [ropensci](https://ropensci.org/blog/2017/07/18/value-of-welcome/)
-]
-
-???
-
-I learned this early from the folks at rOpenSci, RStudio and RLadies with their commitment to creating diverse and inclusive spaces. 
-
-And it has been a big part of my experience and education with Mozilla, and a foundational part of Openscapes.
-
-transition: and I'm convinced it's the way to help scientists do better science in less time
-
----
-class: inverse
-# Lessons learned 
-<br>
-
-### Open data science is a mindset
-> expect a better way • build confidence & willingness • reimagine science communication
-
-### Teamwork starts with openness
-> working openly • vertical & horizontal & leadership • community
-
-### Harness the power of welcome 
-
-???
-
-So these lessons for me fuel what it means to work responsibly and collaboratively with data but should also fuel what it means to do science. 
-
-transition: I'm so proud of what we've accomplished with Openscapes in this first round of Champions —
-
----
-```{r closing-thoughts}
-```
-name: environ-comm-r4ds
-class: center, middle
-background-image: url(img/horst-eco-r4ds.png) 
-background-size: contain
-
-.footnote[
-.left[
-<br>
-art: [@allison_horst](https://twitter.com/allison_horst);
-updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
-]
-]
 
 ???
 
