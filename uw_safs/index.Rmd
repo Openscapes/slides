@@ -189,40 +189,6 @@ Funding opportunities for scientists to participate in open science
 Building software to meet scientists where they are
 
 ---
-```{r rey-toc-header}
-```
-class: title-slide, right, bottom
-background-image: url(img/horst-starwars-rey.png)
-background-size: contain
-background-position: bottom left   
-
-
-# Better science in less time 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-???
-
-R is the Force that enables us as scientists to do better science in less time. 
-
-It empowers us to get our own data out of the swamp. 
-
-It empowers us and build off of our confidence and experiences and broaden the scope of scientific challenges that we can tackle, which for environmental scientists, includes food security, disease transmission, and climate change. 
-
-For me, I didn't fully feel the power of R until I finished graduate school and joined a research group where I am today, where we learned to work with data as a team. 
-
-transition: So I'll talk today about 
-
----
 ```{r rey-toc-full}
 ```
 class: title-slide, right, bottom
@@ -244,6 +210,17 @@ background-position: bottom left
 <br>
 
 ???
+
+R is the Force that enables us as scientists to do better science in less time. 
+
+It empowers us to get our own data out of the swamp. 
+
+It empowers us and build off of our confidence and experiences and broaden the scope of scientific challenges that we can tackle, which for environmental scientists, includes food security, disease transmission, and climate change. 
+
+For me, I didn't fully feel the power of R until I finished graduate school and joined a research group where I am today, where we learned to work with data as a team. 
+
+transition: So I'll talk today about 
+
 
 ---
 ```{r OHI hex, out.width = '55%', fig.align='center'}
@@ -349,6 +326,7 @@ background-position: bottom left
 ???
 
 ---
+exclude: TRUE
 .pull-left[
 ```{r luke2, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst-starwars-luke.png")
@@ -398,6 +376,8 @@ art: [@allison_horst](https://twitter.com/allison_horst), graphics: [Andy Teuche
 ```{r yoda-smaller, out.width = '60%', fig.align='center'}
 knitr::include_graphics("img/horst-starwars-yoda.png")
 ```
+
+<br>
 
 ```{r teucher2, out.width = '95%', fig.align='center'}
 knitr::include_graphics("img/teucher2.png")
@@ -644,6 +624,8 @@ knitr::include_graphics("img/ohi-team-2018b-crop.jpeg")
 
 **Horizontal leadership** •  **Trust** • **Overlapping skillsets** • **Seaside Chats**
 
+Add Star Wars Hands
+
 Resilience. Skillsharing. Mindset open to learning from anyone 
 
 Onboarding and offboarding plans. 
@@ -707,7 +689,9 @@ Open as a way to work
 Lab members as a team  
 Collaborators and community (redefined) as a way to learn  
 The internet as an underleveraged tool for science  
-
+<br>
+<br>
+<br>
 
 ???
 
@@ -727,7 +711,6 @@ The internet as an underleveraged tool for science
 ---
 # Data science is a discipline
 ### "the discipline of turning raw data into understanding"
-<br>
 
 ```{r data-science-r4ds, out.width = '90%', fig.align='center'}
 knitr::include_graphics("img/r4ds_data-science.png")
@@ -755,7 +738,6 @@ transition So expecting there is a better way is a big part of a shifting mindse
 ---
 # Data science is a discipline
 ### "the discipline of turning raw data into understanding"
-<br>
 
 ```{r data-science-r4ds-tidy, out.width = '90%', fig.align='center'}
 knitr::include_graphics("img/r4ds_data-science-redbox.png")
@@ -768,11 +750,9 @@ knitr::include_graphics("img/r4ds_data-science-redbox.png")
 
 
 ---
-# Open data science tools match theory
-<br>
-<br>
-
-```{r tidyverse, out.width = '90%', fig.align='center'}
+# Data science is a discipline
+### Open data science tools match theory
+```{r tidyverse, out.width = '60%', fig.align='center'}
 knitr::include_graphics("img/r4ds_data-science-tidyverse.png")
 ```
   
@@ -782,58 +762,28 @@ knitr::include_graphics("img/r4ds_data-science-tidyverse.png")
 
 ???
 
-And there is R code to do it
+And there is R code to do it. And if multiple people in a research group are thinking this way and working this way, togetther with GitHub, it's a way to streamline how you collaborate. 
 
----
-## TODO: githubs tidyverse screenshot
-<br>
-<br>
-
-```{r tidyverse-collab, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/r4ds_data-science.png")
-```
-  
-.footnote[
-<!---### "Data science is the discipline of turning raw data into understanding" <br> --->
-[Wickham & Grolemund, 2016](https://r4ds.had.co.nz/)
-]  
-
-???
-
-And there is R code to do it
 
 
 ---
-```{r open-science}
-```
-.whisper[Open science]
+# Open as a way to work  
+### open science is "the concept of transparency at all stages of the research process, coupled with free and open access to data, code, and papers"
 
+source: [Hampton et al. 2015](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1)
+
+--
+
+### "transparency, collaboration, empowerment, inclusivity, and accountability" ... "trust" ... "safe to be vulnerable"
+
+source: [Wright 2019](https://medium.com/@stephanie_6761/why-bother-with-the-open-anyway-c76afb4dcb85)
 ???
 
 For many environmental scientists, open science can be a negative thing. It's seen as extra work and high risk on already overburdened scientists, particularly those who are early career. 
 
 And that is because it often also has a narrow definition of sharing your data and code at the end of your study, at the risk of people stealing your work and misconstuing your science. 
 
-In this narrow mindset it's not considered that open science could ever be a benefit to the scientist who pays such cost in terms of time and risk.
-
-transition: So in Openscapes, we talk about open science with this definition: 
-
----
-```{r open-science}
-```
-.whisper[Open science is the concept of transparency at all stages of the research process, coupled with free and open access to data, code, and papers]
-
-TODO: Add Steph Wright's def of Open. inclusion. 
-
-```{r spectrum, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/spectrum-haha.png")
-```
-
-.footnote[
-source: [Hampton et al. 2015](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1)
-]
-
-???
+In this narrow mindset it's not considered that open science could ever be a benefit to the scientist who pays such cost in terms of time and risk
 
 I like this definition of open science
 
@@ -859,42 +809,65 @@ Community was really my entry way into open science.
 
 Take a moment to say a few things
 
----
-# rOpenSci - software catalogue
-
----
-# RStudio
-
----
-# Carpentries
-
----
-# RLadies
-
----
-# Moz
-
-???
+I'm a Mozilla Fellow
 
 And I connect with all of thesee through Twitter
 
+---
+.pull-left[
+<br>
+```{r rnoaa, out.width = '100%'}
+knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
+```
+
+.footnote[
+tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
+]
+]
+
+--
+.pull-right[
+<br>
+<br>
+### My internal monologue: 
+
+**Cool visualization!**  
+**I want to represent my data this way**  
+**He includes [his code](https://gist.github.com/mrecos)!**  
+**Package from [@sckottie](https://twitter.com/sckottie) at [rOpenSci](https://ropensci.org)**  
+**rnoaa is a package making NOAA data more accessible!**  
+]
 
 ---
-# Twitter. Allison figure, also rnoaa example. 
-
-And Hadley could always be better
+class: center, middle
+```{r halley-rnoaa, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/tweet-docfroehlich-rnoaa-full.png")  
+```
+ 
+.footnote[
+tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/1085990833571020800)
+]
 
 ???
 
-More of reimagining communicatino. Not just the tools, the mindset
+Halley has a big science follwing already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
+
+
+
+---
+### \#rstats Twitter
+```{r welcome-rstats, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
+```
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst);
+blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
+]
 
 ???
 
-In environmental science, communication is something we really value. 
 
-We are very similar to the open source community like R and Moz in that all of our work is for the public good, and thus communication about it is critical
-
-transition: But For a lot of people, science communication still largely occurs at the end of a study, when everything is complete. 
 
 ---
 ## Twitter. Follow:
@@ -960,16 +933,26 @@ The biggest things that I've learned are that science teams — research groups,
 
 
 ---
-class: inverse, center, middle
-# Supercharge your research
+```{r rey-toc-supercharge-list}
+```
+class: title-slide, right, bottom
+background-image: url(img/horst-starwars-rey.png)
+background-size: contain
+background-position: bottom left   
 
 
-**Normalize data discussions**: talk about data with your research group and colleagues
+# Better science in less time 
 
-**Identify and address shared needs**: developing vocabulary around data challenges can help you find solutions and engage with the broader open data science community
+### Supercharge your research
 
-**Think ahead for Future You and Future Us**: always consider how to make it easier for others to understand and build from your work – especially when it is most likely to be ~you~ or someone in your research group.
-
+**Normalize data discussions**  
+**Identify and address shared needs**  
+**Think ahead for Future You and Future Us**  
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ???
 
@@ -982,6 +965,34 @@ knitr::include_graphics("img/openscapes-efficiency-tip.png")
 ```
 
 ???
+
+---
+### Use Twitter to learn
+.pull-left[
+```{r welcome-rstats2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
+```
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst);
+blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
+]
+]
+
+.pull-right[
+**Follow selectively, listen & learn**
+
+#rstats, @hadleywickham, @JennyBryan, @WeAreRLadies
+
+@openscapes, @nceas, @OHIscience, @EcoDataScience
+
+@pinskylab, @ntherk, @DocFroehlich, @AdrianStier, @allison_horst, @DrChelseaLWood
+
+]
+
+
+Twitter for learning 
+
 
 ---
 class: center, middle
@@ -1312,20 +1323,6 @@ tweet: [@juliesquid](https://twitter.com/juliesquid/status/726521325821431808)
 
 transition: So in Openscapes, I encourage everyone to engage, and it's cool to see them 
 
----
-class: center, middle
-
-```{r halley-rnoaa, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/tweet-docfroehlich-rnoaa-full.png")  
-```
- 
-.footnote[
-tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/1085990833571020800)
-]
-
-???
-
-Halley has a big science follwing already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
 
 ---
 # rOpenSci & RStudio
@@ -1431,22 +1428,6 @@ tweet: [@allison_horst](https://twitter.com/allison_horst/status/111024252083376
 Allison Horst and her student Gracie started in an in-person tidytuesday hacky hour. 
 
 You probably recognize her name from all the beautiful artwork in this talk. 
-
----
-```{r welcome-rstats, out.width = '75%', fig.align='center'}
-knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
-```
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst);
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
-]
-
-???
-
-and from her little #rstats monsters 
-
-transition: But she is also a lecturer of data science and statistics in an environmental science and management program, and she is an Openscapes Champion. 
 
 ---
 class: center, middle
