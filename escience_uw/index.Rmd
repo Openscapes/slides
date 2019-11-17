@@ -1,9 +1,9 @@
 ---
-title: "R for better science in less time"
+title: "R & friends for better science in less time<br>in big (& small) teams"
 subtitle: 
 author: 'Julia Stewart Lowndes, PhD' 
-role: 'Marine Data Scientist & Mozilla Fellow'
-institute: 'National Center for Ecological Analysis & Synthesis<br>University of California at Santa Barbara, USA'
+role: ''
+institute: 'National Center for Ecological Analysis & Synthesis, UCSB'
 date: "useR! 2019 Keynote<br>Toulouse, France"
 output:
   xaringan::moon_reader:
@@ -40,10 +40,8 @@ background-size: contain
 background-position: bottom left 
 
 
-# `r rmarkdown::metadata$title`
-
+## `r rmarkdown::metadata$title`
 ### `r rmarkdown::metadata$author`
-### `r rmarkdown::metadata$role`
 ### `r rmarkdown::metadata$institute`
 
 [`r icon::fa("twitter")` @juliesquid](https://twitter.com/juliesquid)  
@@ -81,23 +79,34 @@ This is my (Openscapes) mindset; this is where I'm coming from when I talk about
 
 Start off: R for BSILT. Really about open data science more broadly. And how there are really powerful tools that exist, that we can use for science. But also, they are most powerful when we use them as a team. 
 
-<!---
+---
+.pull-left[
 ### The problem
-We are struggling with data analysis as individuals
+**Individual mindset in science**: 
 
-<br>
-
-## This matters now
-We study critical systems affected by climate change, and have no time to waste
-
-## A solution
-Engage with existing open data science tools and communities, as teams
+struggling with data analysis  
+"working alone"  
+reinventing the wheel <!---difficult to repeat, reproduce--->
 
 
-### Open data science is a mindset
-### Teamwork starts with openness 
-### Harness the power of welcome
---->
+### This matters now
+**No time to waste:** 
+
+studying critical systems affected by climate change  
+bad practices perpetuated
+
+]
+
+.pull-right[
+### A solution
+**Team mindset centered on open data science**: 
+
+redefine collaborators & communities  
+expect better ways  
+create resilient teams  
+
+
+]
 
 ???
 
@@ -219,6 +228,33 @@ For me, I didn't fully feel the power of R until I finished graduate school and 
 transition: So I'll talk today about 
 
 ---
+```{r rey-toc-look-like}
+```
+class: title-slide, right, bottom
+background-image: url(img/horst-starwars-rey.png)
+background-size: contain
+background-position: bottom left   
+
+
+# Better science in less time 
+
+### What does it look like
+Why it is a mindset  
+How to engage
+
+### Open data science tools & workflows
+### Mindsets and culture
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+???
+
+---
 <br>
 ```{r OHI hex, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/OHI-banner-hex.png")
@@ -233,6 +269,7 @@ knitr::include_graphics("img/OHI-banner-hex.png")
 **Independent assessment2 20+**
 
 .footnote[
+source: [Halpern et al. 2012](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html)
 web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
 ]
 ]
@@ -252,75 +289,16 @@ It is being used by the United Nations and by 20 groups around the world.
 
 There is a lot to it but what is relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team.
 
----
-```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
-```
-
-
-.pull-left[
-**A mentorship program for research teams to help build mindsets and habits around open data science.**  
-<br>
-**Cohorts (5 months, remote) 2019-**  
-**Workshops (2-day, in-person) 2020-**  
-]
-
-.pull-right[
-```{r zoom, out.width = '85%', fig.align='center'}
-knitr::include_graphics("img/Cohort1_zoom.png") 
-```
-
-]
-
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst); 
-web: [openscapes.org](https://openscapes.org)
-]
-
-???
-
-welcome and empower scientists as research groups
-
-increase visibility and valuee by amplifying labs and creating more examples of how powerful open data science can be for environmental science
 
 ---
-```{r rey-toc-look-like}
-```
-class: title-slide, right, bottom
-background-image: url(img/horst-starwars-rey.png)
-background-size: contain
-background-position: bottom left   
-
-
-# Better science in less time 
-
-### What does it look like
-
-Ocean Health Index background  
-Tools and workflow  
-Reimagine communication & publishing  
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-???
-
----
-## OHI background
-
-First global assessment in 2012, big deal. after 4 years work to develop the models workflow, find and process and model data. 
-
----
+exclude: TRUE
 # OHI process
 ```{r ohi-workflow, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/ohi-workflow.png")
 ```
 
 ---
+exclude: TRUE
 # OHI process
 ```{r ohi-workflow-repeat, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/ohi-workflow-repeat.png")
@@ -342,8 +320,6 @@ art: [@allison_horst](https://twitter.com/allison_horst), graphics: [Andy Teuche
 ]
 ]
 
---
-
 .pull-right[
 
 ```{r yoda-smaller, out.width = '60%', fig.align='center'}
@@ -360,7 +336,7 @@ knitr::include_graphics("img/teucher2.png")
 
 ???
 
-But when we actually went to repeat it, it was a bummer. Because of our workflow.
+We felt like this. Even though we were working as a team. Really difficult for reproducibility, reinventing the wheel. Each of us individually was doing our own way or was on piece of that, isolated. 
 
 ---
 exclude: TRUE
@@ -377,6 +353,7 @@ source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLt
 So this is how we work: the tools we use
 
 ---
+exclude: TRUE
 # OHI Toolbox
 ```{r ohi-toolbox, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/ohi-workflow-toolbox.png")
@@ -399,7 +376,7 @@ Figuring out was a big enough deal that we published this in Nature Ecology & Ev
 What made it unique: we shared our struggles, and described the transition
 
 ---
-class: middle, center
+### More reproducibility & collaboration, less time
 ```{r fig 1-whiteout, out.width = '80%'}
 knitr::include_graphics("img/bsilt-fig1-nature-whiteout.jpg")
 # lowndes-nature-figure1-slides2.png
@@ -419,7 +396,7 @@ Shown here as the circles get smaller and moving up the y axis. It also go easie
 This let us focus on making improvements either on the data science side or the science side
 
 ---
-class: middle, center
+### More reproducibility & collaboration, less time
 ```{r fig 1, out.width = '80%'}
 knitr::include_graphics("img/bsilt-fig1-nature.jpg")
 # lowndes-nature-figure1-slides2.png
@@ -597,6 +574,7 @@ inspiration: [Imagine Boston](https://analytics.boston.gov/app/imagine-boston)
 And when we are working closely with partners who are engaged with data analysis decisions, we have been able to create dashboards as well. 
 
 ---
+exclude: TRUE
 <br>
 ```{r openscapes-web, out.width = '80%', fig.align='center'}
 knitr::include_graphics("img/web-blogdown-openscapes.png") 
@@ -611,6 +589,7 @@ web (blogdown): [openscapes.org](https://openscapes.org)
 Additionally, these tools have been amazing for blogging and sharing Openscapes stories
 
 ---
+exclude: TRUE
 <br>
 ```{r user-xaringan, out.width = '80%', fig.align='center'}
 knitr::include_graphics("img/user-keynote-titleslide.png") 
@@ -702,33 +681,26 @@ Collaborators and community (redefined) as a way to learn
 The internet as an underleveraged tool for science
 
 ---
-# Data science is a discipline
-### "the discipline of turning raw data into understanding"
-
+<br>
 ```{r data-science-r4ds, out.width = '90%', fig.align='center'}
 knitr::include_graphics("img/r4ds_data-science.png")
 ```
 
 .footnote[
 <br>
-[Wickham & Grolemund, 2016](https://r4ds.had.co.nz/)
+[Wickham & Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)
 ]  
 
 ???
+
+Abstract from your problem. 
 
 This graphic really changed they way we work and think. 
 
 First, it separates the Understand part. This is this science part. It's an iterative process of transforming, subsetting, comparting data, vizulazing, modeling. And it's distinct from the import and tidying parts. This is critical. 
 
->> insert quote from paper "we couldn't reproduce our own work" -- it was the tidying as much as the modeling. 
-
-This definition resonates with me because I can see myself included in it — and then with the graphic I can actually walk through the steps. 
-
-The idea of tidying your data first and then being streamlined with the tools you can use for science is amazing. Rather than accommodating around weird data.
-
-transition So expecting there is a better way is a big part of a shifting mindset towards open data science. And along with it comes
-
 ---
+exclude: TRUE
 # Data science is a discipline
 ### "the discipline of turning raw data into understanding"
 
@@ -745,8 +717,7 @@ knitr::include_graphics("img/r4ds_data-science-redbox.png")
 OHI: It actually took us a long time to realize that this was discrete, separate thing. 
 
 ---
-# Data science is a discipline
-### Tools to operationalize theory
+<br>
 ```{r tidyverse, out.width = '60%', fig.align='center'}
 knitr::include_graphics("img/r4ds_data-science-tidyverse.png")
 ```
@@ -757,8 +728,7 @@ knitr::include_graphics("img/r4ds_data-science-tidyverse.png")
 
 ???
 
-And there is R code to do it. And if multiple people in a research group are thinking this way and working this way, togetther with GitHub, it's a way to streamline how you collaborate. 
-
+Expect there's a better way
 
 
 ---
@@ -892,7 +862,9 @@ class: middle
 **resilience**  
 **overlapping skillsets & interoperability**  
 **horizontal leadership**  
-
+<br>
+ADD: Expect there is a better way  
+Abstract my problem. 
 ]
 
 .pull-right[
@@ -1000,8 +972,39 @@ How to supercharge science
 ???
 
 I'm really going to focus on the mindset part here; there are we also have 10 weeks of recommendations. 
+---
+```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
+
+.pull-left[
+**A mentorship program for research teams to help build mindsets and habits around open data science.**  
+<br>
+**Cohorts (5 months, remote) 2019-**  
+**Workshops (2-day, in-person) 2020-**  
+]
+
+.pull-right[
+```{r zoom, out.width = '85%', fig.align='center'}
+knitr::include_graphics("img/Cohort1_zoom.png") 
+```
+
+]
+
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst); 
+web: [openscapes.org](https://openscapes.org)
+]
+
+???
+
+welcome and empower scientists as research groups
+
+increase visibility and valuee by amplifying labs and creating more examples of how powerful open data science can be for environmental science
 
 ---
+exclude: TRUE
 ```{r openscapes-grassland, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_openscapes_grassland_1500px-text.png")
 ```
