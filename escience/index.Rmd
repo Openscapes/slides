@@ -206,14 +206,16 @@ background-position: bottom left
 
 # Better science in less time 
 
-### What does it look like (tools)  
-### Open data science as a mindset (team)
-### How to supercharge your research (you)
+### What does it look like
+### Open data science as a mindset, teamwork, and culture
+### How to supercharge your research
 
+<!---
 .pull-right[
 
 ###  <img src="img/openscapes-hex.png" alt="" style="float:right;width:100px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:100px;"/>
 ]
+--->
 
 ???
 
@@ -573,6 +575,7 @@ inspiration: [Imagine Boston](https://analytics.boston.gov/app/imagine-boston)
 
 And when we are working closely with partners who are engaged with data analysis decisions, we have been able to create dashboards as well. 
 
+
 ---
 exclude: TRUE
 <br>
@@ -680,6 +683,31 @@ Lab members as a team
 Collaborators and community (redefined) as a way to learn
 The internet as an underleveraged tool for science
 
+
+---
+# OHI Team circa 2013-2014
+
+.pull-left[
+### Traits
+A knowledgable & skillsharing coder, an enabling & supportive leader, willing others  
+
+### Strategies
+Twitter
+Seaside chats
+Webinars & conferences/webin
+Coding clubs
+]
+
+???
+
+.pull-right[
+```{r team-side, out.width = '80%', fig.align='center'}
+knitr::include_graphics("img/horst-startwars-hands.png") 
+```
+
+]
+
+
 ---
 <br>
 ```{r data-science-r4ds, out.width = '90%', fig.align='center'}
@@ -762,95 +790,7 @@ We also practice working openly with their own teams, even if it is within a pri
 
 transition: and these 2 pieces really trigger you to reimagine what data science and open science can do for communication
 
----
-### Collaborators and community (redefined) as a way to learn
-```{r community-logos, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ods-community-logos.png")
-```
 
-???
-
-Community was really my entry way into open science. 
-
-Take a moment to say a few things
-
-I'm a Mozilla Fellow
-
-And I connect with all of thesee through Twitter
-
----
-.pull-left[
-<br>
-```{r rnoaa, out.width = '100%'}
-knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
-```
-
-.footnote[
-tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
-]
-]
-
---
-.pull-right[
-<br>
-<br>
-### My internal monologue: 
-
-**Cool visualization!**  
-**I want to represent my data this way**  
-**He includes [his code](https://gist.github.com/mrecos)!**  
-**Package from [@sckottie](https://twitter.com/sckottie) at [rOpenSci](https://ropensci.org)**  
-**rnoaa is a package making NOAA data more accessible!**  
-]
-
----
-class: center, middle
-```{r halley-rnoaa, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/tweet-docfroehlich-rnoaa-full.png")  
-```
- 
-.footnote[
-tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/1085990833571020800)
-]
-
-???
-
-Halley has a big science follwing already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
-
-
----
-```{r rladies-sydney, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/tweet-apreshill-rladies-sydney.png")
-```
-
-.footnote[
-twitter: [@apreshill](https://twitter.com/apreshill/status/1184660994007519232); 
-web: [RLadies Sydney](https://rladiessydney.org/courses/ryouwithme/)
-]
-
-???
-
-https://twitter.com/WeAreRLadies/status/1087741684618809346
-https://twitter.com/frau_dr_barber/status/1127189812308369408
-
-```{r tweet-maybe, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
-# https://twitter.com/danidlsa/status/1192773907088064512
-```
-
-
----
-### \#rstats Twitter
-```{r welcome-rstats, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
-```
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst);
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
-]
-
-???
 
 ---
 class: middle
@@ -1167,6 +1107,99 @@ I mentioned that Michelle is going to teach a new open data science course; she 
 
 transition: Those are just some stories of the teamwork, leadership, and community involvement that the Openscapes champions have been engaged in.
 
+
+---
+# Redefine community
+
+---
+### Collaborators and community (redefined) as a way to learn
+```{r community-logos, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ods-community-logos.png")
+```
+
+???
+
+Community was really my entry way into open science. 
+
+Take a moment to say a few things
+
+I'm a Mozilla Fellow
+
+And I connect with all of thesee through Twitter
+
+---
+.pull-left[
+<br>
+```{r rnoaa, out.width = '100%'}
+knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
+```
+
+.footnote[
+tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
+]
+]
+
+--
+.pull-right[
+<br>
+<br>
+### My internal monologue: 
+
+**Cool visualization!**  
+**I want to represent my data this way**  
+**He includes [his code](https://gist.github.com/mrecos)!**  
+**Package from [@sckottie](https://twitter.com/sckottie) at [rOpenSci](https://ropensci.org)**  
+**rnoaa is a package making NOAA data more accessible!**  
+]
+
+---
+class: center, middle
+```{r halley-rnoaa, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/tweet-docfroehlich-rnoaa-full.png")  
+```
+ 
+.footnote[
+tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/1085990833571020800)
+]
+
+???
+
+Halley has a big science follwing already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
+
+
+---
+```{r rladies-sydney, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/tweet-apreshill-rladies-sydney.png")
+```
+
+.footnote[
+twitter: [@apreshill](https://twitter.com/apreshill/status/1184660994007519232); 
+web: [RLadies Sydney](https://rladiessydney.org/courses/ryouwithme/)
+]
+
+???
+
+https://twitter.com/WeAreRLadies/status/1087741684618809346
+https://twitter.com/frau_dr_barber/status/1127189812308369408
+
+```{r tweet-maybe, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
+# https://twitter.com/danidlsa/status/1192773907088064512
+```
+
+
+---
+### \#rstats Twitter
+```{r welcome-rstats, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
+```
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst);
+blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
+]
+
+???
 
 ---
 exclude: TRUE
