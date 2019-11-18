@@ -55,7 +55,6 @@ background-position: bottom left
 ???
 
 ---
-exclude: TRUE
 ```{r loop-wtext, out.width = '100%'}
 knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
 # https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
@@ -80,6 +79,7 @@ This is my (Openscapes) mindset; this is where I'm coming from when I talk about
 Start off: R for BSILT. Really about open data science more broadly. And how there are really powerful tools that exist, that we can use for science. But also, they are most powerful when we use them as a team. 
 
 ---
+exclude:TRUE
 .pull-left[
 ### The problem
 **Individual mindset in science**: 
@@ -204,20 +204,10 @@ background-image: url(img/horst-starwars-rey.png)
 background-size: contain
 background-position: bottom left   
 
-# Better science in less time 
-
-### What does it look like
-### Open data science as a mindset, teamwork, and culture
-### How to supercharge your research
-
-<!---
-.pull-right[
-
-###  <img src="img/openscapes-hex.png" alt="" style="float:right;width:100px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:100px;"/>
-]
---->
 
 ???
+
+And end with how to supercharge. 
 
 R is the Force that enables us as scientists to do better science in less time. 
 
@@ -229,11 +219,36 @@ For me, I didn't fully feel the power of R until I finished graduate school and 
 
 transition: So I'll talk today about 
 
+
 ---
+```{r loop-toc1, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
+```
+
+???
+This is my outline. Try to talk this through
+
+---
+exclude: TRUE
+```{r rey-toc-full}
+```
+class: title-slide, right, bottom
+background-image: url(img/horst-lowndes-loop-wtext-full.png)
+background-size: contain
+background-position: bottom left   
+
+
+???
+
+And end with how to supercharge. 
+
+---
+exclude: TRUE
 ```{r rey-toc-look-like}
 ```
 class: title-slide, right, bottom
-background-image: url(img/horst-starwars-rey.png)
+background-image: url(img/horst-lowndes-loop.png)
 background-size: contain
 background-position: bottom left   
 
@@ -255,6 +270,8 @@ How to engage
 
 
 ???
+
+I'm going to focus on tools and workflow first and get into team but you'll see that mindset is a big part
 
 ---
 <br>
@@ -291,6 +308,24 @@ It is being used by the United Nations and by 20 groups around the world.
 
 There is a lot to it but what is relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team.
 
+---
+```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
+
+.pull-left[
+**A mentorship program for research teams to help build mindsets and habits around open data science.**  
+<br>
+**Cohorts (5 months, remote) 2019-**  
+**Workshops (2-day, in-person) 2020-**  
+]
+
+.pull-right[
+```{r zoom1, out.width = '85%', fig.align='center'}
+knitr::include_graphics("img/Cohort1_zoom.png") 
+```
+
+]
 
 ---
 exclude: TRUE
@@ -647,6 +682,7 @@ background-position: bottom left
 <br>
 
 ---
+exclude: TRUE
 ```{r rey-toc-mindset-list}
 ```
 class: title-slide, right, bottom
@@ -913,7 +949,7 @@ How to supercharge science
 
 I'm really going to focus on the mindset part here; there are we also have 10 weeks of recommendations. 
 ---
-```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
+```{r openscapes grasslandx2, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
 ```
 
@@ -973,29 +1009,32 @@ knitr::include_graphics("img/connecting-awesome-researchers.png")
 Complements existing efforts
 
 ---
-```{r careers-screenshot, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/nature-careers-supercharge.png") 
-```
 
 ???
 
 written as group leads, but the idea is to enable a team, whether it's vertical leadership or horizontal leadership. 
 
 ---
-### Talk about data
-.pull-left[
-```{r openscapesing, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/openscapesing-6thfloor.jpg")
+# Redefine collaborators
+```{r horst-seaside-chats, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-seaside-chats.png") 
 ```
 
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst);
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
-]
+### Research group as a team
+### Future you, future us
+
+---
+### Talk about data
+.pull-left[
+```{r careers-screenshot, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/nature-careers-supercharge.png") 
+```
 ]
 
 .pull-right[
-**Normalize data discussions**
+### Normalize data discussions
+### Identify and address shared needs
+# Think ahead: Future You & Future Us
 
 "Seaside chats", "Hacky hours", Coding clubs/meetups
 
@@ -1008,22 +1047,9 @@ Establish trust, share challenges & wins, learn together
 
 10-week plan. 
 
----
-exclude: TRUE
-# Normalize data discussions
-```{r seaside-chat, out.width = '80%', fig.align='center'}
-knitr::include_graphics("img/seaside-chats-wood.png") 
-```
-
-.footnote[
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/03/10/seaside-chats/); [Wood lab](https://github.com/wood-lab/wood-lab-resources#wood-lab-resources)
-]
-
-???
-[Sea]side chats & hackathons
 
 ---
-# Identify and address shared needs
+# 
 
 ```{r clippy, fig.align='center'}
 knitr::include_graphics("https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif") 
@@ -1038,18 +1064,6 @@ knitr::include_graphics("https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif"
 **University courses**
 <br>
 **Champion open data science**
-
----
-# Think ahead: Future You & Future Us
-
-```{r horst-seaside-chats, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/horst-seaside-chats.png") 
-```
-
-
-???
-
-Need quote from paper. 
 
 ---
 # Enable and support leaderful teams
