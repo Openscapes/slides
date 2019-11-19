@@ -99,11 +99,10 @@ this builds from nearly 7 years of the OHI
 
 ---
 <br> 
-```{r OHI hex3, out.width = '100%', fig.align='center'}
+<br>
+```{r ohi-banner, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/OHI-banner-hex.png")
 ```
-
-<br>
 
 .pull-left[
 **A scientific method, tool, and community for channeling the best available scientific information into marine policy.**  
