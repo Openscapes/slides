@@ -98,10 +98,8 @@ knitr::include_graphics("img/Cohort1_zoom.png")
 this builds from nearly 7 years of the OHI
 
 ---
-<br> 
-<br>
-```{r ohi-banner, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/OHI-banner-hex.png")
+```{r ohi-banner, out.width = '80%', fig.align='center'}
+knitr::include_graphics("img/ohi-illustration-hex.png")
 ```
 
 .pull-left[
