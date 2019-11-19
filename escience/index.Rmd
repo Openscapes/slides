@@ -83,7 +83,7 @@ knitr::include_graphics("img/OHI-banner-hex.png")
 **A scientific method, tool, and community for channeling the best available scientific information into marine policy.**  
 <br>
 **Global assessments annually 2012-**  
-**Independent assessment2 20+**
+**Independent assessments 20+**
 
 .footnote[
 source: [*Halpern et al. 2012, Nature*: An Index to assess the health and benefits of the global ocean](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html)  
@@ -785,6 +785,9 @@ source: [Hampton et al. 2015](https://esajournals.onlinelibrary.wiley.com/doi/fu
 ### "transparency, collaboration, empowerment, inclusivity, and accountability" ... "trust" ... "safe to be vulnerable"
 
 source: [Wright 2019](https://medium.com/@stephanie_6761/why-bother-with-the-open-anyway-c76afb4dcb85)
+
+--
+### Incremental progress & imperfection
 ???
 
 For many environmental scientists, open science can be a negative thing. It's seen as extra work and high risk on already overburdened scientists, particularly those who are early career. 
@@ -1177,7 +1180,7 @@ knitr::include_graphics("https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif"
 **Learn what's possible & how to do it: rOpenSci, RStudio (Twitter)**  
 **Learn how to teach: Carpentries**  
 **Learn how to lead: RLadies, Mozilla**  
-**Skill-share Eco-Data-Science, RLadiesSB (Santa Barbara)**  
+**Skill-share Eco-Data-Science, RLadiesSB (SB)**  
 ]
 
 .pull-right[
