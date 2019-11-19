@@ -445,6 +445,26 @@ This graphic really changed they way we work and think.
 First, it separates the Understand part. This is this science part. It's an iterative process of transforming, subsetting, comparting data, vizulazing, modeling. And it's distinct from the import and tidying parts. This is critical. 
 
 ---
+# Data science mindset
+<br>
+```{r data-science-r4ds-lohr, out.width = '90%', fig.align='center'}
+knitr::include_graphics("img/r4ds_data-science-lohr.png")
+```
+
+.footnote[
+<br>
+[Wickham & Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)  
+[Lohr, 2014 "For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights"](https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html)
+]  
+
+???
+
+This graphic really changed they way we work and think. 
+
+First, it separates the Understand part. This is this science part. It's an iterative process of transforming, subsetting, comparting data, vizulazing, modeling. And it's distinct from the import and tidying parts. This is critical. 
+
+
+---
 # Open data science tools
 <br>
 ```{r tidyverse, out.width = '60%', fig.align='center'}
@@ -701,8 +721,7 @@ knitr::include_graphics("img/tweet-mozilla-juliesquid-keynote.png")
 And there's been amazing momentum, both from mentees and for the program, which is awesome. We plan to have further cohorts,  available for bookings and sponsorships. 
 
 ---
-### Advice for better science in less time:
-```{r yoda-fin, out.width = '72%', fig.align='center'}
+```{r yoda-fin, out.width = '88%', fig.align='center'}
 knitr::include_graphics("img/horst-starwars-yoda.png") 
 ```
 
@@ -710,6 +729,8 @@ knitr::include_graphics("img/horst-starwars-yoda.png")
 art: [@allison_horst](https://twitter.com/allison_horst)
 ]
 
+???
+Advice for better science in less time:
 ---
 # Talk about data
 <br>
@@ -790,7 +811,7 @@ But on an individual level, we all have had to get comfortable with sharing thin
 But this has resulted in a really positive team culture, where we are comfortable with trying new things & learning from failure, and we are comfortable asking for help. 
 
 ---
-### Engage with the \#rstats Twitter community
+# Engage with the \#rstats community
 .pull-left[
 ```{r welcome-rstats2, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
