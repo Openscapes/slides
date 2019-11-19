@@ -65,43 +65,11 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 ???
 
-I've been thinking a lot about this feedback loop and am excited to be able to talk it through with you a bit more. 
+The way I have been thinking about it, open data science tools and practices and teamwork & collaboration exist in this feedback loop. 
 
 Learning and using similar software promotes and streamlines teammwork. And also working as a team better equips you to learn open practices data science.
 
-transition: I've been thinking about this over the last 7 years at NCEAS, at the OHI:
-
----
-<br> 
-```{r OHI hex3, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/OHI-banner-hex.png")
-```
-
-<br>
-
-.pull-left[
-**A scientific method, tool, and community for channeling the best available scientific information into marine policy.**  
-<br>
-**Global assessments annually 2012-**  
-**Independent assessments 20+**
-
-.footnote[
-source: [*Halpern et al. 2012*: An Index to assess the health and benefits of the global ocean](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html)  
-web: [ohi-science.org](http://ohi-science.org); twitter: [@OHIscience](https://twitter.com/OHIscience)
-]
-]
-
-.pull-right[
-```{r teamx2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ohi-team-2018b-crop.jpeg") 
-```
-]
-
-???
-
-A scientific method, tool, and community for channeling the best available scientific information into marine policy.
-
-It is being used by the United Nations and by 20 groups around the world. 
+But as env scientists, we're never taught data science/open practices, and we're not taught to work as a team, even when we are physically sitting with other scientists similar to us in our research groups research group
 
 ---
 ```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
@@ -111,8 +79,7 @@ knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
 .pull-left[
 **A mentorship program for research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
 <br>
-**Cohorts (5 months, remote) 2019-**  
-**Workshops (2-day, in-person) 2020-**  
+**Operated by NCEAS and incubated by Mozilla** 
 
 .footnote[
 web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
@@ -128,7 +95,43 @@ knitr::include_graphics("img/Cohort1_zoom.png")
 
 ???
 
-But I like to talk about this with analogies from Star Wars 
+this builds from nearly 7 years of the OHI
+
+---
+<br> 
+```{r OHI hex3, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/OHI-banner-hex.png")
+```
+
+<br>
+
+.pull-left[
+**A scientific method, tool, and community for channeling the best available scientific information into marine policy.**  
+<br>
+**Global assessments annually since 2012**  
+<br>
+**Independent assessments in ~20 geographies**
+
+<!---(example: Ecuador, Baltic, Northeast US) --->
+
+.footnote[
+source: [*Halpern et al. 2012*: An Index to assess the health and benefits of the global ocean](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html); web: [ohi-science.org](http://ohi-science.org)
+]
+]
+
+.pull-right[
+```{r teamx2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ohi-team-2018b-crop.jpeg") 
+```
+]
+
+???
+
+A scientific method, tool, and community for channeling the best available scientific information into marine policy.
+
+It is being used by the United Nations and by 20 groups around the world. 
+
+transition: But I like to talk about this with analogies from Star Wars 
 
 ---
 
@@ -248,27 +251,26 @@ knitr::include_graphics("img/ohi-global-map.png")
 ```
 
 .footnote[
-source: [Halpern et al. 2012](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html)
-web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
+source: [Halpern et al. 2012](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html); web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
 ]
 ]
 
 .pull-right[
-```{r shiny-ne, out.width = '80%'}
-knitr::include_graphics("img/jafflerbach-shiny-ne.png") 
-```
 
-.footnote[
-dashboard (Shiny): [@jafflerbach](https://twitter.com/jafflerbach), work in progress. 
-]
+### Global assessments 
+
+Annually since 2012
+
+Considered in United Nations Sustainable Development Goals 14: Life Below Water
 ]
 
 ???
 
 OHI models tourism, clean waters, and biodiversity, among others, synthesizing nearly 100 data sets into quantitative scores that can be tracked through time and inform policy. 
-We lead assessments at the global scale, like the bottom left, which we've done each  year since 2012 and being formally considered for UN SDG 14; also in the US Northeast, tracking change for the last 10 years.  
 
-transition: But we didn't start here. 
+Example here:  global scale, like the bottom left, which we've done each  year since 2012 and being formally considered for UN SDG 14. Exciting example of open science in SDGs. 
+
+But we didn't start here. When we published in 2012 that had been a huge 4-year effort with 30+ people. And when we went to repeat it again in 2013, felt like Luke. 
 
 ---
 .pull-left[
@@ -284,6 +286,8 @@ knitr::include_graphics("img/teucher1.png")
 art: [@allison_horst](https://twitter.com/allison_horst), graphics: [Andy Teucher](https://github.com/ateucher/vic-geogeeks-2018-01-30)
 ]
 ]
+
+--
 
 .pull-right[
 
@@ -410,7 +414,7 @@ knitr::include_graphics("img/workflow-ex-comm-wtext.png")
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
 ]
 
-??
+???
 
 ---
 ```{r loop-wtext2, out.width = '100%'}
@@ -459,19 +463,6 @@ source: [Hadley Wickham, 2019](https://speakerdeck.com/hadley/welcome-to-the-tid
 Expect there's a better way
 
 ---
-## Reimagining communication and publishing
-```{r rmd-reimagine, out.width = '50%', fig.align='center'}
-knitr::include_graphics("img/rmarkdownWebsite2-cropped.png")
-```
-
-.footnote[
-source: [RStudio](http://www.robbyshaver.com/rmarkdownGen/lesson-11.html)
-]
-
-???
-transition: seeing what's possible reduces friction, gives you an open  mindset
-
----
 # Open mindset
 ### "transparency at all stages of the research process, coupled with free and open access to data, code, and papers"
 
@@ -500,7 +491,7 @@ knitr::include_graphics("img/horst-starwars-hands.png")
 --
 
 .pull-right[
-### Circa 2013-2014
+### Circa 2013
 **Horizontal leadership: jazzed about open data science**   
 **Vertical leadership: enabling & supportive**  
 **Team mindset: trusting and willing**  
@@ -521,7 +512,7 @@ knitr::include_graphics("img/horst-starwars-hands.png")
 ]
 
 .pull-right[
-### Circa 2013-2014
+### Circa 2013
 **Horizontal leadership: jazzed about open data science**   
 **Vertical leadership: enabling & supportive**  
 **Team mindset: trusting and willing**  
@@ -668,9 +659,14 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 --
 
 .pull-right[
-```{r dorks, out.width = '100%'}
-knitr::include_graphics("img/tweet-drchelsealwood-dorks.png") 
-```
+### Teams participate together
+
+**7x labs, leads & members from each lab**
+
+**1) everyone sees and values what is possible**   
+**2) leads enable members to invest time**  
+**3) members have guidance, agency, and support**  
+**4) everyone champions open data science and contributes to growing the community of practice**
 
 ]
 
@@ -686,15 +682,12 @@ transition: really focused on enabling others
 
 .pull-left[
 
->"This isn’t just about coding and GitHub, this is about changing how we do science"<br>— Dr. Malin Pinsky, Rutgers
+>"This isn’t just about coding and GitHub, this is about changing how we do science"— Dr. Malin Pinsky, Rutgers
 
-<br>
 
->"This program has honestly completely re-made how I think about my science"<br>-Dr. Chelsea Wood, U Washington
-
-<br>
-
->"I honestly have learned more from #rstats on twitter in the last 7 months than I have in the prev 5 years." -Anon
+```{r dorks, out.width = '70%', fig.align='center'}
+knitr::include_graphics("img/tweet-drchelsealwood-dorks.png") 
+```
 
 ]
 
@@ -722,14 +715,16 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 ---
 # Talk about data
-```{r careers-screenshot, out.width = '80%', fig.align='center'}
+<br>
+```{r careers-screenshot, out.width = '85%', fig.align='center'}
 knitr::include_graphics("img/nature-careers-supercharge.png") 
 ```
 
 <br>
 
+<!---
 **Normalize data discussions • Identify and address shared needs • Think ahead: Future You & Future Us**
-
+--->
 
 ???
 "Seaside chats", "Hacky hours", Coding clubs/meetups
@@ -849,6 +844,24 @@ get involved: [openscapes.org/contact](https://www.openscapes.org/contact)
 ]
 
 ---
+```{r horst-eco-r4ds0fin}
+```
+name: environ-comm-r4ds
+class: center, middle
+background-image: url(img/horst-eco-r4ds.png) 
+background-size: contain
+
+.footnote[
+.left[
+<br>
+art: [@allison_horst](https://twitter.com/allison_horst);
+updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
+]
+]
+
+
+---
+exclude: TRUE
 ```{r openscapes-desert, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_openscapes_desert_1500px.png")
 ```
