@@ -21,7 +21,7 @@ output:
     includes:
       in_header: header.html    
       
-# http://arm.rbind.io/slides/xaringan.html
+# http://arm.rbind.io/slides/xaringan.html#45: presenter mode:: press c then f then p
 # https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/static/slides/xaringan.Rmd      
 ---
 
