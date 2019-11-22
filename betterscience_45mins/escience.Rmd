@@ -11,7 +11,7 @@ output:
     chakra: libs/remark-latest.js # with @bjungbogati tidyverse dev toulouse: need to save this file to knit offline!
     lib_dir: libs 
     nature:
-      slideNumberFormat: "" # if you want to disable
+     # slideNumberFormat: "" # if you want to disable
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
