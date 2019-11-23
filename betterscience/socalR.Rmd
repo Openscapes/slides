@@ -372,61 +372,20 @@ Openscapes helps them establish and maintain shared practices around data and wo
 
 It is modeled after our experiences from the Ocean Health Index, which is one of the most visible examples of what open data science can look like in an environmental context. 
 
-
 ---
-exclude: TRUE
-<br>
-```{r openscapes grassland, out.width = '100%', fig.align='center'}
+```{r openscapes-grassland, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_openscapes_grassland_1500px-text.png")
 ```
 
-<br>
+### We welcome scientists to open data science by mentoring research teams.
 
-.pull-left[
-### Welcome and empower scientists as labs
-]
-
-.pull-right[
-### Increase visibility and value by amplifying labs
-]
-
+**Engage**: build awareness and excitement with empathy, art, and storytelling  
+**Empower**: connect with existing open software and communities  
+**Amplify**: champion broadly to increase visibility, value, and practice  
 
 .footnote[
-art: [@allison_horst](https://twitter.com/allison_horst); 
-web: [openscapes.org](https://openscapes.org)
+web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https://twitter.com/openscapes)
 ]
-
-???
-
-welcome and empower scientists as research groups
-
-increase visibility and valuee by amplifying labs and creating more examples of how powerful open data science can be for environmental science
-
----
-exclude: TRUE
-<br>
-```{r openscapes desert, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_desert_1500px.png")
-```
-
-.pull-left[
-### Mentorship program for early career scientists & their labs
-]
-
-.pull-right[
-### Normalize open data science in the lab & seed change beyond
-]
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst);
-web: [openscapes.org/champions](https://openscapes.org/champions)
-]
-
-???
-
-Centered mentorship program for early career scientists & their labs
-
-Normalize open data science in the lab & seed change beyond
 
 ---
 ```{r env-r4ds}
@@ -656,6 +615,21 @@ Open data science streamlines working with data but also working with each other
 
 As an OHI team, these tools let us co-develop things, share early drafts, and we can constantly giving feedback and iterating with each other. 
 
+---
+```{r ropensci-janitor-redoc, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ropensci-janitor-redoc.png")  
+```
+
+.footnote[
+web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor); [redoc](https://twitter.com/noamross/status/1127273301443850240?lang=en)
+]
+
+
+???
+These kinds of conversations and communities enable packages like these, from rOpenSci
+
+transition: and when we talk about them in Openscapes it leads to tweets like these 
+
 
 ---
 # Ocean Health Index team strategies
@@ -754,7 +728,7 @@ We covered a lot of other things in our cohort calls, and I'm working on capturi
 transition: and in addition to these cohort calls, we focused a lot on leadership, both vertical and horizontal. 
 
 ---
-# [Sea]side chats & meetups
+### Openscapes [Sea]side chats & meetups
 ```{r allison-tidytuesday, out.width = '90%', fig.align='center'}
 knitr::include_graphics("img/seasidechats-meetup-montage.png") 
 ```
@@ -840,7 +814,7 @@ And together we are partners in crime. We cofounded the eco-data-science study g
 transition: Enabling this kind of vertical and horizontal leadership around data is what I try to ignite with Openscapes. 
 
 ---
-### Openscapes inaugural cohort 2019
+### Openscapes Champions: inaugural cohort 2019
 
 ```{r zoom-left, out.width = '50%', fig.align='center'}
 knitr::include_graphics("img/Cohort1_zoom.png") 
@@ -988,21 +962,6 @@ RLadies has given me confidence in myself, and made me be a better advocate for 
 
 transition: The Openscapes cohort has engaged with RLadies and existing coding clubs, and also created new opportunities to code. 
 
----
-exclude: TRUE
-```{r ropensci-janitor-redoc, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ropensci-janitor-redoc.png")  
-```
-
-.footnote[
-web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor); [redoc](https://twitter.com/noamross/status/1127273301443850240?lang=en)
-]
-
-
-???
-These kinds of conversations and communities enable packages like these, from rOpenSci
-
-transition: and when we talk about them in Openscapes it leads to tweets like these 
 
 ---
 class: center, middle
@@ -1028,7 +987,7 @@ mindset summed in many ways
 class: middle
 .whisper[This isn’t just about coding and GitHub, this is about changing how we do science]
 
-**- Malin Pinsky, Professor at Rutgers University**
+**- Malin Pinsky, Professor at Rutgers University & Openscapes Champion**
 .footnote[
 blog: [openscapes.org](https://www.openscapes.org/blog/2019/04/08/summit-reflections1/)
 ]
