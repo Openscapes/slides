@@ -84,7 +84,7 @@ knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
 .footnote[
 web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
 ]
-]
+
 ]
 
 .pull-right[
@@ -238,36 +238,26 @@ knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
 This is my outline. Will talk this through
 
 ---
-```{r OHI-illustration, out.width = '85%', fig.align='center'}
-knitr::include_graphics("img/ohi-illustration-hex.png")
-```
-
-.pull-left[
-```{r OHI-map, out.width = '90%'}
-knitr::include_graphics("img/ohi-global-map.png")
+```{r OHI hex, out.width = '55%', fig.align='center'}
+knitr::include_graphics("img/OHI-hex.png")
 ```
 
 .footnote[
 source: [Halpern et al. 2012](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html); web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
 ]
-]
 
-.pull-right[
+The Ocean Health Index is a scientific endeavor to quantify impacts and benefits of oceans around the world using the best publically available data. 
 
-### Global assessments 
+It is being used by the United Nations and by 20 groups around the world. 
 
-Annually since 2012
+There is a lot to it but what is relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team.
 
-Considered in United Nations Sustainable Development Goals 14: Life Below Water
-]
+But we are marine scientists, and we were never trained to work responsibly with data. 
 
-???
+So we found out the hard way that our default approaches were not reproducible by even ourselves. 
 
-OHI models tourism, clean waters, and biodiversity, among others, synthesizing nearly 100 data sets into quantitative scores that can be tracked through time and inform policy. 
+Getting through this involved quite a reckoning, but when we got through it, we knew we had a story to tell. 
 
-Example here:  global scale, like the bottom left, which we've done each  year since 2012 and being formally considered for UN SDG 14. Exciting example of open science in SDGs. 
-
-But we didn't start here. When we published in 2012 that had been a huge 4-year effort with 30+ people. And when we went to repeat it again in 2013, felt like Luke. 
 
 ---
 .pull-left[
