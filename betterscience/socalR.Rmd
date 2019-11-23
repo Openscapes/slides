@@ -890,43 +890,51 @@ She taught me that liking and retweeting was not only a way to engage with the c
 So I was amazed that you could have community on Twitter
 
 ---
-exclude: TRUE
-```{r ropensci-unconf, out.width = '70%', fig.align='center'}
-knitr::include_graphics("img/tweet-jcheng-leaflet.png") 
+.pull-left[
+<br>
+```{r rnoaa, out.width = '100%'}
+knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
 ```
- 
-.footer[
-tweet: [@jcheng](https://twitter.com/jcheng/status/611260382741577729)
+
+.footnote[
+tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
+]
 ]
 
-???
+.pull-right[
+<br>
+<br>
+### My internal monologue: 
 
-But you can. 
+**Cool visualization!**  
+**I want to represent my data this way**  
+**He includes [his code](https://gist.github.com/mrecos)!**  
+**Package from [@sckottie](https://twitter.com/sckottie) at [rOpenSci](https://ropensci.org)**  
+**rnoaa is a package making NOAA data more accessible!**  
+]
 
-And I was also amazed that software developers were real people. And not only that, they were super nice people that made me feel welcome and valued.
 
-Prior to conversations like these, I had never stopped to think that there were real people behind software. 
-
-transition: And that might sound crazy, but before twitter, this is the closest I'd ever come to interacting with software:
 
 ---
-exclude: TRUE
-class:middle, inverse, center
-```{r clippy}
+class: center, middle
+
+```{r value-welcome, out.width = '50%', fig.align='center'}
+knitr::include_graphics("img/ropensci-butland-welcome.png")
 ```
 
-![](https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif)
+```{r hadley-could-be-betterx, out.width = '60%'}
+knitr::include_graphics("img/tweet-allimoberger-hadley.png")
+```
 
-<!---![](https://media.giphy.com/media/Law8cmreIvpMQ/giphy.gif) --->
+.footnote[
+tweet: [@allimoberger](https://twitter.com/allimoberger/status/1085268564821585921)
+blog: [ropensci.org](https://ropensci.org/blog/2017/07/18/value-of-welcome/)
+]
+
+
 ???
 
-I'm not kidding. 
-
-But seriously, realizing that software developers went well beyond Clippy here was really a defining point in my life. 
-
-This is was that turning point when I really became the person I am today — that person who never stops talking about how awesome R is and how it will change your life
-
-transition: Even back in 2016 my 4 year old niece knew about ggplot and dplyr
+and then when you combine those tweets with other ideas like the value of welcome 
 
 ---
 # rOpenSci & RStudio & RLadies
@@ -962,26 +970,6 @@ RLadies has given me confidence in myself, and made me be a better advocate for 
 
 transition: The Openscapes cohort has engaged with RLadies and existing coding clubs, and also created new opportunities to code. 
 
-
----
-class: center, middle
-
-```{r value-welcome, out.width = '50%', fig.align='center'}
-knitr::include_graphics("img/ropensci-butland-welcome.png")
-```
-
-```{r hadley-could-be-betterx, out.width = '60%'}
-knitr::include_graphics("img/tweet-allimoberger-hadley.png")
-```
-
-.footnote[
-tweet: [@allimoberger](https://twitter.com/allimoberger/status/1085268564821585921)
-blog: [ropensci.org](https://ropensci.org/blog/2017/07/18/value-of-welcome/)
-]
-
-
-???
-mindset summed in many ways
 
 ---
 class: middle
