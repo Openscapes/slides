@@ -2,9 +2,9 @@
 title: "R for better science in less time"
 subtitle: 
 author: 'Julia Stewart Lowndes, PhD' 
-role: 'Marine Data Scientist & Mozilla Fellow'
+role: 'Senior Fellow'
 institute: 'National Center for Ecological Analysis & Synthesis<br>University of California at Santa Barbara, USA'
-date: "useR! 2019 Keynote<br>Toulouse, France"
+date: "SoCal All Hands useR Meeting 2019"
 output:
   xaringan::moon_reader:
     seal: false
