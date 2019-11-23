@@ -1150,7 +1150,7 @@ We can all welcome and amplify these awesome environmental sicnetists as they in
 #### especially for this talk:
 ###OHI team <br>Mozilla team<br>Openscapes labs<br>RLadies team
 <br>
-#### Find me for stickers... <img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:80px;"/>
+#### Find me for stickers... <img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/> <img src="img/OHI-hex.png" alt="" style="float:right;width:80px;"/>
 ]
 
 .pull-right[
