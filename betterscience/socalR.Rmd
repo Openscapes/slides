@@ -48,7 +48,7 @@ background-position: bottom left
 
 [`r icon::fa("twitter")` @juliesquid](https://twitter.com/juliesquid)  
 [`r icon::fa("paper-plane")` lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
-[`r icon::fa("desktop")` jules32.github.io/useR-2019-keynote](http://jules32.github.io/useR-2019-keynote)  
+[`r icon::fa("desktop")` bit.ly/37tbggi](https://openscapes.github.io/slides/betterscience/socalR#1)  
 
 
 <img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
@@ -649,57 +649,6 @@ We are very similar to the open source community like R and Moz in that all of o
 transition: But For a lot of people, science communication still largely occurs at the end of a study, when everything is complete. 
 
 ---
-.whisper[Communication tools]
-
-???
-
-And I think this mindset is rooted in the fact that for a long time, sharing your work was hard to do. 
-
-It involved a lot of bookkeeping and formatting and physically printing in many cases, and then distribution was also limited to mail, either phyical or electronic. 
-
-But the internet provides amazing channels to share our work not only at the end, but throughout all of the process. This is critical to establish trust and action for environmental solutions. 
-
----
-.whisper[Communication tools]
-
-```{r ods-software, out.width = '65%', fig.align='center'}
-knitr::include_graphics("img/screenshot-paur-talk-ods.png") 
-```
-
-.footnote[
-source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLtj9u5E9wMxtYuP0T_HxoDnyKw/edit?usp=sharing)
-]
-
-???
-
-So these are the communication tools I use for open data science — it is a small suite, primarily based with R, RStudio, Git, and GitHub. 
-
-And keeping it so simple really streamlines how manageable it is to focus on science communication, because we use the exact same tools for analysis.
-
-I may as well also say that I can be a big curmudgen about introducing extra software into my life and having to create new user accounts. 
-
-I remember in one NSSD episode, Roger Peng said that if he has to create a new user account, he's like 50% out. For me it's like 80%. 
-
-But anyways, these tools have reimagined what communication means, and I'll show you a few examples from the OHI. 
-
-<next go quickly>
-
----
-exclude: TRUE
-class: center, middle
-```{r global-map, out.width = '100%'}
-knitr::include_graphics("img/global_map_Index_2018_mol.png")
-```
-
-.footnote[
-source: [ohi-science.org/ohi-global](http://ohi-science.org/ohi-global/)
-]
-
-???
-
-We create ocean health index maps like these, in R, with scores reflecting how healthy oceans are for every coastal country around the world. and making these every year by modeling almost 100 data sets forces documentation and decision making to be part of science communication. 
-
----
 class: center, middle
 ```{r ohi-science-github, out.width = '100%'}
 knitr::include_graphics("img/github-ohi-science.png") 
@@ -1138,17 +1087,22 @@ I've learn so much from each and try to help channel those lessons between group
 transition: And engaging in these broader communities for me started on Twitter.
  
 ---
-# \#rstats
 
-```{r jafflerbach, out.width = '45%', fig.align='center'}
-knitr::include_graphics("img/tweet-juliesquid-jafflerbachspatial.png") 
+```{r welcome-rstats, out.width = '75%', fig.align='center'}
+knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
 ```
 
-.footer[
-tweet: [@juliesquid](https://twitter.com/juliesquid/status/728326585485402112)
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst);
+blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
 ]
 
 ???
+
+and from her little #rstats monsters 
+
+transition: But she is also a lecturer of data science and statistics in an environmental science and management program, and she is an Openscapes Champion. 
+
 
 I joined twitter to learn R because of my teammate Jamie.
 
@@ -1161,6 +1115,7 @@ She taught me that liking and retweeting was not only a way to engage with the c
 So I was amazed that you could have community on Twitter
 
 ---
+exclude: TRUE
 ```{r ropensci-unconf, out.width = '70%', fig.align='center'}
 knitr::include_graphics("img/tweet-jcheng-leaflet.png") 
 ```
@@ -1180,6 +1135,7 @@ Prior to conversations like these, I had never stopped to think that there were 
 transition: And that might sound crazy, but before twitter, this is the closest I'd ever come to interacting with software:
 
 ---
+exclude: TRUE
 class:middle, inverse, center
 ```{r clippy}
 ```
@@ -1196,21 +1152,6 @@ But seriously, realizing that software developers went well beyond Clippy here w
 This is was that turning point when I really became the person I am today — that person who never stops talking about how awesome R is and how it will change your life
 
 transition: Even back in 2016 my 4 year old niece knew about ggplot and dplyr
-
----
-class: center, middle
-```{r out.width = '100%'}
-knitr::include_graphics("img/tweet-juliesquid-wizard.png")
-# https://twitter.com/juliesquid/status/726521325821431808
-```
-
-.footnote[
-tweet: [@juliesquid](https://twitter.com/juliesquid/status/726521325821431808)
-]
-
-???
-
-transition: So in Openscapes, I encourage everyone to engage, and it's cool to see them 
 
 ---
 # rOpenSci & RStudio & RLadies
@@ -1276,39 +1217,22 @@ tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/10859908335710208
 Halley has a big science follwing already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
 
 
-
 ---
-```{r welcome-rstats, out.width = '75%', fig.align='center'}
-knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
+class: center, middle
+```{r out.width = '100%'}
+knitr::include_graphics("img/tweet-juliesquid-wizard.png")
+# https://twitter.com/juliesquid/status/726521325821431808
 ```
 
 .footnote[
-art: [@allison_horst](https://twitter.com/allison_horst);
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
+tweet: [@juliesquid](https://twitter.com/juliesquid/status/726521325821431808)
 ]
 
 ???
 
-and from her little #rstats monsters 
+transition: So in Openscapes, I encourage everyone to engage, and it's cool to see them 
 
-transition: But she is also a lecturer of data science and statistics in an environmental science and management program, and she is an Openscapes Champion. 
 
----
-exclude: TRUE
-class: middle
-.whisper[This isn’t just about coding and GitHub, this is about changing how we do science <br>— Malin Pinsky, Professor & Openscapes Champion]
-
-.footnote[
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/04/08/summit-reflections1/)
-]
-
-???
-
-So Malin said that this isn’t just about coding and GitHub, this is about changing how we do science. 
-
-I'm just so excited that they feel this way, because mindset change comes from truly feeling it
-
-transition: There are many more communities that I love but I'm going to talk about one more right now, and that's RLadies
 
 ---
 class: middle, center
@@ -1358,7 +1282,7 @@ Establish trust, share challenges & wins, learn together
 
 
 ---
-# Have a team mindset
+# Build a team mindset
 
 .pull-left[
 ### Redefine collaborators
@@ -1381,6 +1305,7 @@ knitr::include_graphics("img/horst-seaside-chats.png")
 It's not your fault
 
 ---
+exclude: TRUE
 # Enable and support leaderful teams
 
 .pull-left[
@@ -1416,78 +1341,13 @@ But on an individual level, we all have had to get comfortable with sharing thin
 But this has resulted in a really positive team culture, where we are comfortable with trying new things & learning from failure, and we are comfortable asking for help. 
 
 ---
-# Engage with \#rstats Twitter
-.pull-left[
-```{r welcome-rstats2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
-```
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst);
-blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
-]
-]
-
-.pull-right[
-### Follow selectively, listen, learn, meet awesome allies
-
-**Start with:** 
-
-**\#rstats, @hadleywickham, @JennyBryan, @WeAreRLadies, @rOpenSci**  
-
-**@openscapes**  
-
-]
-
----
+exclude: TRUE
 class: center, middle
 # Incremental progress, together
 
 ```{r hadley-could-be-better, out.width = '90%'}
 knitr::include_graphics("img/tweet-allimoberger-hadley.png")
 ```
-
----
-```{r horst-eco-r4ds0fin}
-```
-name: environ-comm-r4ds
-class: center, middle
-background-image: url(img/horst-eco-r4ds.png) 
-background-size: contain
-
-.footnote[
-.left[
-<br>
-art: [@allison_horst](https://twitter.com/allison_horst);
-updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
-]
-]
-
-
-
----
-```{r closing-thoughts}
-```
-name: environ-comm-r4ds
-class: center, middle
-background-image: url(img/horst-eco-r4ds.png) 
-background-size: contain
-
-.footnote[
-.left[
-<br>
-art: [@allison_horst](https://twitter.com/allison_horst);
-updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
-]
-]
-
-???
-
-And I am working to continue to develop and grow the program so that I can lead cohorts every year and begin on-demand workshops with teams on the ground. 
-
-We do have a long way to go before this is is truly the reality in science.
-
-But I am optimistic that Openscapes can play a role. I think the more we talk about and see why open data science is important for environmental science, the more it will be valued and the quicker we can change the culture as a whole.
 
 ---
 ```{r hands} 
@@ -1536,10 +1396,45 @@ Thank you.
 ---
 ```{r fin}
 ```
+---
+title: "R for better science in less time"
+subtitle: 
+author: 'Julia Stewart Lowndes, PhD' 
+role: 'Senior Fellow'
+institute: 'National Center for Ecological Analysis & Synthesis<br>University of California at Santa Barbara, USA'
+date: "SoCal All Hands useR Meeting 2019"
+output:
+  xaringan::moon_reader:
+    seal: false
+    chakra: libs/remark-latest.js # with @bjungbogati tidyverse dev toulouse: need to save this file to knit offline!
+    lib_dir: libs 
+    nature:
+    #  slideNumberFormat: "" # if you want to disable
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:10" # https://github.com/apreshill/talks/blob/master/sdss-blogdown/index.Rmd#L16, http://user2019.r-project.org/information_for_presenters/
+      output:
+    css: ["default", "css/my-fonts.css", "css/my-theme.css"] #https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7
+    includes:
+      in_header: header.html    
+      
+# http://arm.rbind.io/slides/xaringan.html
+# https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/static/slides/xaringan.Rmd      
+---
+```{r setup-fin, include=FALSE}
+options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+
+library(xaringan)
+library(fontawesome)
+```
+
+
 class: title-slide, right, bottom
 background-image: url(img/horst-starwars-rey.png)
 background-size: contain
-background-position: bottom left   
+background-position: bottom left 
 
 
 # `r rmarkdown::metadata$title`
@@ -1550,9 +1445,8 @@ background-position: bottom left
 
 [`r icon::fa("twitter")` @juliesquid](https://twitter.com/juliesquid)  
 [`r icon::fa("paper-plane")` lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
-[`r icon::fa("desktop")` jules32.github.io/user-2019-keynote](http://jules32.github.io/user-2019-keynote)  
+[`r icon::fa("desktop")` bit.ly/37tbggi](https://openscapes.github.io/slides/betterscience/socalR#1)  
 
 
 <img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
 <img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
-
