@@ -65,30 +65,6 @@ So much so that over the past six years I have been moving away from doing my ow
 Throughout this I've learned several lessons, and I want to share them up front: 
 
 ---
-```{r loop-wtext2, out.width = '100%'}
-knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
-# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
-```
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst)   
-]
-
-???
-
-This is what better science in less time looks like to me. 
-
-The way I have been thinking about it, open data science tools and practices and teamwork & collaboration exist in this feedback loop. 
-
-Learning and using similar software promotes and streamlines teammwork. And also working as a team better equips you to learn open practices data science.
-
-But as env scientists, we're never taught data science/open practices, and we're not taught to work as a team, even when we are physically sitting with other scientists similar to us in our research groups research group. 
-
-I am often asked why a marine scientist would use R, so I want to make sure you leave here knowing that marine scientists, as well as environmental scientist more broadly, work with data every single day to do our science, and it is critical that we are supported to work with data responsibly. 
-
-So let me start off when I was a graduate student in a marine research group, which we also call laboratories in the US. 
-
----
 ## @juliesquid
 ```{r sq-tag2, out.width = '40%', fig.align='center'}
 knitr::include_graphics("img/*JulieReleaseAugerIMG_9311-crop.png")
@@ -198,7 +174,34 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 And this community is powerful because of the diversity of backgrounds and expertise, and although not everyone is a Jedi, everyone contributes in really critical ways. 
 
-transition: So just to recap, 
+transition: so for Luke, it is a combination of the Force and his community that make this him so powerful
+
+---
+```{r loop-wtext2, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
+```
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)   
+]
+
+???
+
+And I think it's the same with open data science tools & practices and teamwork and collaboration. 
+
+This is what better science in less time looks like to me. 
+
+The way I have been thinking about it, open data science tools and practices and teamwork & collaboration exist in this feedback loop. 
+
+Learning and using similar software promotes and streamlines teammwork. And also working as a team better equips you to learn open practices data science.
+
+But as env scientists, we're never taught data science/open practices, and we're not taught to work as a team, even when we are physically sitting with other scientists similar to us in our research groups research group. 
+
+I am often asked why a marine scientist would use R, so I want to make sure you leave here knowing that marine scientists, as well as environmental scientist more broadly, work with data every single day to do our science, and it is critical that we are supported to work with data responsibly. 
+
+So let me start off when I was a graduate student in a marine research group, which we also call laboratories in the US. 
+
 
 ---
 ```{r rey}
