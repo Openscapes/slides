@@ -4,7 +4,6 @@ subtitle:
 author: 'Julia Stewart Lowndes, PhD' 
 role: ''
 institute: 'National Center for Ecological Analysis & Synthesis, UCSB'
-date: "useR! 2019 Keynote<br>Toulouse, France"
 output:
   xaringan::moon_reader:
     seal: false
@@ -72,19 +71,19 @@ Learning and using similar software promotes and streamlines teammwork. And also
 
 But as env scientists, we're never taught data science/open practices, and we're not taught to work as a team, even when we are physically sitting with other scientists similar to us in our research groups research group
 
+So despite this being a really powerful feedback loop, many scientists are outside of it, without clear entry points. 
+
 ---
 ```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
 ```
 
 .pull-left[
-**A mentorship program for research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
+**We champion open practices in science to help uncover data-driven solutions faster.**  
+<br>
+**Champions Program mentors research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
 <br>
 **Operated by NCEAS and incubated by Mozilla** 
-
-.footnote[
-web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
-]
 
 ]
 
@@ -92,14 +91,19 @@ web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitte
 ```{r zoom12, out.width = '85%', fig.align='center'}
 knitr::include_graphics("img/Cohort1_zoom.png") 
 ```
+
+.footnote[
+web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
+]
 ]
 
 ???
+So I developed Openscapes, 
 
 this builds from nearly 7 years of the OHI
 
 ---
-```{r ohi-banner, out.width = '80%', fig.align='center'}
+```{r ohi-banner, out.width = '80%', fig.align='left'}
 knitr::include_graphics("img/ohi-illustration-hex.png")
 ```
 
@@ -108,7 +112,7 @@ knitr::include_graphics("img/ohi-illustration-hex.png")
 <br>
 **Global assessments annually since 2012**  
 <br>
-**Independent assessments in ~20 geographies**
+**Independent "OHI+" assessments in ~20 geographies**
 
 <!---(example: Ecuador, Baltic, Northeast US) --->
 
@@ -471,7 +475,7 @@ source: [Hadley Wickham, 2019](https://speakerdeck.com/hadley/welcome-to-the-tid
 Expect there's a better way
 
 ---
-# Open mindset
+## Open mindset
 ### "transparency at all stages of the research process, coupled with free and open access to data, code, and papers"
 
 source: [*Hampton et al. 2015* The Tao of open science for ecology](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1)
@@ -481,6 +485,12 @@ source: [*Hampton et al. 2015* The Tao of open science for ecology](https://esaj
 ### "collaboration, empowerment, inclusivity, and accountability" ... "trust" ... "safe to be vulnerable"
 
 source: [*Wright 2019* Why bother with the “open” anyway?](https://medium.com/@stephanie_6761/why-bother-with-the-open-anyway-c76afb4dcb85)
+
+--
+
+### "It's about technology *enabling* social infrastructure that can promote inclusivity to create kinder science."
+
+source: [*Lowndes 2019* Open software means kinder science](https://blogs.scientificamerican.com/observations/open-software-means-kinder-science/)
 
 
 ???
@@ -500,7 +510,7 @@ knitr::include_graphics("img/horst-starwars-hands.png")
 
 .pull-right[
 ### Circa 2013
-**Horizontal leadership: jazzed about open data science**   
+**Horizontal leadership: a Champion jazzed about open data science**   
 **Vertical leadership: enabling & supportive**  
 **Team mindset: trusting and willing**  
 ]
@@ -521,13 +531,14 @@ knitr::include_graphics("img/horst-starwars-hands.png")
 
 .pull-right[
 ### Circa 2013
-**Horizontal leadership: jazzed about open data science**   
+**Horizontal leadership: a Champion jazzed about open data science**   
 **Vertical leadership: enabling & supportive**  
 **Team mindset: trusting and willing**  
 
 ### Circa 2019
 **Overlapping & complimentary skillsets**   
-**Resilience: onboarding & offboarding**
+**Resilience: onboarding & offboarding**  
+**We are all Champions in our own ways**
 ]
 
 ???
@@ -552,6 +563,25 @@ knitr::include_graphics("img/ods-community-logos.png")
 ]
 
 ???
+So what do these communities do?
+
+
+---
+```{r ropensci-janitor-redoc, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ropensci-janitor-redoc.png")  
+```
+
+.footnote[
+web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor); [redoc](https://twitter.com/noamross/status/1127273301443850240?lang=en)
+]
+
+
+???
+These kinds of conversations and communities enable packages like these, from rOpenSci
+
+transition: and when we talk about them in Openscapes it leads to tweets like these 
+
+
 
 ---
 # Ocean Health Index team strategies
@@ -577,6 +607,28 @@ knitr::include_graphics("img/eds-rladies-hex.png")
 ???
 
 This Reinforced shared values
+
+---
+### Openscapes [Sea]side chats & meetups
+```{r allison-tidytuesday, out.width = '90%', fig.align='center'}
+knitr::include_graphics("img/seasidechats-meetup-montage.png") 
+```
+
+.footnote[
+tweets: [@RLadiesHPNJ](https://twitter.com/RLadiesHPNJ/status/1139867491822383104); [@allison_horst](https://twitter.com/allison_horst/status/1110242520833769472); blogs: [bayside chats](https://github.com/wood-lab/wood-lab-resources#wood-lab-resources); [seaside chats](https://www.openscapes.org/blog/2019/03/10/seaside-chats/);  
+]
+
+
+???
+
+We call these conversations Seaside Chats, or Bayside, Bluffside or Fishbowl chats. They are specific times and places to talk about reproducible research, discuss coding issues, and learn about cool new packages relevant for research. 
+
+This something that our OHI team has been doing for years now in addition to our weekly science lab meetings. This is a dedicated space to discuss and develop shared systems for the lab start weaving open data science into their every day work
+
+We have also coopted the term hackathon, which is when our OHI team we will all drop our own projects and come together for a day or an afternoon to do something that will benefit the whole group, but is no one person's responsibility,like upgrading our filepath strategies with the "here" package. 
+
+Some labs have also done hackathons too, and gotten metadata organized and developed onboarding procedures for the lab, so that new teammembers can get on board with the lab's workflow as soon as possible.
+
 
 ---
 ```{r horst-eco-r4ds}
