@@ -1,20 +1,38 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-  <head>
-    <title>R &amp; friends for better science in less time in big (&amp; small) team collaborations</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Julia Stewart Lowndes, PhD" />
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/my-fonts.css" type="text/css" />
-    <link rel="stylesheet" href="css/my-theme.css" type="text/css" />
-  </head>
-  <body>
-    <textarea id="source">
+---
+title: "R and teamwork for better science in less time"
+subtitle: 
+author: 'Julia Stewart Lowndes, PhD' 
+role: ''
+institute: 'National Center for Ecological Analysis & Synthesis, UCSB'
+date: "useR! 2019 Keynote<br>Toulouse, France"
+output:
+  xaringan::moon_reader:
+    seal: false
+    chakra: libs/remark-latest.js # with @bjungbogati tidyverse dev toulouse: need to save this file to knit offline!
+    lib_dir: libs 
+    nature:
+     # slideNumberFormat: "" # if you want to disable
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:10" # https://github.com/apreshill/talks/blob/master/sdss-blogdown/index.Rmd#L16, http://user2019.r-project.org/information_for_presenters/
+      output:
+    css: ["default", "css/my-fonts.css", "css/my-theme.css"] #https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7
+    includes:
+      in_header: header.html    
+      
+# http://arm.rbind.io/slides/xaringan.html#45: presenter mode:: press c then f then p
+# https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/static/slides/xaringan.Rmd      
+---
 
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
 
-
+library(xaringan)
+library(fontawesome) #devtools::install_github("rstudio/fontawesome")
+library(icon) #devtools::install_github("ropenscilabs/icon")
+```
 
 class: title-slide, right, bottom
 background-image: url(img/horst-starwars-rey.png)
@@ -22,22 +40,25 @@ background-size: contain
 background-position: bottom left 
 
 
-## R &amp; friends for better science in less time&lt;br&gt;in big (&amp; small) team collaborations
-### Julia Stewart Lowndes, PhD
-### National Center for Ecological Analysis &amp; Synthesis, UCSB
+## `r rmarkdown::metadata$title`
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$institute`
 
-[<i class="fab  fa-twitter "></i> @juliesquid](https://twitter.com/juliesquid)  
-[<i class="fas  fa-paper-plane "></i> lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
-[<i class="fas  fa-desktop "></i> openscapes.org/media](http://openscapes.org/media)  
+[`r icon::fa("twitter")` @juliesquid](https://twitter.com/juliesquid)  
+[`r icon::fa("paper-plane")` lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
+[`r icon::fa("desktop")` openscapes.org/media](http://openscapes.org/media)  
 
 
-&lt;img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/&gt;
-&lt;img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/&gt;
+<img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
+<img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
 
 ???
 
 ---
-&lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
+```{r loop-wtext, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
+```
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)   
@@ -45,18 +66,20 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 ???
 
-The way I have been thinking about it, open data science tools and practices and teamwork &amp; collaboration exist in this feedback loop. 
+The way I have been thinking about it, open data science tools and practices and teamwork & collaboration exist in this feedback loop. 
 
 Learning and using similar software promotes and streamlines teammwork. And also working as a team better equips you to learn open practices data science.
 
 But as env scientists, we're never taught data science/open practices, and we're not taught to work as a team, even when we are physically sitting with other scientists similar to us in our research groups research group
 
 ---
-&lt;img src="img/horst_openscapes_grassland_1500px-text-hex.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
 
 .pull-left[
 **A mentorship program for research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
-&lt;br&gt;
+<br>
 **Operated by NCEAS and incubated by Mozilla** 
 
 .footnote[
@@ -66,7 +89,9 @@ web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitte
 ]
 
 .pull-right[
-&lt;img src="img/Cohort1_zoom.png" width="85%" style="display: block; margin: auto;" /&gt;
+```{r zoom12, out.width = '85%', fig.align='center'}
+knitr::include_graphics("img/Cohort1_zoom.png") 
+```
 ]
 
 ???
@@ -74,16 +99,18 @@ web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitte
 this builds from nearly 7 years of the OHI
 
 ---
-&lt;img src="img/ohi-illustration-hex.png" width="80%" style="display: block; margin: auto;" /&gt;
+```{r ohi-banner, out.width = '80%', fig.align='center'}
+knitr::include_graphics("img/ohi-illustration-hex.png")
+```
 
 .pull-left[
 **A scientific method, tool, and community for channeling the best available scientific information into marine policy.**  
-&lt;br&gt;
+<br>
 **Global assessments annually since 2012**  
-&lt;br&gt;
+<br>
 **Independent assessments in ~20 geographies**
 
-&lt;!---(example: Ecuador, Baltic, Northeast US) ---&gt;
+<!---(example: Ecuador, Baltic, Northeast US) --->
 
 .footnote[
 source: [*Halpern et al. 2012*: An Index to assess the health and benefits of the global ocean](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html); web: [ohi-science.org](http://ohi-science.org)
@@ -91,7 +118,9 @@ source: [*Halpern et al. 2012*: An Index to assess the health and benefits of th
 ]
 
 .pull-right[
-&lt;img src="img/ohi-team-2018b-crop.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+```{r teamx2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ohi-team-2018b-crop.jpeg") 
+```
 ]
 
 ???
@@ -104,7 +133,8 @@ transition: But I like to talk about this with analogies from Star Wars
 
 ---
 
-
+```{r luke}
+```
 class: center, middle
 background-image: url(img/horst-starwars-luke.png)
 background-size: contain
@@ -131,7 +161,9 @@ transition: but luckily what happens next is that he meets Yoda
 
 ---
 class: top, center
-&lt;img src="img/horst-starwars-yoda.png" width="88%" /&gt;
+```{r yoda, out.width = '88%'}
+knitr::include_graphics("img/horst-starwars-yoda.png") 
+```
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)
@@ -155,7 +187,8 @@ So the Force is a powerful thing, but importantly, it is not something that exis
 Transition: But Luke didn't go on to defeat the Empire himself, he had a whole community.
 
 ---
-
+```{r hands} 
+```
 class: center, middle
 background-image: url(img/horst-starwars-hands.png)  
 background-size: contain
@@ -178,7 +211,8 @@ Building software to meet scientists where they are
 transition: So to recap: 
 
 ---
-
+```{r rey-toc-full}
+```
 class: title-slide, right, bottom
 background-image: url(img/horst-starwars-rey.png)
 background-size: contain
@@ -195,14 +229,19 @@ It empowers us and build off of our confidence and experiences and broaden the s
 
 
 ---
-&lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
+```{r loop-toc1, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
+```
 
 ???
 
 This is my outline. Will talk this through
 
 ---
-&lt;img src="img/OHI-hex.png" width="55%" style="display: block; margin: auto;" /&gt;
+```{r OHI hex, out.width = '55%', fig.align='center'}
+knitr::include_graphics("img/OHI-hex.png")
+```
 
 .footnote[
 source: [Halpern et al. 2012](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html); web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
@@ -223,9 +262,13 @@ Getting through this involved quite a reckoning, but when we got through it, we 
 
 ---
 .pull-left[
-&lt;img src="img/horst-starwars-luke.png" width="60%" style="display: block; margin: auto;" /&gt;
+```{r luke-smaller, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-luke.png")
+```
 
-&lt;img src="img/teucher1.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r teucher1, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/teucher1.png")
+```
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst), graphics: [Andy Teucher](https://github.com/ateucher/vic-geogeeks-2018-01-30)
@@ -236,11 +279,15 @@ art: [@allison_horst](https://twitter.com/allison_horst), graphics: [Andy Teuche
 
 .pull-right[
 
-&lt;img src="img/horst-starwars-yoda.png" width="60%" style="display: block; margin: auto;" /&gt;
+```{r yoda-smaller, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-yoda.png")
+```
 
-&lt;br&gt;
+<br>
 
-&lt;img src="img/teucher2.png" width="95%" style="display: block; margin: auto;" /&gt;
+```{r teucher2, out.width = '95%', fig.align='center'}
+knitr::include_graphics("img/teucher2.png")
+```
 
 ]
 
@@ -250,7 +297,9 @@ Because we were all self taught, we came at OHI with the mismatches. Difficult w
 
 ---
 class: middle, center
-&lt;img src="img/nature-screenshot-title.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r nature-bsilt, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/nature-screenshot-title.png")
+```
 
 .footnote[
 source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160); web: [ohi-science.org/betterscienceinlesstime](http://ohi-science.org/betterscienceinlesstime/)
@@ -258,13 +307,15 @@ source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160)
 
 ???
 
-Figuring out was a big enough deal that we published this in Nature Ecology &amp; Evolution. 
+Figuring out was a big enough deal that we published this in Nature Ecology & Evolution. 
 
 What made it unique: we shared our struggles, and described the transition
 
 ---
-### More reproducibility &amp; collaboration, less time
-&lt;img src="img/bsilt-fig1-simple.png" width="60%" style="display: block; margin: auto;" /&gt;
+### More reproducibility & collaboration, less time
+```{r fig 1-whiteout, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/bsilt-fig1-simple.png")
+```
 
 .footnote[
 source: [*Lowndes et al. 2017* Our path  to better science in less time using open data science tools](https://www.nature.com/articles/s41559-017-0160)
@@ -283,7 +334,9 @@ Having all of this coding infrastructure in place is what enables those 20 indep
 
 ---
 class: center, middle
-&lt;img src="img/workflow-repro-wtext.png" width="100%" /&gt;
+```{r workflow-repro-wtext, out.width = '100%'}
+knitr::include_graphics("img/workflow-repro-wtext.png")
+```
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -293,7 +346,9 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 
 ---
 class: center, middle
-&lt;img src="img/workflow-full-wtext.png" width="100%" /&gt;
+```{r workflow-full-wtext, out.width = '100%'}
+knitr::include_graphics("img/workflow-full-wtext.png")
+```
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -302,8 +357,10 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## RStudio for R, text editing, Github sync, &amp; more
-&lt;img src="img/workflow-ex-repro-wtext.png" width="100%" /&gt;
+## RStudio for R, text editing, Github sync, & more
+```{r workflow-ex-repro-wtext, out.width = '100%'}
+knitr::include_graphics("img/workflow-ex-repro-wtext.png")
+```
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -313,7 +370,9 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 
 ---
 ## GitHub for archiving and bookkeeping
-&lt;img src="img/workflow-ex-collab-wtext.png" width="100%" /&gt;
+```{r workflow-ex-collab-wtext, out.width = '100%'}
+knitr::include_graphics("img/workflow-ex-collab-wtext.png")
+```
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -322,8 +381,10 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## Github for discussion &amp; project mgmt
-&lt;img src="img/workflow-ex-collab2-wtext.png" width="100%" style="display: block; margin: auto;" /&gt;
+## Github for discussion & project mgmt
+```{r workflow-ex-collab2-wtext, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/workflow-ex-collab2-wtext.png")
+```
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -332,8 +393,10 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## R + Github for docs &amp; publishing
-&lt;img src="img/workflow-ex-comm-wtext.png" width="100%" /&gt;
+## R + Github for docs & publishing
+```{r workflow-ex-comm-wtext, out.width = '100%'}
+knitr::include_graphics("img/workflow-ex-comm-wtext.png")
+```
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -342,7 +405,9 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-&lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
+```{r loop-wtext2, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+```
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)   
@@ -354,12 +419,14 @@ But remember, these tools are really most powerful with teams.
 
 ---
 # Data science mindset
-&lt;br&gt;
-&lt;img src="img/r4ds_data-science.png" width="90%" style="display: block; margin: auto;" /&gt;
+<br>
+```{r data-science-r4ds, out.width = '90%', fig.align='center'}
+knitr::include_graphics("img/r4ds_data-science.png")
+```
 
 .footnote[
-&lt;br&gt;
-[Wickham &amp; Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)
+<br>
+[Wickham & Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)
 ]  
 
 ???
@@ -370,12 +437,14 @@ First, it separates the Understand part. This is this science part. It's an iter
 
 ---
 # Data science mindset
-&lt;br&gt;
-&lt;img src="img/r4ds_data-science-lohr.png" width="90%" style="display: block; margin: auto;" /&gt;
+<br>
+```{r data-science-r4ds-lohr, out.width = '90%', fig.align='center'}
+knitr::include_graphics("img/r4ds_data-science-lohr.png")
+```
 
 .footnote[
-&lt;br&gt;
-[Wickham &amp; Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)  
+<br>
+[Wickham & Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)  
 [Lohr, 2014 "For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights"](https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html)
 ]  
 
@@ -388,8 +457,10 @@ First, it separates the Understand part. This is this science part. It's an iter
 
 ---
 # Open data science tools
-&lt;br&gt;
-&lt;img src="img/r4ds_data-science-tidyverse.png" width="60%" style="display: block; margin: auto;" /&gt;
+<br>
+```{r tidyverse, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/r4ds_data-science-tidyverse.png")
+```
   
 .footnote[
 source: [Hadley Wickham, 2019](https://speakerdeck.com/hadley/welcome-to-the-tidyverse?slide=28); web: [tidyverse.org](https://www.tidyverse.org/)
@@ -419,8 +490,10 @@ I'd  also add: Kindness
 ---
 # Ocean Health Index team traits
 .pull-left[
-&lt;br&gt;
-&lt;img src="img/horst-starwars-hands.png" width="100%" style="display: block; margin: auto;" /&gt;
+<br>
+```{r team-side, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-hands.png") 
+```
 ]
 
 --
@@ -428,7 +501,7 @@ I'd  also add: Kindness
 .pull-right[
 ### Circa 2013
 **Horizontal leadership: jazzed about open data science**   
-**Vertical leadership: enabling &amp; supportive**  
+**Vertical leadership: enabling & supportive**  
 **Team mindset: trusting and willing**  
 ]
 ???
@@ -440,19 +513,21 @@ Not everyone codes. But everyone values
 ---
 # Ocean Health Index team traits
 .pull-left[
-&lt;br&gt;
-&lt;img src="img/horst-starwars-hands.png" width="100%" style="display: block; margin: auto;" /&gt;
+<br>
+```{r team-side2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-hands.png") 
+```
 ]
 
 .pull-right[
 ### Circa 2013
 **Horizontal leadership: jazzed about open data science**   
-**Vertical leadership: enabling &amp; supportive**  
+**Vertical leadership: enabling & supportive**  
 **Team mindset: trusting and willing**  
 
 ### Circa 2019
-**Overlapping &amp; complimentary skillsets**   
-**Resilience: onboarding &amp; offboarding**
+**Overlapping & complimentary skillsets**   
+**Resilience: onboarding & offboarding**
 ]
 
 ???
@@ -465,12 +540,14 @@ Bens enabled us to become leaders. horizontal leadership: evolve with the softwa
 # Ocean Health Index team strategies
 
 .pull-left[
-### Learn what's possible, how to teach &amp; lead
+### Learn what's possible, how to teach & lead
 **rOpenSci • RStudio** • **RLadies • Mozilla • The Carpentries**
 ]
 
 .pull-right[
-&lt;img src="img/ods-community-logos.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r community-logosx, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ods-community-logos.png")
+```
 
 ]
 
@@ -480,7 +557,7 @@ Bens enabled us to become leaders. horizontal leadership: evolve with the softwa
 # Ocean Health Index team strategies
 
 .pull-left[
-### Learn what's possible, how to teach &amp; lead
+### Learn what's possible, how to teach & lead
 **rOpenSci • RStudio** • **RLadies • Mozilla • The Carpentries**
 
 ### Create skill-sharing spaces
@@ -488,9 +565,13 @@ Bens enabled us to become leaders. horizontal leadership: evolve with the softwa
 ]
 
 .pull-right[
-&lt;img src="img/ods-community-logos.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r community-logos3, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ods-community-logos.png")
+```
  
-&lt;img src="img/eds-rladies-hex.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r eds, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/eds-rladies-hex.png")  
+```
 ]
 
 ???
@@ -498,7 +579,8 @@ Bens enabled us to become leaders. horizontal leadership: evolve with the softwa
 This Reinforced shared values
 
 ---
-
+```{r horst-eco-r4ds}
+```
 name: environ-comm-r4ds
 class: center, middle
 background-image: url(img/horst-eco-r4ds.png) 
@@ -506,9 +588,9 @@ background-size: contain
 
 .footnote[
 .left[
-&lt;br&gt;
+<br>
 art: [@allison_horst](https://twitter.com/allison_horst);
-updated from [Wickham &amp; Grolemund](https://r4ds.had.co.nz/)
+updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
 ]
 ]
 
@@ -517,7 +599,8 @@ updated from [Wickham &amp; Grolemund](https://r4ds.had.co.nz/)
 So all of this together makes a possible for env science
 
 ---
-
+```{r horst-eco-r4ds-env-comm-only}
+```
 name: environ-comm-r4ds
 class: center, middle
 background-image: url(img/horst-eco-r4ds-env-comm-only.png) 
@@ -525,9 +608,9 @@ background-size: contain
 
 .footnote[
 .left[
-&lt;br&gt;
+<br>
 art: [@allison_horst](https://twitter.com/allison_horst);
-updated from [Wickham &amp; Grolemund](https://r4ds.had.co.nz/)
+updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
 ]
 ]
 
@@ -536,7 +619,10 @@ updated from [Wickham &amp; Grolemund](https://r4ds.had.co.nz/)
 But this is where we are. And why is that? It's because we don't have the skills because we're never trained, but we aslso don't have the accompanying mindset and teamwork. 
 
 ---
-&lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
+```{r loop-wtext3, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
+```
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)   
@@ -551,7 +637,9 @@ Luke never would have imagined to expect that the Force existed unless he had se
 Individuals aren't aware of what's possible, and research groups aren't thinking like teams. We talk about science but not data. 
 
 ---
-&lt;img src="img/horst_openscapes_grassland_1500px-text-hex.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r openscapes-grassland, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
 
 ### We welcome scientists to open data science by mentoring research teams.
 
@@ -566,8 +654,10 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 ---
 ### Openscapes inaugural cohort 2019
 .pull-left[
-&lt;br&gt;
-&lt;img src="img/Cohort1_zoom.png" width="100%" /&gt;
+<br>
+```{r zoom-left, out.width = '100%'}
+knitr::include_graphics("img/Cohort1_zoom.png") 
+```
 
 .footnote[
 web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https://twitter.com/openscapes)
@@ -579,7 +669,7 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 .pull-right[
 ### Teams participate together
 
-**7x labs, leads &amp; members from each lab**
+**7x labs, leads & members from each lab**
 
 **1) everyone sees and values what is possible**   
 **2) leads enable members to invest time**  
@@ -600,24 +690,31 @@ transition: really focused on enabling others
 
 .pull-left[
 
-&gt;"This isn’t just about coding and GitHub, this is about changing how we do science"— Dr. Malin Pinsky, Rutgers
+>"This isn’t just about coding and GitHub, this is about changing how we do science"— Dr. Malin Pinsky, Rutgers
 
 
-&lt;img src="img/tweet-drchelsealwood-dorks.png" width="70%" style="display: block; margin: auto;" /&gt;
+```{r dorks, out.width = '70%', fig.align='center'}
+knitr::include_graphics("img/tweet-drchelsealwood-dorks.png") 
+```
 
 ]
 
 --
  
 .pull-right[
-&lt;img src="img/tweet-mozilla-juliesquid-keynote.png" width="100%" /&gt;
+```{r moz-tweet, out.width = '100%'}
+knitr::include_graphics("img/tweet-mozilla-juliesquid-keynote.png") 
+# https://twitter.com/mozilla/status/1149363508276092928
+```
 ]
 ???
 
 And there's been amazing momentum, both from mentees and for the program, which is awesome. We plan to have further cohorts,  available for bookings and sponsorships. 
 
 ---
-&lt;img src="img/horst-starwars-yoda.png" width="88%" style="display: block; margin: auto;" /&gt;
+```{r yoda-fin, out.width = '88%', fig.align='center'}
+knitr::include_graphics("img/horst-starwars-yoda.png") 
+```
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)
@@ -627,19 +724,21 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 Advice for better science in less time:
 ---
 # Talk about data
-&lt;br&gt;
-&lt;img src="img/nature-careers-supercharge.png" width="85%" style="display: block; margin: auto;" /&gt;
+<br>
+```{r careers-screenshot, out.width = '85%', fig.align='center'}
+knitr::include_graphics("img/nature-careers-supercharge.png") 
+```
 
-&lt;br&gt;
+<br>
 
-&lt;!---
-**Normalize data discussions • Identify and address shared needs • Think ahead: Future You &amp; Future Us**
----&gt;
+<!---
+**Normalize data discussions • Identify and address shared needs • Think ahead: Future You & Future Us**
+--->
 
 ???
 "Seaside chats", "Hacky hours", Coding clubs/meetups
 
-Establish trust, share challenges &amp; wins, learn together
+Establish trust, share challenges & wins, learn together
 
 10-week plan. 
 
@@ -656,11 +755,13 @@ Establish trust, share challenges &amp; wins, learn together
 ]
 
 .pull-right[
-&lt;img src="img/horst-seaside-chats.png" width="90%" style="display: block; margin: auto;" /&gt;
+```{r horst-seaside-chats2, out.width = '90%', fig.align='center'}
+knitr::include_graphics("img/horst-seaside-chats.png") 
+```
 ]
 
 ### Reimagine challenges
-**Separate your science from your data • Expect there is a better way** • **Have confidence, agency, &amp; community to solve them** • **You're not alone, it's not too late**  
+**Separate your science from your data • Expect there is a better way** • **Have confidence, agency, & community to solve them** • **You're not alone, it's not too late**  
 
 ???
 It's not your fault
@@ -669,7 +770,7 @@ It's not your fault
 # Enable and support leaderful teams
 
 .pull-left[
-### Learn what's possible, how to teach &amp; lead
+### Learn what's possible, how to teach & lead
 **rOpenSci • RStudio** • **RLadies • Mozilla • The Carpentries**
 
 ### Create skill-sharing spaces
@@ -682,9 +783,11 @@ resources: [openscapes.org/resources](https://www.openscapes.org/resources)
 ]
 
 .pull-right[
-&lt;img src="img/horst-starwars-hands.png" width="100%" /&gt;
+```{r handshands, out.width = '100%'}
+knitr::include_graphics("img/horst-starwars-hands.png")
+```
 
-**trust** • **resilience** • **overlapping skillsets &amp; interoperability** • **leadership • kindness**  
+**trust** • **resilience** • **overlapping skillsets & interoperability** • **leadership • kindness**  
 
 ]
 
@@ -696,12 +799,14 @@ This trust really centers on respect for each other and also kindness.
 
 But on an individual level, we all have had to get comfortable with sharing things before they are perfect and being vulnerable to critique, which gets easier when you can assume the best intentions from anyone's feedback. 
 
-But this has resulted in a really positive team culture, where we are comfortable with trying new things &amp; learning from failure, and we are comfortable asking for help. 
+But this has resulted in a really positive team culture, where we are comfortable with trying new things & learning from failure, and we are comfortable asking for help. 
 
 ---
 # Engage with the \#rstats community
 .pull-left[
-&lt;img src="img/horst-welcome_to_rstats_twitter.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r welcome-rstats2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
+```
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst);
@@ -721,9 +826,11 @@ blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code
 ]
 
 ---
-&lt;img src="img/horst_openscapes_arctic_1500px.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r openscapes-arctic, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_arctic_1500px.png")
+```
 
-### Get involved with Openscapes &amp; open data science
+### Get involved with Openscapes & open data science
 
 .pull-left[
 **Follow us on Twitter @openscapes**  
@@ -746,7 +853,8 @@ get involved: [openscapes.org/contact](https://www.openscapes.org/contact)
 ]
 
 ---
-
+```{r horst-eco-r4ds0fin}
+```
 name: environ-comm-r4ds
 class: center, middle
 background-image: url(img/horst-eco-r4ds.png) 
@@ -754,16 +862,18 @@ background-size: contain
 
 .footnote[
 .left[
-&lt;br&gt;
+<br>
 art: [@allison_horst](https://twitter.com/allison_horst);
-updated from [Wickham &amp; Grolemund](https://r4ds.had.co.nz/)
+updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)
 ]
 ]
 
 
 ---
 exclude: TRUE
-&lt;img src="img/horst_openscapes_desert_1500px.png" width="100%" style="display: block; margin: auto;" /&gt;
+```{r openscapes-desert, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_desert_1500px.png")
+```
 
 .pull-left[
 ### Parting thoughts
@@ -774,7 +884,9 @@ exclude: TRUE
 ]
 
 .pull-right[
-&lt;img src="img/horst-lowndes-loop.png" width="100%" /&gt;
+```{r loop-dloop, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop.png")
+```
 
 ]
 
@@ -783,22 +895,22 @@ exclude: TRUE
 
 .pull-left[
 #### especially for this talk:
-###OHI team &lt;br&gt;Mozilla team&lt;br&gt;Openscapes Champions&lt;br&gt;Allison Horst
+###OHI team <br>Mozilla team<br>Openscapes Champions<br>Allison Horst
 
-&lt;br&gt;
+<br>
 
-####all artwork: [@allison_horst](https://twitter.com/allison_horst)&lt;br&gt;xaringan theme: [@apreshill](https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7)
+####all artwork: [@allison_horst](https://twitter.com/allison_horst)<br>xaringan theme: [@apreshill](https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7)
 
 ]
 
 .pull-right[
-&lt;br&gt;
-&lt;br&gt;
+<br>
+<br>
 
 ### Please get involved: [openscapes.org/contact](https://www.openscapes.org/contact/); [@openscapes](https://openscapes.org)
 
 
-#### Find me for stickers... &lt;img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/&gt; &lt;img src="img/ohi-hex.png" alt="" style="float:right;width:80px;"/&gt;
+#### Find me for stickers... <img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:80px;"/>
 ]
 
 ???
@@ -806,32 +918,35 @@ exclude: TRUE
 Thank you.
 
 ---
-
+```{r fin}
+```
 class: title-slide, right, bottom
 background-image: url(img/horst-starwars-rey.png)
 background-size: contain
 background-position: bottom left 
 
 
-## R &amp; friends for better science in less time&lt;br&gt;in big (&amp; small) team collaborations
-### Julia Stewart Lowndes, PhD
-### National Center for Ecological Analysis &amp; Synthesis, UCSB
+## `r rmarkdown::metadata$title`
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$institute`
 
-[<i class="fab  fa-twitter "></i> @juliesquid](https://twitter.com/juliesquid)  
-[<i class="fas  fa-paper-plane "></i> lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
-[<i class="fas  fa-desktop "></i> openscapes.org/media](http://openscapes.org/media)  
+[`r icon::fa("twitter")` @juliesquid](https://twitter.com/juliesquid)  
+[`r icon::fa("paper-plane")` lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
+[`r icon::fa("desktop")` openscapes.org/media](http://openscapes.org/media)  
 
 
-&lt;img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/&gt;
-&lt;img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/&gt;
+<img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
+<img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
 
 ---
 
 
 ---
 .pull-left[
-&lt;br&gt;
-&lt;img src="img/tweet-Md_Harris-rnoaa.png" width="100%" /&gt;
+<br>
+```{r rnoaa, out.width = '100%'}
+knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
+```
 
 .footnote[
 tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
@@ -839,8 +954,8 @@ tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/pho
 ]
 
 .pull-right[
-&lt;br&gt;
-&lt;br&gt;
+<br>
+<br>
 ### My internal monologue: 
 
 **Cool visualization!**  
@@ -852,7 +967,9 @@ tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/pho
 
 ---
 class: center, middle
-&lt;img src="img/tweet-docfroehlich-rnoaa-full.png" width="60%" style="display: block; margin: auto;" /&gt;
+```{r halley-rnoaa, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/tweet-docfroehlich-rnoaa-full.png")  
+```
  
 .footnote[
 tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/1085990833571020800)
@@ -863,7 +980,9 @@ tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/10859908335710208
 Halley has a big science following already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
 
 ---
-&lt;img src="img/tweet-apreshill-rladies-sydney.png" width="60%" style="display: block; margin: auto;" /&gt;
+```{r rladies-sydney, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/tweet-apreshill-rladies-sydney.png")
+```
 
 .footnote[
 twitter: [@apreshill](https://twitter.com/apreshill/status/1184660994007519232); 
@@ -874,96 +993,6 @@ web: [RLadies Sydney](https://rladiessydney.org/courses/ryouwithme/)
 
 https://twitter.com/WeAreRLadies/status/1087741684618809346
 https://twitter.com/frau_dr_barber/status/1127189812308369408
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="libs/remark-latest.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:10",
-"output": null
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
 
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();</script>
 
-<script>
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-</script>
 
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>

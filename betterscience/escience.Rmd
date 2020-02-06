@@ -30,7 +30,8 @@ options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = F
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
 
 library(xaringan)
-library(fontawesome)
+library(fontawesome) #devtools::install_github("rstudio/fontawesome")
+library(icon) #devtools::install_github("ropenscilabs/icon")
 ```
 
 class: title-slide, right, bottom
