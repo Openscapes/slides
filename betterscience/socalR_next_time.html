@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>R for better science in less time</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Julia Stewart Lowndes, PhD" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/my-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: title-slide, right, bottom
+background-image: url(img/horst-starwars-rey.png)
+background-size: contain
+background-position: bottom left 
+
+
+# R for better science in less time
+
+### Julia Stewart Lowndes, PhD
+### Senior Fellow
+### National Center for Ecological Analysis &amp; Synthesis&lt;br&gt;University of California at Santa Barbara, USA
+
+[<i class="fab  fa-twitter "></i> @juliesquid](https://twitter.com/juliesquid)  
+[<i class="fas  fa-paper-plane "></i> lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
+[<i class="fas  fa-desktop "></i> openscapes.org/media](https://openscapes.org/media)  
+
+
+&lt;img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/&gt;
+&lt;img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/&gt;
+
+???
+
+Well thank you so much, I am so excited to be here with all of you and I want to thank the organizers for this invitation. 
+
+I am a marine scientist and R as a language and as a community has been game-changing for my science, and my life. 
+
+So much so that over the past six years I have been moving away from doing my own research so I can pay forward what I've learned and focus on enabling other scientists to better science in less time, together. 
+
+Throughout this I've learned several lessons, and I want to share them up front: 
+
+---
+## @juliesquid
+&lt;img src="img/*JulieReleaseAugerIMG_9311-crop.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+photo: Greg Auger 
+]
+
+???
+
+I am actually a squid ecologist, which is why many of you know me as juliesquid. 
+
+That is me on the right, holding a squid that can be nearly as big as I am. 
+
+We caught it and I am releasing it alive back into the ocean with a little electronic tag on it. The tag turns this squid little oceanographer, because it will collect data about it environment as it swims through the ocean. i collected data every second, which means I could actually see the squid breathe, since its breathing and movement are coupled through jet propulsion. 
+
+My whole PhD research group focused on squid. We were interested because squid have huge impact on ecosystems since they eat a lot and grow quickly and they also have huge impact on economies because globally there is such high consumption of calamari. In our lab some focused on ecology like me, others on locomotion, camouflage, or early life development. 
+
+---
+&lt;br&gt;
+
+.pull-left[
+&lt;img src="img/sq-ctd-fieldwork.JPG" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src="img/DannaJulieAshleyNOAA.JPG" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.footnote[
+web: [Gilly Lab](https://gillylab.stanford.edu/)
+]
+
+???
+
+Our research required a lot of teamwork, both at sea and in the laboratory. 
+
+We were a typical research group because we worked like a team about our scientific questions. 
+
+We were also a typical research group because we didn't act like a team when it came to data. Analyzing data was something that was left to each of us to figure out as individuals.  
+
+In in all my education I had never learned computing or how to work responsibly with data. So for me it was a super demoralizing experience to get the tag back and actually hold data in my hand but not be able to analyze it.
+
+transition: It felt like this. 
+
+---
+
+class: center, middle
+background-image: url(img/horst-starwars-luke.png)
+background-size: contain
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)
+]
+
+???
+
+This is Luke Skywalker after he crashed his plane in the swamp on Degobah. 
+
+He cannot solve the the challenge in front of him with the skillsets he has. 
+
+He is demoralized and alone. And if you imagine him attempting to use whatever pulleys and ropes he might have with him, you know it wouldn't be pretty, it wouldn't be reproducible, and it probably wouldn't get him where he needs to be on time. 
+
+transition: but luckily what happens next is that he meets Yoda
+
+---
+class: top, center
+&lt;img src="img/horst-starwars-yoda.png" width="88%" /&gt;
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)
+]
+
+???
+
+Yoda uses the Force to solve Luke's problem in a way Luke never imagined was possible. 
+
+This is going to open up Luke's whole world because he can learn from Yoda and not only solve his current but it will broaden his mind to what is possible in the future. 
+
+transition: But Luke didn't go on to defeat the Empire himself, he had a whole community.
+
+---
+
+class: center, middle
+background-image: url(img/horst-starwars-hands.png)  
+background-size: contain
+
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)
+]
+
+???
+
+And this community is powerful because of the diversity of backgrounds and expertise, and although not everyone is a Jedi, everyone contributes in really critical ways. 
+
+transition: so for Luke, it is a combination of the Force and his community that make this him so powerful
+
+---
+&lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)   
+]
+
+???
+
+And I think it's the same with open data science tools &amp; practices and teamwork and collaboration. 
+
+This is what better science in less time looks like to me. 
+
+The way I have been thinking about it, open data science tools and practices and teamwork &amp; collaboration exist in this feedback loop. 
+
+Learning and using similar software promotes and streamlines teammwork. And also working as a team better equips you to learn open practices data science.
+
+But as env scientists, we're never taught data science/open practices, and we're not taught to work as a team, even when we are physically sitting with other scientists similar to us in our research groups research group. 
+
+I am often asked why a marine scientist would use R, so I want to make sure you leave here knowing that marine scientists, as well as environmental scientist more broadly, work with data every single day to do our science, and it is critical that we are supported to work with data responsibly. 
+
+So let me start off when I was a graduate student in a marine research group, which we also call laboratories in the US. 
+
+
+---
+
+class: center, middle
+background-image: url(img/horst-starwars-rey.png) 
+background-size: contain
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)
+]
+
+???
+
+R is the Force that enables us as scientists to do better science in less time. 
+
+It empowers us to get our own data out of the swamp. 
+
+It empowers us and build off of our confidence and experiences and broaden the scope of scientific challenges that we can tackle, which for environmental scientists, includes food security, disease transmission, and climate change. 
+
+For me, I didn't fully feel the power of R until I finished graduate school and joined a research group where I am today, where we learned to work with data as a team. 
+
+---
+
+&lt;img src="img/OHI-hex.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+source: [Halpern et al. 2012](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html); web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
+]
+
+???
+The Ocean Health Index is a scientific endeavor to quantify impacts and benefits of oceans around the world using the best publically available data. 
+
+It is being used by the United Nations and by 20 groups around the world. 
+
+There is a lot to it but what is relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team.
+
+But we are marine scientists, and we were never trained to work responsibly with data. 
+
+So we found out the hard way that our default approaches were not reproducible by even ourselves. 
+
+Getting through this involved quite a reckoning, but when we got through it, we knew we had a story to tell. 
+
+
+---
+class: middle, center
+&lt;img src="img/nature-screenshot-title.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160); web: [ohi-science.org/betterscienceinlesstime](http://ohi-science.org/betterscienceinlesstime/)
+]
+
+???
+
+We found our path to better science in less time with open data science tools. 
+
+And by this I mean R and GitHub and friends. 
+
+transition: We shared how these tools enabled us to more reproducible science faster each year, as we illustrated in this figure
+
+---
+class: middle, center
+&lt;img src="img/bsilt-fig1-nature-whiteout.jpg" width="80%" /&gt;
+
+.footnote[
+source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160)
+]
+
+???
+
+Shown here as the circles get smaller and moving up the y axis. It also go easier for us to collaborate each year, along the x axis. 
+
+This let us focus on making improvements either on the data science side or the science side
+
+---
+class: middle, center
+&lt;img src="img/bsilt-fig1-nature.jpg" width="80%" /&gt;
+
+.footnote[
+source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160)
+]
+
+
+???
+
+We couldn't overhaul everything all at once, but focused on different pieces incrementally each year. 
+
+We started off focused on R and RStudio, and then on using Git and GitHub, then on tidy data and then documentation and Rmd. And ever since we've focused on leading a training program to teach students how to maintain it. 
+
+Having all of this coding infrastructure in place is what enables those 20 independent groups I mentioned to study ocean health in the places they care about. 
+
+But just like Luke, we were able to do this because of community. 
+
+---
+class: center, middle
+&lt;img src="img/ods-community-logos.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+These communities in particular have been so transformative for our work. 
+
+So many of you in this room and listening around the world have welcomed us and supported us and enabled us. 
+
+I've been working on how to pay this forward and help other groups
+
+---
+exclude: TRUE
+# Eco-Data-Science &amp; RLadies SB
+
+&lt;img src="img/eds-rladies-hex.png" width="100%" style="display: block; margin: auto;" /&gt;
+ 
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst); twitter: [@ecodatasci](https://twitter.com/ecodatasci); [@RLadiesSB](https://twitter.com/RLadiesSB)
+]
+
+???
+
+leading local study groups like Eco-Data-Science and RLadies chapters, and generally telling everybody how awesome R is. 
+
+This is how I got a fellowship with Mozilla. 
+
+---
+exclude: TRUE
+class: center, middle
+
+&lt;img src="img/moz-fellow-announcement.png" width="100%" /&gt;
+
+.footnote[
+blog: [blog.mozilla.org](https://blog.mozilla.org/blog/2018/08/21/mozilla-announces-25-new-fellows-in-openness-science-and-tech-policy/)
+]
+
+???
+
+Yes Moz is firefox, but also the internet for good. 
+
+Spent the last year developing a program with Mozilla and NCEAS, the ecology center where I am based. 
+
+---
+&lt;img src="img/openscapes-hex.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst); 
+web: [openscapes.org](https://openscapes.org); [@openscapes](https://twitter.com/openscapes)
+]
+
+???
+
+The program is called Openscapes, and it is mentorship program for research groups. 
+
+Openscapes helps them establish and maintain shared practices around data and work as a team. 
+
+It is modeled after our experiences from the Ocean Health Index, which is one of the most visible examples of what open data science can look like in an environmental context. 
+
+---
+&lt;img src="img/horst_openscapes_grassland_1500px-text.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+### We welcome scientists to open data science by mentoring research teams.
+
+**Engage**: build awareness and excitement with empathy, art, and storytelling  
+**Empower**: connect with existing open software and communities  
+**Amplify**: champion broadly to increase visibility, value, and practice  
+
+.footnote[
+web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https://twitter.com/openscapes)
+]
+
+---
+
+class: center, middle
+background-image: url(img/horst-eco-r4ds.png) 
+background-size: contain
+
+.footnote[
+.left[
+art: [@allison_horst](https://twitter.com/allison_horst); 
+updated from [Wickham &amp; Grolemund](https://r4ds.had.co.nz/)
+]
+]
+
+???
+
+This is the vision I see for environmental science. 
+
+Where the elements that environmental scientsts are great at, like theory, and experimental design are streeamlined together by ODS, and help us communicate around environmental solutions. 
+
+I know this graphic looks familiar from R4DS, but notice that all of the data science components here are ringed by communities and support that our OHI team has found so critical to our success. 
+
+So this is the vision I'm working towards with Openscapes, and I am optimistic we can do this because the first cohort of Openscapes participants are well on their way after only 5 months.
+
+---
+
+class: center, middle
+background-image: url(img/horst-eco-r4ds-env-comm-only.png) 
+background-size: contain
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)
+]
+
+???
+
+But right now environmental science looks like this. We rarely have formal training with coding or computing or data and so folks learn in pockets and are unsupported at broader institutional levels. 
+
+And often they are not supported even at level of the research group, which is already poised to work like a team. 
+
+Helping complete this picture drives my work now. I want to figure out how to best introduce open data science and teamwork to this picture.
+
+I've found that scientists are often not aware of what tools are availabe. But that is just the first sliver of the challenge. 
+
+The real challenge is about mindset around open data science, and helping scientists feel included so that it can be part not only of their future, but of their present. 
+
+---
+&lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)   
+]
+
+???
+
+&lt;water&gt;
+
+So the first is that open data science is a mindset. 
+
+---
+class: inverse, center, middle
+# Open data science is a mindset
+
+???
+
+&lt;br&gt;
+
+This involves expecting there is a better way with data science, 
+
+Expect there is a better way
+
+It can be really hard to expect that there is a better way to do something when you do not know what is possible and you don't see any examples within your own context. 
+
+It's like how Luke would have never expected the Force to have been a thing if he hadn't run into ObiWan and Yoda. 
+
+When I struggled with my squid data, I couldn't expect there was a better way because I thought my challenges with column renaming was a part of my squid research, not something separate like data wrangling. 
+
+So this mindset drained weeks of my time, because I didn't have the mindset or the vocabulary to articulate my struggles and ask for help. 
+
+transition: so when I talk about data science with Openscapes — 
+
+---
+# Data science mindset
+&lt;br&gt;
+&lt;img src="img/r4ds_data-science.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;br&gt;
+[Wickham &amp; Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)
+]  
+
+???
+
+This graphic really changed they way we work and think. 
+
+First, it separates the Understand part. This is this science part. It's an iterative process of transforming, subsetting, comparting data, vizulazing, modeling. And it's distinct from the import and tidying parts. This is critical. 
+
+---
+# Data science mindset
+&lt;br&gt;
+&lt;img src="img/r4ds_data-science-lohr.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+&lt;br&gt;
+[Wickham &amp; Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)  
+[Lohr, 2014 "For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights"](https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html)
+]  
+
+???
+
+This graphic really changed they way we work and think. 
+
+First, it separates the Understand part. This is this science part. It's an iterative process of transforming, subsetting, comparting data, vizulazing, modeling. And it's distinct from the import and tidying parts. This is critical. 
+
+
+---
+# Open data science tools
+&lt;br&gt;
+&lt;img src="img/r4ds_data-science-tidyverse.png" width="60%" style="display: block; margin: auto;" /&gt;
+  
+.footnote[
+source: [Hadley Wickham, 2019](https://speakerdeck.com/hadley/welcome-to-the-tidyverse?slide=28); web: [tidyverse.org](https://www.tidyverse.org/)
+]  
+
+???
+
+Expect there's a better way
+
+---
+# Open mindset
+### "transparency at all stages of the research process, coupled with free and open access to data, code, and papers"
+
+source: [*Hampton et al. 2015* The Tao of open science for ecology](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/ES14-00402.1)
+
+--
+
+### "collaboration, empowerment, inclusivity, and accountability" ... "trust" ... "safe to be vulnerable"
+
+source: [*Wright 2019* Why bother with the “open” anyway?](https://medium.com/@stephanie_6761/why-bother-with-the-open-anyway-c76afb4dcb85)
+
+???
+
+Imperfect, recovering perfectionist
+
+Requires trust. 
+
+
+---
+exclude: TRUE
+
+class: center, middle
+background-image: url(img/horst-eco-r4ds.png) 
+background-size: contain
+
+.footnote[
+.left[
+&lt;br&gt;
+art: [@allison_horst](https://twitter.com/allison_horst);
+updated from [Wickham &amp; Grolemund](https://r4ds.had.co.nz/)
+]
+]
+
+???
+
+So open data science as a mindset is the framing that we start with in Openscapes. 
+
+But the way we actually start acting on all of this is through teamwork, which starts with openness.
+
+---
+exclude: TRUE
+class: inverse, center, middle
+# Teamwork starts with openness
+### build trust around shared needs • fuel vertical &amp; horizontal leadership • engage with &amp; build community
+
+???
+
+--water
+
+Teams to me mean rings of people you respect, innovate with, and can rely upon. It does not have to be limited to a certain deliverable, location, discipline or anything else really. 
+
+Teamwork is critical in science because no one it can do it all. And for the sake for innovation as well as for emotional well-being we need to shed the expectation that we should be able to. Instead, we need to value teamwork. 
+
+So I've categorized teamwork here but there are definitely a lot of blurred lines. 
+
+But actually one of the coolest things to me throughout everything I've learned is how teamwork and collaboration and leadership and community all intertwine when you work openly. 
+
+
+---
+class: inverse, center, middle
+# Build trust around shared needs
+
+???
+
+
+transition: But working openly is something you have to feel safe doing. 
+
+
+---
+# Ocean Health Index team strategies
+
+.pull-left[
+### Learn what's possible, how to teach &amp; lead
+**rOpenSci • RStudio** • **RLadies • Mozilla • The Carpentries**
+]
+
+.pull-right[
+&lt;img src="img/ods-community-logos.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+???
+Open data science streamlines working with data but also working with each other. 
+
+As an OHI team, these tools let us co-develop things, share early drafts, and we can constantly giving feedback and iterating with each other. 
+
+---
+&lt;img src="img/ropensci-janitor-redoc.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor); [redoc](https://twitter.com/noamross/status/1127273301443850240?lang=en)
+]
+
+
+???
+These kinds of conversations and communities enable packages like these, from rOpenSci
+
+transition: and when we talk about them in Openscapes it leads to tweets like these 
+
+
+---
+# Ocean Health Index team strategies
+
+.pull-left[
+### Learn what's possible, how to teach &amp; lead
+**rOpenSci • RStudio** • **RLadies • Mozilla • The Carpentries**
+
+### Create skill-sharing spaces
+**Seaside Chats** • **Eco-Data-Science • RLadiesSB** 
+]
+
+.pull-right[
+&lt;img src="img/ods-community-logos.png" width="100%" style="display: block; margin: auto;" /&gt;
+ 
+&lt;img src="img/eds-rladies-hex.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+???
+
+This Reinforced shared values
+
+I'm a recovering perfectionist
+
+---
+exclude: TRUE
+# Ocean Health Index team
+ 
+&lt;img src="img/ohi-team-2018b-crop.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+
+We as an OHI team have spent years building up trust with each other, and that makes us be able to do our best work. 
+
+This trust really centers on respect for each other and also kindness.
+
+But on an individual level, we all have had to get comfortable with sharing things before they are perfect and being vulnerable to critique, which gets easier when you can assume the best intentions from anyone's feedback. 
+
+But this has resulted in a really positive team culture, where we are comfortable with trying new things &amp; learning from failure, and we are comfortable asking for help. 
+
+---
+exclude: TRUE
+# Ocean Health Index team
+ 
+&lt;img src="img/ohi-team-2019-crop.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Another thing about our team is that we prioritize social time, obviously, since it is impossible to find a picture of our team that is not at happy hour. 
+
+But seriously, getting along well together builds resilience into our team and has helped avoid burnout. And it helps us us manage as people come and go into our group, as is common in science.
+
+transition: one of the ways to start working on this as a team is to create safe spaces where you can deliberately talk about shared stuff.
+
+And in Openscapes, that's what we do in our cohort calls. 
+
+---
+exclude: TRUE
+# Openscapes lesson series
+.pull-left[
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src="img/openscapes-series.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+lesson series: [openscapes.org/series](https://openscapes.github.io/series)
+]
+]
+
+.pull-right[
+&lt;img src="img/tweet-openscapes-series-thread.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+tweet thread: [@openscapes](https://twitter.com/openscapes/status/1131243910200668160)
+]
+]
+
+???
+
+Recreated this online with Openscapes
+
+We covered a lot of other things in our cohort calls, and I'm working on capturing them all in the lesson series that anyone is able to use. 
+
+transition: and in addition to these cohort calls, we focused a lot on leadership, both vertical and horizontal. 
+
+---
+### Openscapes [Sea]side chats &amp; meetups
+&lt;img src="img/seasidechats-meetup-montage.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+tweets: [@RLadiesHPNJ](https://twitter.com/RLadiesHPNJ/status/1139867491822383104); [@allison_horst](https://twitter.com/allison_horst/status/1110242520833769472); blogs: [bayside chats](https://github.com/wood-lab/wood-lab-resources#wood-lab-resources); [seaside chats](https://www.openscapes.org/blog/2019/03/10/seaside-chats/);  
+]
+
+
+???
+
+We call these conversations Seaside Chats, or Bayside, Bluffside or Fishbowl chats. They are specific times and places to talk about reproducible research, discuss coding issues, and learn about cool new packages relevant for research. 
+
+This something that our OHI team has been doing for years now in addition to our weekly science lab meetings. This is a dedicated space to discuss and develop shared systems for the lab start weaving open data science into their every day work
+
+We have also coopted the term hackathon, which is when our OHI team we will all drop our own projects and come together for a day or an afternoon to do something that will benefit the whole group, but is no one person's responsibility,like upgrading our filepath strategies with the "here" package. 
+
+Some labs have also done hackathons too, and gotten metadata organized and developed onboarding procedures for the lab, so that new teammembers can get on board with the lab's workflow as soon as possible.
+
+
+---
+class: inverse, center, middle
+# Fuel vertical &amp; horizontal leadership
+
+???
+
+---
+### Ocean Health Index team
+
+&lt;img src="img/ohi-team-2018b-crop.jpeg" width="70%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+tweet: [@juliesquid](https://twitter.com/juliesquid/status/693324555704610816)
+]
+
+
+**Leadership (vertical &amp; horizontal): enabling &amp; supportive**  
+**Team mindset: trusting and willing**  
+
+**Overlapping &amp; complimentary skillsets; resilience for on/offboarding**   
+
+
+???
+
+**Vertical leadership: gave us time &amp; space to learn**  
+**Horizontal leadership: jazzed about open data science**     
+**Team mindset: trusting and willing because it seemed awesome, we saw welcoming entryways, and we were struggling** 
+
+---
+exclude: TRUE
+# Ocean Health Index team
+.pull-left[
+&lt;img src="img/Halpern-UCSB_UCOP-30.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+web: [National Center for Ecological Analysis &amp; Synthesis](https://www.nceas.ucsb.edu/); 
+]
+]
+
+.pull-right[
+&lt;img src="img/shiny-conf-2016-crop.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+tweet: [@juliesquid](https://twitter.com/juliesquid/status/693324555704610816)
+]
+]
+
+???
+
+On the right here are Jamie Afflerbach, Ben Best, and me. They are my teammates but they are also leaders for me. Ben spent countless hours sitting with me and teaching me R and was patient when I deliberately made emails from github go to my spam folder because I thought GitHub was not going to be useful to me. I told you I am really skeptical of new software. 
+
+And Jamie is an amazing leader as well, I'll tell a story about her in a moment. 
+
+And together we are partners in crime. We cofounded the eco-data-science study group together and have taught multiple carpentries workshops together. This is us preparing for the Shiny conference in 2016. 
+
+transition: Enabling this kind of vertical and horizontal leadership around data is what I try to ignite with Openscapes. 
+
+---
+### Openscapes Champions: inaugural cohort 2019
+
+&lt;img src="img/Cohort1_zoom.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+**1) everyone sees and values what is possible**   
+**2) leads enable members to invest time**  
+**3) members have guidance, agency, and support**  
+**4) everyone champions open data science**
+
+
+???
+That's what we were did in this first cohort that I mentioned. Really focused on the teamwork side, but immediately around open data science and iteratively, make this a spiral 
+
+And it's been exciting to not only see changes within labs, but across them, and new UW alliances. 
+
+transition: really focused on enabling others
+
+???
+
+This is the first cohort from Openscapes! 
+
+These are scientists from 7 labs, with the faculty or lecturers of each lab participating along with their lab members, who are graduate students, postdocs, technicians, lab managers, visiting faculty. 
+
+We all meet twice each month to discuss open data science concepts and to build community. 
+
+In our calls, I try to model the behavior I want to see, so that they can bring it to their labs. We start off every meeting with a Code of Conduct. 
+
+transiton: So this is an excellent transition into community.   
+
+---
+class: inverse, center, middle
+# Engage with &amp; build community
+
+???
+
+I think that the best thing I do for the Openscapes cohort is to introduce and welcome them to our communities. 
+
+When we talk about the awesomeness of R communities in Openscapes, it's not only to encourage them to become a part of them, but also to extend its ethos and kick-start this kind of movement in science. 
+
+I used to have my feet squarely in the marine science community, but now I feel like a bridge across environmental communtities, R communities and Mozilla communities. 
+
+I've learn so much from each and try to help channel those lessons between groups.
+ 
+transition: And engaging in these broader communities for me started on Twitter.
+ 
+---
+
+&lt;img src="img/horst-welcome_to_rstats_twitter.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst);
+blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code/)
+]
+
+???
+
+and from her little #rstats monsters 
+
+transition: But she is also a lecturer of data science and statistics in an environmental science and management program, and she is an Openscapes Champion. 
+
+
+I joined twitter to learn R because of my teammate Jamie.
+
+And you know me, I was definitely skeptical. I  thought Twitter was a megaphone for angry people. 
+
+But she taught me how to use it to listen and learn from other others. And then to gradually build up the courage to like and retweet things. 
+
+She taught me that liking and retweeting was not only a way to engage with the community yourself, but it was a way to welcome and amplify other people as well.   
+
+So I was amazed that you could have community on Twitter
+
+---
+.pull-left[
+&lt;br&gt;
+&lt;img src="img/tweet-Md_Harris-rnoaa.png" width="100%" /&gt;
+
+.footnote[
+tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
+]
+]
+
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+### My internal monologue: 
+
+**Cool visualization!**  
+**I want to represent my data this way**  
+**He includes [his code](https://gist.github.com/mrecos)!**  
+**Package from [@sckottie](https://twitter.com/sckottie) at [rOpenSci](https://ropensci.org)**  
+**rnoaa is a package making NOAA data more accessible!**  
+]
+
+
+
+---
+class: center, middle
+
+&lt;img src="img/ropensci-butland-welcome.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/tweet-allimoberger-hadley.png" width="60%" /&gt;
+
+.footnote[
+tweet: [@allimoberger](https://twitter.com/allimoberger/status/1085268564821585921)
+blog: [ropensci.org](https://ropensci.org/blog/2017/07/18/value-of-welcome/)
+]
+
+
+???
+
+and then when you combine those tweets with other ideas like the value of welcome 
+
+---
+# rOpenSci &amp; RStudio &amp; RLadies
+
+&lt;img src="img/tweets-ropensci-rstudio-rladies.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+tweets: [@jafflerbach](https://twitter.com/jafflerbach/status/581578558977368064);  [@juliesquid](https://twitter.com/juliesquid/status/694237930991161344); [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/1197169476837498880)
+]
+
+???
+
+Here together to save time and because I'm still trying to figure out how to talk about how important they have been on my life while also keeping my voice steady. 
+
+They welcomed me and empowered me and believed in me before I really understood the importance 
+
+So, rOpenSci, RStudio, RLadies have just ignited such a change in my life.
+
+They have been so welcoming and supportive of me from well before I knew how impactful this would be. 
+
+They have created communities where developers and new users who are strangers become collabortors and friends and where there is deliberate attention to setting the right space to make that happen. 
+
+It was a big deal to not only connect online, but also in person, with so many other people in these communiies. It really solidified that we were part of this. 
+
+And I wanted Openscapes to have this same opportunity
+
+
+RLadies is changing the world. Increasing gender diversity in the R community is so impactful. But I think it's the the beginning. 
+
+RLadies has given me confidence in myself, and made me be a better advocate for women in science. And that is something I try to pass on through Openscapes; I encourage them to become a part of RLadies adn extend its ethos to science. 
+
+transition: The Openscapes cohort has engaged with RLadies and existing coding clubs, and also created new opportunities to code. 
+
+
+---
+class: middle
+.whisper[This isn’t just about coding and GitHub, this is about changing how we do science]
+
+**- Malin Pinsky, Professor at Rutgers University &amp; Openscapes Champion**
+.footnote[
+blog: [openscapes.org](https://www.openscapes.org/blog/2019/04/08/summit-reflections1/)
+]
+
+???
+
+So Malin said that this isn’t just about coding and GitHub, this is about changing how we do science. 
+
+I'm just so excited that they feel this way, because mindset change comes from truly feeling it
+
+transition: There are many more communities that I love but I'm going to talk about one more right now, and that's RLadies
+
+---
+exclude:  TRUE
+class: center, middle
+
+&lt;img src="img/tweet-docfroehlich-rnoaa-full.png" width="60%" style="display: block; margin: auto;" /&gt;
+ 
+.footnote[
+tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/1085990833571020800)
+]
+
+???
+
+Halley has a big science follwing already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
+
+
+---
+exclude: TRUE
+class: center, middle
+&lt;img src="img/tweet-juliesquid-wizard.png" width="100%" /&gt;
+
+.footnote[
+tweet: [@juliesquid](https://twitter.com/juliesquid/status/726521325821431808)
+]
+
+???
+
+transition: So in Openscapes, I encourage everyone to engage, and it's cool to see them 
+
+
+
+---
+class: middle, center
+&lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)   
+]
+
+---
+class: center, middle
+&lt;img src="img/tweet-openscapes-supercharge.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+
+&lt;!---
+**Normalize data discussions • Identify and address shared needs • Think ahead: Future You &amp; Future Us**
+---&gt;
+
+.footnote[
+tweet: [@openscapes](https://twitter.com/openscapes/status/1189996719800373248); source: [*Lowndes et al. 2019*](https://www.nature.com/articles/d41586-019-03335-4)
+]
+
+???
+"Seaside chats", "Hacky hours", Coding clubs/meetups
+
+Establish trust, share challenges &amp; wins, learn together
+
+10-week plan. 
+
+
+---
+exclude: TRUE
+# Build a team mindset
+
+.pull-left[
+### Redefine collaborators
+**Research group as a team** • **Future you, future us**
+
+### Redefine community
+**Online** •  **Beyond your own discipline**
+]
+
+.pull-right[
+&lt;img src="img/horst-seaside-chats.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+### Reimagine challenges
+**Expect there is a better way** • **Approch with confidence, agency, &amp; community** • **You're not alone, it's not too late**  
+
+???
+It's not your fault
+
+---
+exclude: TRUE
+# Enable and support leaderful teams
+
+.pull-left[
+### Learn what's possible, how to teach &amp; lead
+**rOpenSci • RStudio** • **RLadies • Mozilla • The Carpentries**
+
+### Create skill-sharing spaces
+**[Sea]side Chats** • **Coding clubs • Hacky hours/weeks** • **courses** • **webinar movie nights** • **[your awesome idea here]**
+
+.footnote[
+resources: [openscapes.org/resources](https://www.openscapes.org/resources)
+]
+
+]
+
+.pull-right[
+&lt;img src="img/horst-starwars-hands.png" width="75%" /&gt;
+
+**trust** • **resilience** • **overlapping skillsets &amp; interoperability** • **leadership • kindness**  
+
+]
+
+???
+
+Teams to me mean rings of people you respect, innovate with, and can rely upon. It does not have to be limited to a certain deliverable, location, discipline or anything else really. 
+
+This trust really centers on respect for each other and also kindness.
+
+But on an individual level, we all have had to get comfortable with sharing things before they are perfect and being vulnerable to critique, which gets easier when you can assume the best intentions from anyone's feedback. 
+
+But this has resulted in a really positive team culture, where we are comfortable with trying new things &amp; learning from failure, and we are comfortable asking for help. 
+
+---
+exclude: TRUE
+class: center, middle
+# Incremental progress, together
+
+&lt;img src="img/tweet-allimoberger-hadley.png" width="90%" /&gt;
+
+---
+
+class: center, middle
+background-image: url(img/horst-starwars-hands.png)  
+background-size: contain
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)
+]
+
+???
+
+And the awesome thing is that we all have our part to play in helping this change.
+
+We can all welcome and amplify these awesome environmental sicnetists as they in engage in R and join our community, so that we all can benefit from better science in less time. 
+
+---
+# Thank you all so much
+
+.pull-left[
+#### especially for this talk:
+###OHI team &lt;br&gt;Mozilla team&lt;br&gt;Openscapes labs&lt;br&gt;RLadies team
+&lt;br&gt;
+#### Find me for stickers... &lt;img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/&gt; &lt;img src="img/OHI-hex.png" alt="" style="float:right;width:80px;"/&gt;
+]
+
+.pull-right[
+### Art by Allison Horst
+&lt;img src="img/horst_rstudio_air.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+
+
+
+???
+
+Thank you.
+
+---
+
+class: title-slide, right, bottom
+background-image: url(img/horst-starwars-rey.png)
+background-size: contain
+background-position: bottom left 
+
+
+# R for better science in less time
+
+### Julia Stewart Lowndes, PhD
+### Senior Fellow
+### National Center for Ecological Analysis &amp; Synthesis&lt;br&gt;University of California at Santa Barbara, USA
+
+[<i class="fab  fa-twitter "></i> @juliesquid](https://twitter.com/juliesquid)  
+[<i class="fas  fa-paper-plane "></i> lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
+[<i class="fas  fa-desktop "></i> openscapes.org/media](https://openscapes.org/media)
+
+
+&lt;img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/&gt;
+&lt;img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:10",
+"output": null
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

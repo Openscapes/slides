@@ -1,5 +1,5 @@
 ---
-title: "R and teamwork for better science in less time"
+title: "R and teamwork <br>for better science in less time"
 subtitle: 
 author: 'Julia Stewart Lowndes, PhD' 
 role: ''
@@ -488,7 +488,7 @@ source: [*Wright 2019* Why bother with the “open” anyway?](https://medium.co
 
 --
 
-### "It's about technology *enabling* social infrastructure that can promote inclusivity to create kinder science."
+### "...technology enabling social infrastructure that can promote inclusivity to create kinder science"
 
 source: [*Lowndes 2019* Open software means kinder science](https://blogs.scientificamerican.com/observations/open-software-means-kinder-science/)
 
@@ -579,8 +579,7 @@ web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirk
 ???
 These kinds of conversations and communities enable packages like these, from rOpenSci
 
-transition: and when we talk about them in Openscapes it leads to tweets like these 
-
+This is the kind of things we talk about in Openscapes: what are you doing, and what tools are available to help you?
 
 
 ---
@@ -609,7 +608,7 @@ knitr::include_graphics("img/eds-rladies-hex.png")
 This Reinforced shared values
 
 ---
-### Openscapes [Sea]side chats & meetups
+### [Sea]side chats, clubs, & meetups
 ```{r allison-tidytuesday, out.width = '90%', fig.align='center'}
 knitr::include_graphics("img/seasidechats-meetup-montage.png") 
 ```
@@ -629,6 +628,7 @@ We have also coopted the term hackathon, which is when our OHI team we will all 
 
 Some labs have also done hackathons too, and gotten metadata organized and developed onboarding procedures for the lab, so that new teammembers can get on board with the lab's workflow as soon as possible.
 
+<!---consider twitter slides here?from socalR_nexttime --->
 
 ---
 ```{r horst-eco-r4ds}
@@ -728,12 +728,17 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 **3) members have guidance, agency, and support**  
 **4) everyone champions open data science and contributes to growing the community of practice**
 
+### Cohorts enable shared learning, cross-pollination, allies & community
+
 ]
 
 ???
 That's what we were did in this first cohort that I mentioned. Really focused on the teamwork side, but immediately around open data science and iteratively, make this a spiral 
 
 And it's been exciting to not only see changes within labs, but across them, and new UW alliances. 
+
+cohort model enables shared learning, cross-pollination of scientific research, and strengthens the community of practice within and across our research domains. 
+
 
 transition: really focused on enabling others
 
@@ -742,7 +747,7 @@ transition: really focused on enabling others
 
 .pull-left[
 
->"This isn’t just about coding and GitHub, this is about changing how we do science"— Dr. Malin Pinsky, Rutgers
+>"**This isn’t just about coding and GitHub, this is about changing how we do science"— Dr. Malin Pinsky, Rutgers**
 
 
 ```{r dorks, out.width = '70%', fig.align='center'}
@@ -783,6 +788,10 @@ knitr::include_graphics("img/nature-careers-supercharge.png")
 
 <br>
 
+.footnote[
+sources: [Lowndes et al. 2019](https://www.nature.com/articles/d41586-019-03335-4)
+]
+
 <!---
 **Normalize data discussions • Identify and address shared needs • Think ahead: Future You & Future Us**
 --->
@@ -800,7 +809,7 @@ Establish trust, share challenges & wins, learn together
 
 .pull-left[
 ### Redefine collaborators
-**Research group as a team** • **Future you, future us**
+**Research group as a team** • **Future You, Future Us**
 
 ### Redefine community
 **Online** •  **Beyond your own discipline**
@@ -946,23 +955,25 @@ knitr::include_graphics("img/horst-lowndes-loop.png")
 # Thank you all so much
 
 .pull-left[
-#### especially for this talk:
-###OHI team <br>Mozilla team<br>Openscapes Champions<br>Allison Horst
+###OHI team <br>Mozilla team<br>Openscapes Champions<br>#rstats community
+
+### Please get involved: [openscapes.org/contact](https://www.openscapes.org/contact/); [@openscapes](https://openscapes.org)
 
 <br>
 
-####all artwork: [@allison_horst](https://twitter.com/allison_horst)<br>xaringan theme: [@apreshill](https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7)
+####xaringan theme: [@apreshill](https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7)
 
 ]
 
 .pull-right[
+### Art by Allison Horst
+```{r horst-air, out.width = '60%', fig.align='center'}
+knitr::include_graphics("img/horst_rstudio_air.png")
+```
+
 <br>
-<br>
 
-### Please get involved: [openscapes.org/contact](https://www.openscapes.org/contact/); [@openscapes](https://openscapes.org)
-
-
-#### Find me for stickers... <img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:80px;"/>
+#### And I have stickers... <img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:80px;"/>
 ]
 
 ???
@@ -1032,7 +1043,14 @@ tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/10859908335710208
 Halley has a big science following already and now tweets also about open data science, so this is a great example of the influence these champions are already having. 
 
 ---
-```{r rladies-sydney, out.width = '60%', fig.align='center'}
+.pull-left[
+
+<br>
+<br>
+<br>
+<br>
+
+```{r rladies-sydney, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/tweet-apreshill-rladies-sydney.png")
 ```
 
@@ -1040,7 +1058,21 @@ knitr::include_graphics("img/tweet-apreshill-rladies-sydney.png")
 twitter: [@apreshill](https://twitter.com/apreshill/status/1184660994007519232); 
 web: [RLadies Sydney](https://rladiessydney.org/courses/ryouwithme/)
 ]
+]
 
+.pull-right[
+
+<br>
+<br>
+
+```{r wearerladies-sydney, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/tweet-wearerladies-rladiesmelb-thread.png")
+```
+
+.footnote[
+twitter: [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/1225028377280516096)
+]
+]
 ???
 
 https://twitter.com/WeAreRLadies/status/1087741684618809346
