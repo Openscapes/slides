@@ -79,14 +79,14 @@ So I developed Openscapes,
 this builds from nearly 7 years of the OHI
 
 ---
-&lt;img src="img/ohi-illustration-hex.png" width="80%" style="display: block; margin: auto auto auto 0;" /&gt;
+&lt;img src="img/ohi-illustration-hex.png" width="80%" style="display: block; margin: auto;" /&gt;
 
 .pull-left[
 **A scientific method, tool, and community for channeling the best available scientific information into marine policy.**  
 &lt;br&gt;
 **Global assessments annually since 2012**  
 &lt;br&gt;
-**Independent "OHI+" assessments in ~20 geographies**
+**Independent "OHI+" assessments in 20 geographies**
 
 &lt;!---(example: Ecuador, Baltic, Northeast US) ---&gt;
 
@@ -105,7 +105,15 @@ A scientific method, tool, and community for channeling the best available scien
 
 It is being used by the United Nations and by 20 groups around the world. 
 
-transition: But I like to talk about this with analogies from Star Wars 
+There is a lot to it but what is relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team.
+
+But we are marine scientists, and we were never trained to work responsibly with data. 
+
+So we found out the hard way that our default approaches were not reproducible by even ourselves. 
+
+Getting through this involved quite a reckoning, but when we got through it, we knew we had a story to tell. 
+
+transition: I like to talk about this with analogies from Star Wars 
 
 ---
 
@@ -120,17 +128,11 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 ???
 
-This is Luke Skywalker after he crashed his plane on Dagobah. He is there staring at a problem that he can’t solve with the skillsets he has, and it is demoralizing. 
+This is Luke Skywalker after he crashed his plane in the swamp on Degobah.
 
-This plane can represent a lot of things for data analysis. 
-As an individual, it can be data that is too big to be opened in Excel. 
-It can be your self-taught code that you are too ashamed of embarrassed to share
-And as a team, it can be not being able to run code sent by a colleague. 
-It can be the time spent organizing the files your students send you through a mosaic of Google Drive and GitHub links, email attachments, and thumb drives. 
+He cannot solve the the challenge in front of him with the skillsets he has.
 
-For environmental scientists, there are ways big and small that can leave you feeling like Luke here. 
-
-If you imagine what it would be like for Luke if he had used whatever ropes or pulleys he had on hand, it probably wouldn’t have been pretty, reproducible, or gotten him where he needs to be on time.
+He is demoralized and alone. And if you imagine him attempting to use whatever pulleys and ropes he might have with him, you know it wouldn't be pretty, it wouldn't be reproducible, and it probably wouldn't get him where he needs to be on time.
 
 transition: but luckily what happens next is that he meets Yoda
 
@@ -144,20 +146,11 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 ???
 
-But Yoda comes along and can solve Luke's problem in a way Luke never imagined. He uses the Force. And the Force is a powerful skillset and mindset because Luke can see this and learn from Yoda, and he can go on then to not only solve his current but it will broaden his mind to what is possible in the future.
+Yoda uses the Force to solve Luke's problem in a way Luke never imagined was possible.
 
-Open data science is the Force that helps us do better science in less time. It can be:
-As an individual: 
-code in an open source language like R, having your own work be more automated and reproducible 
-And as a team: 
+This is going to open up Luke's whole world because he can learn from Yoda and not only solve his current but it will broaden his mind to what is possible in the future.
 
-coding and coordinating collaboratively with tools like GitHub
-being empowered by open practices and having it be part of the whole research process
-These types of practices not only save time and are more reproducible, but it’s a whole mindset of what is possible as you reduce friction in the day-to-day analyses and become comfortable with the power of these tools. 
-
-So the Force is a powerful thing, but importantly, it is not something that exists on its own.
-
-Transition: But Luke didn't go on to defeat the Empire himself, he had a whole community.
+transition: But Luke didn't go on to defeat the Empire himself, he had a whole community.
 
 ---
 
@@ -174,13 +167,7 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 And this community is powerful because of the diversity of backgrounds and expertise, and although not everyone is a Jedi, everyone contributes in really critical ways.
 
-So in science this can be
-Teaching scientists how to code through university courses and trainings like the Carpentries
-Championing open science by mentioning it in science talks, publications faculty meetings, 
-Funding opportunities for scientists to participate in open science
-Building software to meet scientists where they are
-
-transition: So to recap: 
+transition: So just to recap, 
 
 ---
 
@@ -192,38 +179,20 @@ background-position: bottom left
 
 ???
 
-R is the Force that enables us as scientists to do better science in less time. 
+R is the Force that enables us as scientists to do better science in less time.
 
-It empowers us to get our own data out of the swamp. 
+It empowers us to get our own data out of the swamp.
 
-It empowers us and build off of our confidence and experiences and broaden the scope of scientific challenges that we can tackle, which for environmental scientists, includes food security, disease transmission, and climate change. 
+It empowers us and build off of our confidence and experiences and broaden the scope of scientific challenges that we can tackle, which is relevant whether you are at SCCWRP or anywhere else.
 
+transition: so my talk will really be framed around these ideas: that the software and the teamwork go hand-in-hand.
 
 ---
 &lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
 
 ???
 
-This is my outline. Will talk this through
-
----
-&lt;img src="img/OHI-hex.png" width="55%" style="display: block; margin: auto;" /&gt;
-
-.footnote[
-source: [Halpern et al. 2012](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html); web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
-]
-
-The Ocean Health Index is a scientific endeavor to quantify impacts and benefits of oceans around the world using the best publically available data. 
-
-It is being used by the United Nations and by 20 groups around the world. 
-
-There is a lot to it but what is relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team.
-
-But we are marine scientists, and we were never trained to work responsibly with data. 
-
-So we found out the hard way that our default approaches were not reproducible by even ourselves. 
-
-Getting through this involved quite a reckoning, but when we got through it, we knew we had a story to tell. 
+This is my outline. Will talk this through with concrete examples from OHI, and how I've been turning those lessons learned into mentorship and impact with Openscapes
 
 
 ---
@@ -285,6 +254,26 @@ We couldn't overhaul everything all at once, but focused on different pieces inc
 
 Having all of this coding infrastructure in place is what enables those 20 independent groups I mentioned to study ocean health in the places they care about. 
 
+---
+&lt;img src="img/screenshot-paur-talk-ods.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLtj9u5E9wMxtYuP0T_HxoDnyKw/edit?usp=sharing)
+]
+
+???
+
+---
+exclude: TRUE
+&lt;img src="img/ohi-how-we-work2.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+source: [OHI slides — UW](https://docs.google.com/presentation/d/1LA4EcnRxD11rjwbRh0hrjPG5J0dmiiuCbNaoQrz0XHU/edit?usp=sharing)
+]
+
+???
+
+
 
 ---
 class: center, middle
@@ -345,6 +334,8 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ]
 
 ???
+
+Also made these slides in R!
 
 ---
 &lt;img src="img/horst-lowndes-loop-wtext.png" width="100%" /&gt;
@@ -487,7 +478,7 @@ Bens enabled us to become leaders. horizontal leadership: evolve with the softwa
 ]
 
 ???
-So what do these communities do?
+So what do these communities do? One peek into them through rOpenSci
 
 
 ---
@@ -628,7 +619,7 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 .pull-right[
 ### Teams participate together
 
-**7x labs, leads &amp; members from each lab**
+**7x labs, leads &amp; members from each group**
 
 **1) everyone sees and values what is possible**   
 **2) leads enable members to invest time**  
@@ -955,6 +946,7 @@ https://twitter.com/frau_dr_barber/status/1127189812308369408
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="libs/remark-latest.js"></script>
 <script>var slideshow = remark.create({
+"slideNumberFormat": "",
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false,
