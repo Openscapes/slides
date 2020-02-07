@@ -880,6 +880,28 @@ blog: [openscapes.org](https://www.openscapes.org/blog/2019/01/15/personify-code
 ]
 
 ---
+# An example close to SCCWRP home
+.pull-left[
+```{r tweet-fawda123-tbep, out.width = '70%', fig.align='center'}
+knitr::include_graphics("img/tweet-fawda123-tbep.png")
+```
+
+.footnote[
+tweet thread: [@fawda123](https://twitter.com/fawda123/status/1225760034979708930); github: [github.com/tbep-tech](https://github.com/tbep-tech)
+]
+]
+
+.pull-left[
+```{r tweet-fawda123-tbep2, out.width = '80%', fig.align='center'}
+knitr::include_graphics("img/tweet-fawda123-tbep2.png")
+```
+
+]
+
+]
+
+---
+exclude: TRUE
 ```{r openscapes-arctic, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_openscapes_arctic_1500px.png")
 ```
