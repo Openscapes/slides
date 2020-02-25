@@ -143,44 +143,15 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 ???
 
-To ease us back to this galaxy, the way I have been thinking about it, open data science tools and practices and teamwork & collaboration exist in this feedback loop. 
+So I have been thinking about this in terms of open data science tools and practices and teamwork & collaboration, and that they exist in feedback loop. 
+
+So it's not only the tools like the Force or the anlyticcal power of R that lead to better science in less time, it's also the fact that many other people can use or interplay with these tools. 
 
 Learning and using similar software promotes and streamlines teammwork. And also working as a team better equips you to learn open practices data science.
 
-But as env scientists, we're never taught data science/open practices, and we're not taught to work as a team, even when we are physically sitting with other scientists similar to us in our research groups research group
+So this is going to be my loose outline for the talk, trying to describe more about this. And I'll do that through 2 programs I've been involved in, which I will introduce briefly first. 
 
-So despite this being a really powerful feedback loop, many scientists are outside of it, without clear entry points. 
-
-To set the stage a bit, let me briefly introduce 2 project I'll be talking about today:
-
----
-```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
-```
-
-.pull-left[
-**We champion open practices in science to help uncover data-driven solutions faster.**  
-<br>
-**Champions Program mentors research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
-<br>
-**Operated by NCEAS and incubated by Mozilla** 
-
-]
-
-.pull-right[
-```{r zoom12, out.width = '85%', fig.align='center'}
-knitr::include_graphics("img/Cohort1_zoom.png") 
-```
-
-.footnote[
-web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
-]
-]
-
-???
-So I developed Openscapes, 
-
-this builds from nearly 7 years of the OHI
+We really felt the power of this feedback loop through OHI
 
 ---
 
@@ -225,6 +196,36 @@ Getting through this involved quite a reckoning, but when we got through it, we 
 transition: I like to talk about this with analogies from Star Wars 
 
 ---
+```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
+
+.pull-left[
+**We champion open practices in science to help uncover data-driven solutions faster.**  
+<br>
+**Champions Program mentors research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
+<br>
+**Operated by NCEAS and incubated by Mozilla** 
+
+]
+
+.pull-right[
+```{r zoom12, out.width = '85%', fig.align='center'}
+knitr::include_graphics("img/Cohort1_zoom.png") 
+```
+
+.footnote[
+web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
+]
+]
+
+???
+So I developed Openscapes, 
+
+this builds from nearly 7 years of the OHI
+
+
+---
 ```{r OHI hex, out.width = '55%', fig.align='center'}
 knitr::include_graphics("img/OHI-hex.png")
 ```
@@ -232,19 +233,6 @@ knitr::include_graphics("img/OHI-hex.png")
 .footnote[
 web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
 ]
-
----
-exclude: TRUE 
-```{r loop-toc1, out.width = '100%'}
-knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
-# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
-```
-
-???
-
-This is my outline. Will talk this through with concrete examples from OHI, and how I've been turning those lessons learned into mentorship and impact with Openscapes
-
-
 
 ---
 class: middle, center
