@@ -235,6 +235,7 @@ web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.co
 ]
 
 ---
+exclude: true
 class: middle, center
 ```{r nature-bsilt, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/nature-screenshot-title.png")
