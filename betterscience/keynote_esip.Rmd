@@ -29,8 +29,8 @@ options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = F
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
 
 library(xaringan)
-library(fontawesome) #devtools::install_github("rstudio/fontawesome")
-library(icon) #devtools::install_github("ropenscilabs/icon")
+library(fontawesome) # devtools::install_github("rstudio/fontawesome")
+library(icon) # devtools::install_github("ropenscilabs/icon")
 ```
 
 class: title-slide, right, bottom
@@ -62,12 +62,54 @@ This matters now
 A contributing solution
 
 ---
+This first slide to give a sense of Openscapes could be: 
 
-I'll talk about Openscapes in terms of 
+- "Openscapes complements existing efforts" --- new Allison illustration? OR
+- existing slide below?
 
+but needs to also give concrete: mentoring cohorts of science teams remotely. And citations: OLx, Lowndes 2017, Lowndes 2019
+
+---
+
+```{r openscapes grasslandx2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
+
+.pull-left[
+**We champion open practices in science to help uncover data-driven solutions faster.**  
+<br>
+**Champions Program mentors research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
+<br>
+**Operated by NCEAS and incubated by Mozilla** 
+
+]
+
+.pull-right[
+```{r zoom12, out.width = '85%', fig.align='center'}
+knitr::include_graphics("img/Cohort1_zoom.png") 
+```
+
+.footnote[
+web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
+]
+]
+
+???
+
+---
+
+```{r openscapes grassland banner, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
+
+I'll talk about Openscapes relevant for ESIP in terms of these
+
+--
+
+(Animate across 2 columns)
 - Entryways
 - Behavior change
-- Teams and community
+- Teamwork/Teams and community
 - Communication
 
 But first I want to give a sense of how it feels to be a researcher . 
@@ -151,7 +193,18 @@ It empowers us and build off of our confidence and experiences and broaden the s
 
 transition: so my talk will really be framed around these ideas: that the software and the teamwork go hand-in-hand.
 
+---
 
+# Entryways
+
+Data sience is an entryway into open science
+
+- OHI figure 1: we needed efficiency and collaboration, found this with open source tools. 
+
+---
+# Entryways
+
+- powerful feedback loop, need to find welcoming entryways
 
 ```{r loop-wtext, out.width = '100%'}
 knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
@@ -175,34 +228,34 @@ So despite this being a really powerful feedback loop, many scientists are outsi
 To set the stage a bit, let me briefly introduce 2 project I'll be talking about today:
 
 ---
-```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
-```
+# Behavior change
 
-.pull-left[
-**We champion open practices in science to help uncover data-driven solutions faster.**  
-<br>
-**Champions Program mentors research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
-<br>
-**Operated by NCEAS and incubated by Mozilla** 
+- analogy to exercise?
+- Kindness. Empathy. Culture change. 
+- Data science is the entryways, but once you're already on your way, do more. Especially important now #BlackLivesMatter
+- In openscapes we focus on team culture first. 
+- Open science is about building trust, getting comfortable with imperfection. Unlearning and relearning, being deliberate. 
+And this starts with teams. 
 
-]
+---
+# Teamwork and community
 
-.pull-right[
-```{r zoom12, out.width = '85%', fig.align='center'}
-knitr::include_graphics("img/Cohort1_zoom.png") 
-```
+- create brave spaces
+- model behavior
+- redefine collaborators ---> see eSciences slide
+- Future You, Future Us. Allies
 
-.footnote[
-web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
-]
-]
+---
+# Communication
 
-???
-So I developed Openscapes, 
+- reimagined scicomm
+- open web
+- Twitter
+- sharing work
+- entryway to open publishing: OpenPubFest slides
 
-this builds from nearly 7 years of the OHI
-
+---
+Blank
 ---
 ```{r ohi-banner, out.width = '80%', fig.align='center'}
 knitr::include_graphics("img/ohi-illustration-hex.png")
