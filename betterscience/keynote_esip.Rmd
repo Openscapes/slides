@@ -54,6 +54,21 @@ background-position: bottom left
 ???
 
 ---
+Title: 
+Make it welcoming: team- and community-based entryways to open data science
+
+Make it welcoming: team and community entryways to open data science
+
+Make it welcoming: team and community entryways to open data science
+
+Make it awesome: welcoming entryways to open science
+
+Entryways to open data science and the power of welcome
+
+Data as an entryway to open science and the power of welcome
+
+
+MIMI
 
 The problem
 
@@ -136,6 +151,9 @@ He cannot solve the the challenge in front of him with the skillsets he has.
 
 He is demoralized and alone. And if you imagine him attempting to use whatever pulleys and ropes he might have with him, you know it wouldn't be pretty, it wouldn't be reproducible, and it probably wouldn't get him where he needs to be on time.
 
+SPECIFIC:: in this context, sharing data upon publication is a additional burden. Because you're struggling with it in tll the steps previous. Not comfortable computing, perhaps interneting/taking advantage of the open web. 
+
+
 transition: but luckily what happens next is that he meets Yoda
 
 ---
@@ -202,9 +220,26 @@ Data sience is an entryway into open science
 - OHI figure 1: we needed efficiency and collaboration, found this with open source tools. 
 
 ---
+Gym example; 
+
+What are these entryways? 3 entryways for researchers to get into open science
+
+- Team mindset: Future Us talking about it in teams
+- Data science. what do i mean: where do we put data? coding. Good Enough Practices. 
+- Communication/ community
+
+These are just 3 but many more. There are many other ways. We need to invest time in people, 
+
+There's this sense that if we create enough toolsl and infrastruure but we need to think about entryways. 
+
+Star Wars needs to be early. 
+
+
 # Entryways
 
 - powerful feedback loop, need to find welcoming entryways
+- Value of Welcome
+- not "get researchers to do this". "welcome them"
 
 ```{r loop-wtext, out.width = '100%'}
 knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
@@ -230,16 +265,36 @@ To set the stage a bit, let me briefly introduce 2 project I'll be talking about
 ---
 # Behavior change
 
-- analogy to exercise?
+- analogy to exercise? -- could keep this short
+sometimes we think if iwe create the infrastructuire that people will be excited about it. But that's the same as saying that if we have gyms and workout clothes and equipment that everyone will exercise. 
+So to get participate we need to do something more. 
+
+
+
+  - I'm going to offer an analogy that I've been thinking about
+  - predisposed: exposure to sports as a kid, fluency with computers, participaing in open stuff online (instagram? tyoutubing for DIY? or not?)
+  - probably really great tools out there that you don't know about: better shoes, bathing suits that are more hydrodynamic, etc. but might not be the most necessary/welcoming entryway for someone trying to make time for it in their day.
+  - people read statistics of how exercise makes you healthier, lowers your blood pressure, etc. And they know that infrastructure is there: gyms, running tracks, hiking trails, and tools: running shoes, sports bras, fitbits. But what transforms someone from thinking they should exercise regularly to someone who does exercise regulary? What will get them out of bed earlier, carve time out of their already busy day? I think that it has to have a daily benefit. It has to be awesome
+  - might have had an injury or scarring experience before. what will help them try again (injury could be a pulled hamstring or the fear that someone would reuse your data improperly)
+  - OK and to take this analogy a bit further: let's talk specifically about Yoga. Yoga can mean a lot of different things to different people, including the amount of spirituality/meditation vs strength building vs balance and stretching. And it is also something that can be considered gendered. Depending on your exposure to it, these biases might cause you do dismiss Yoga as a way to practice exercise, just like how folks have interpreted open science/data can lead them to dismiss or embrace. 
+  - Early adopters graphic?
+
+So how do we think about creating change? What helps people start exercising, or engaging in open science?
+
+
+
 - Kindness. Empathy. Culture change. 
 - Data science is the entryways, but once you're already on your way, do more. Especially important now #BlackLivesMatter
 - In openscapes we focus on team culture first. 
 - Open science is about building trust, getting comfortable with imperfection. Unlearning and relearning, being deliberate. 
+Touch on antiracist. Thinking we're being kind and inclusive is different from being antiracist. want to do better
+
 And this starts with teams. 
 
 ---
 # Teamwork and community
 
+- TOO MUCH to do alone. 
 - create brave spaces
 - model behavior
 - redefine collaborators ---> see eSciences slide
@@ -248,13 +303,34 @@ And this starts with teams.
 ---
 # Communication
 
-- reimagined scicomm
+- reimagined scicomm. same workflow for data analysis is for publishing. My personal mindset has changed from this, and I ask scientsts how they share their work outside of peer-reviewd articles.
 - open web
 - Twitter
 - sharing work
 - entryway to open publishing: OpenPubFest slides
 
 ---
+# Open data science
+
+Open data science means a lot to me. I've defined it as x, and y, but it also includes open web, computing savviness, empathy, self-improvement, inclusion, etc. teams. 
+
+Thinking about it this way, we can find entryways and welcome folks to participate. thank you.
+
+R4DS
+
+These are things that I've been thinking about that I think are important. 
+
+End: power of welcome. includes listening, getting to know your audience
+
+Polished needs to be important, don't frame it as 
+Julie feels more ocnfident in not describing in half baked ideas. 
+
+These are things that work and this is the opportunity to make it more widespead
+
+---
+
+
+
 Blank
 ---
 ```{r ohi-banner, out.width = '80%', fig.align='center'}
