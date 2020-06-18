@@ -1,5 +1,5 @@
 ---
-title: "R and teamwork <br>for better science in less time"
+title: "Entryways to open data science and the power of welcome"
 subtitle: 
 author: 'Julia Stewart Lowndes, PhD' 
 role: ''
@@ -54,82 +54,54 @@ background-position: bottom left
 ???
 
 ---
-Title: 
-Make it welcoming: team- and community-based entryways to open data science
+# Loop. 
 
-Make it welcoming: team and community entryways to open data science
-
-Make it welcoming: team and community entryways to open data science
-
-Make it awesome: welcoming entryways to open science
-
-Entryways to open data science and the power of welcome
-
-Data as an entryway to open science and the power of welcome
-
-
-MIMI
-
-The problem
-
-This matters now
-
-A contributing solution
-
----
-This first slide to give a sense of Openscapes could be: 
-
-- "Openscapes complements existing efforts" --- new Allison illustration? OR
-- existing slide below?
-
-but needs to also give concrete: mentoring cohorts of science teams remotely. And citations: OLx, Lowndes 2017, Lowndes 2019
-
----
-
-```{r openscapes grasslandx2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
-```
-
-.pull-left[
-**We champion open practices in science to help uncover data-driven solutions faster.**  
-<br>
-**Champions Program mentors research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
-<br>
-**Operated by NCEAS and incubated by Mozilla** 
-
-]
-
-.pull-right[
-```{r zoom12, out.width = '85%', fig.align='center'}
-knitr::include_graphics("img/Cohort1_zoom.png") 
+```{r loop-wtext, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
 ```
 
 .footnote[
-web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
-]
+art: [@allison_horst](https://twitter.com/allison_horst)   
 ]
 
 ???
 
+This is how we think open science should work, reinforcing. 
+Infrastructure is not enough
+
+(The problem, This matters now, A contributing solution)
+
+
+
 ---
+Entryways are important. 
+ I'll talk about 
+- data science
+- teamwork
+- open web
 
-```{r openscapes grassland banner, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
-```
+but first let's talk about how it feels as researchers 
 
-I'll talk about Openscapes relevant for ESIP in terms of these
+???
+Gym example; 
 
---
+What are these entryways? 3 entryways for researchers to get into open science
 
-(Animate across 2 columns)
-- Entryways
-- Behavior change
-- Teamwork/Teams and community
-- Communication
+- Team mindset: Future Us talking about it in teams
+- Data science. what do i mean: where do we put data? coding. Good Enough Practices. 
+- Communication/ community
 
-But first I want to give a sense of how it feels to be a researcher . 
+These are just 3 but many more. There are many other ways. We need to invest time in people, 
 
-Star Wars analogy. We get into environ science because we are passionate and we care, we have big wins that encourage us and get us into grad school, grants, and jobs, but we can really easily get demoralized when it comes to data. 
+There's this sense that if we create enough toolsl and infrastruure but we need to think about entryways. 
+
+Star Wars needs to be early. 
+
+- analogy to exercise? -- could keep this short
+sometimes we think if iwe create the infrastructuire that people will be excited about it. But that's the same as saying that if we have gyms and workout clothes and equipment that everyone will exercise. 
+So to get participate we need to do something more. 
+
 
 ---
 
@@ -203,6 +175,8 @@ background-position: bottom left
 
 ???
 
+This is how we want folks to feel about open science. 
+
 R is the Force that enables us as scientists to do better science in less time.
 
 It empowers us to get our own data out of the swamp.
@@ -212,43 +186,77 @@ It empowers us and build off of our confidence and experiences and broaden the s
 transition: so my talk will really be framed around these ideas: that the software and the teamwork go hand-in-hand.
 
 ---
-
-# Entryways
+# data science
 
 Data sience is an entryway into open science
 
 - OHI figure 1: we needed efficiency and collaboration, found this with open source tools. 
 
+R. 
+Github
+communication
+
+
+- Data science is the entryways, but once you're already on your way, do more. Especially important now #BlackLivesMatter
+- In openscapes we focus on team culture first. 
+- Open science is about building trust, getting comfortable with imperfection. Unlearning and relearning, being deliberate. 
+Touch on antiracist. Thinking we're being kind and inclusive is different from being antiracist. want to do better
+
+And this starts with teams. 
+
+
 ---
-Gym example; 
+# teamwork.
 
-What are these entryways? 3 entryways for researchers to get into open science
+openscapes creates space
+sets norms for talking
+identifying problems
 
-- Team mindset: Future Us talking about it in teams
-- Data science. what do i mean: where do we put data? coding. Good Enough Practices. 
-- Communication/ community
+- Kindness. Empathy. Culture change. 
 
-These are just 3 but many more. There are many other ways. We need to invest time in people, 
+**Teamwork and community**
 
-There's this sense that if we create enough toolsl and infrastruure but we need to think about entryways. 
+- TOO MUCH to do alone. 
+- create brave spaces
+- model behavior
+- redefine collaborators ---> see eSciences slide
+- Future You, Future Us. Allies
 
-Star Wars needs to be early. 
+
+---
+
+This first slide to give a sense of Openscapes could be: 
+
+- "Openscapes complements existing efforts" --- new Allison illustration? OR
+- existing slide below?
+
+but needs to also give concrete: mentoring cohorts of science teams remotely. And citations: OLx, Lowndes 2017, Lowndes 2019
 
 
-# Entryways
+---
+# Open web / Communication
+
+- reimagined scicomm. same workflow for data analysis is for publishing. My personal mindset has changed from this, and I ask scientsts how they share their work outside of peer-reviewd articles.
+- open web
+- Twitter
+- sharing work
+- entryway to open publishing: OpenPubFest slides
+
+---
+
+---
+# Value of welcome
 
 - powerful feedback loop, need to find welcoming entryways
 - Value of Welcome
 - not "get researchers to do this". "welcome them"
 
-```{r loop-wtext, out.width = '100%'}
-knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
-# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
-```
 
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst)   
-]
+---
+FIN
+
+
+---
 
 ???
 
@@ -262,15 +270,41 @@ So despite this being a really powerful feedback loop, many scientists are outsi
 
 To set the stage a bit, let me briefly introduce 2 project I'll be talking about today:
 
+```{r openscapes grasslandx2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
+
+.pull-left[
+**We champion open practices in science to help uncover data-driven solutions faster.**  
+<br>
+**Champions Program mentors research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
+<br>
+**Operated by NCEAS and incubated by Mozilla** 
+
+]
+
+.pull-right[
+```{r zoom12, out.width = '85%', fig.align='center'}
+knitr::include_graphics("img/Cohort1_zoom.png") 
+```
+
+.footnote[
+web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
+]
+]
+
+???
+
 ---
-# Behavior change
 
-- analogy to exercise? -- could keep this short
-sometimes we think if iwe create the infrastructuire that people will be excited about it. But that's the same as saying that if we have gyms and workout clothes and equipment that everyone will exercise. 
-So to get participate we need to do something more. 
-
+```{r openscapes grassland banner, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
+```
 
 
+
+---
+# Behavior change / full exercise analogy
   - I'm going to offer an analogy that I've been thinking about
   - predisposed: exposure to sports as a kid, fluency with computers, participaing in open stuff online (instagram? tyoutubing for DIY? or not?)
   - probably really great tools out there that you don't know about: better shoes, bathing suits that are more hydrodynamic, etc. but might not be the most necessary/welcoming entryway for someone trying to make time for it in their day.
@@ -281,33 +315,6 @@ So to get participate we need to do something more.
 
 So how do we think about creating change? What helps people start exercising, or engaging in open science?
 
-
-
-- Kindness. Empathy. Culture change. 
-- Data science is the entryways, but once you're already on your way, do more. Especially important now #BlackLivesMatter
-- In openscapes we focus on team culture first. 
-- Open science is about building trust, getting comfortable with imperfection. Unlearning and relearning, being deliberate. 
-Touch on antiracist. Thinking we're being kind and inclusive is different from being antiracist. want to do better
-
-And this starts with teams. 
-
----
-# Teamwork and community
-
-- TOO MUCH to do alone. 
-- create brave spaces
-- model behavior
-- redefine collaborators ---> see eSciences slide
-- Future You, Future Us. Allies
-
----
-# Communication
-
-- reimagined scicomm. same workflow for data analysis is for publishing. My personal mindset has changed from this, and I ask scientsts how they share their work outside of peer-reviewd articles.
-- open web
-- Twitter
-- sharing work
-- entryway to open publishing: OpenPubFest slides
 
 ---
 # Open data science
