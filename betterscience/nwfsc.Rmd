@@ -26,8 +26,6 @@ output:
 # TODO::::: replace ESIP loop for the "team traits" slides
 
 ---
-This is a story about data science, open science, teamwork, and inclusion
----
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = FALSE)
@@ -58,6 +56,40 @@ background-position: bottom left
 
 ???
 
+Thank you so much. I'm 
+
+NOAA PhD work
+
+---
+## PhD research with NOAA SWFSC
+```{r sq-tag2, out.width = '40%', fig.align='center'}
+knitr::include_graphics("img/*JulieReleaseAugerIMG_9311-crop.png")
+# *JulieReleaseAugerIMG_9397.jpg # release to water
+# *IMG_9268.JPG # measure
+```
+
+.footnote[
+photo: Greg Auger 
+]
+
+???
+
+I am actually a squid ecologist, which is why many of you know me as juliesquid. 
+
+That is me on the right, holding a squid that can be nearly as big as I am. 
+
+We caught it and I am releasing it alive back into the ocean with a little electronic tag on it. The tag turns this squid little oceanographer, because it will collect data about it environment as it swims through the ocean. i collected data every second, which means I could actually see the squid breathe, since its breathing and movement are coupled through jet propulsion. 
+
+My whole PhD research group focused on squid. We were interested because squid have huge impact on ecosystems since they eat a lot and grow quickly and they also have huge impact on economies because globally there is such high consumption of calamari. In our lab some focused on ecology like me, others on locomotion, camouflage, or early life development. 
+
+---
+class: inverse
+## This is a story about...
+<br>
+
+### open data science
+### teamwork & community
+### empowerment & inclusion
 
 ---
 
@@ -137,10 +169,31 @@ It empowers us and build off of our confidence and experiences and broaden the s
 transition: so my talk will really be framed around these ideas: that the software and the teamwork go hand-in-hand.
 
 ---
-```{r loop-wtext, out.width = '100%'}
-knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
-# https://docs.google.com/presentation/d/13JkwCiXjfZfNucAsDwHI6FdEvpOngCv50cjnT7HXJK8/edit#slide=id.g625ce81eb0_0_1645
+class: middle, center
+```{r nature-bsilt0, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/nature-screenshot-title.png")
 ```
+
+.footnote[
+source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160); web: [ohi-science.org/betterscienceinlesstime](http://ohi-science.org/betterscienceinlesstime/)
+]
+
+???
+
+Figuring out was a big enough deal that we published this in Nature Ecology & Evolution. 
+
+What made it unique: we shared our struggles, and described the transition
+
+---
+## Open data science
+
+```{r loop-wtext, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-w-esiptext.png")
+# https://docs.google.com/presentation/d/1DjrMaEOw1F7zAIEXq3ZjiiyaqVAjydLyYww7huGfch8/edit#slide=id.g8b762bd836_0_4884
+```
+
+**the tooling and people enabling reproducible, transparent, and inclusive practices for data analysis**
+
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)   
@@ -158,8 +211,10 @@ So this is going to be my loose outline for the talk, trying to describe more ab
 
 We really felt the power of this feedback loop through OHI
 
----
 
+
+---
+exclude:TRUE
 ```{r ohi-banner, out.width = '80%', fig.align='center'}
 knitr::include_graphics("img/ohi-illustration-hex.png")
 ```
@@ -201,6 +256,7 @@ Getting through this involved quite a reckoning, but when we got through it, we 
 transition: I like to talk about this with analogies from Star Wars 
 
 ---
+exclude:TRUE
 ```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
 ```
@@ -240,6 +296,7 @@ web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.co
 ]
 
 ---
+exclude: TRUE
 class: middle, center
 ```{r nature-bsilt, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/nature-screenshot-title.png")
@@ -276,8 +333,36 @@ We couldn't overhaul everything all at once, but focused on different pieces inc
 Having all of this coding infrastructure in place is what enables those 20 independent groups I mentioned to study ocean health in the places they care about. 
 
 ---
+### More reproducibility & collaboration, less time
+.pull-left[
+<br>
+```{r fig 1-whiteoutss, out.width = '100%'}
+knitr::include_graphics("img/bsilt-fig1-simple.png")
+```
+]
 
-REPLACE SOMETHING? 
+.pull-right[
+<br>
+- **Motivated by reproducibility for "data preparation" aka data wrangling**
+
+- **Blown away by collaboration and communication**
+]
+.footnote[
+source: [*Lowndes et al. 2017* Our path  to better science in less time using open data science tools](https://www.nature.com/articles/s41559-017-0160)
+]
+
+???
+An example of this in action is with the Ocean Health Index, where open data science enabled us to do better science in less time and reimagine what is possible. I’ve worked with the Ocean Health Index since 2013 and there is a lot to say about it but what’s relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team. And, because we are a team of marine ecologists, we all came with varying levels of self-taught analytical experience. 
+
+Animate: This is what better science in less time looks like for us. Over 4 years we incrementally introduced the tooling like open source coding into our workflow and established team norms. It meant changing the ways that we had always worked during our whole careers, and it was intimidating, because before we started we were like Luke when he just crashed – we couldn’t imagine what was possible and didn’t have confidence that we could do it ourselves. 
+
+But we were able to do this because we had several entryways. 
+
+animate: The things that benefitted us the most was leadership and trust. A culture of horizontal leadership enabled a team member who knew the tooling to champion it within our team, and for the rest of us to become comfortable with both the benefits and investment it required. We learned from the global R community, and established weekly team meetings where we would co-learn together.
+
+This investment paid off and we had time to focus on new innovation in our science and enable others to build off our work through these new channels. The OHI R package has supported 20 groups around the world that are tailoring our methods to do data-informed ocean management to their own waters, which was unimaginable in the way we worked previously. 
+
+transition: pause
 
 ---
 exclude: TRUE
@@ -354,7 +439,18 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## R + Github for docs, publishing & websites
+## RMarkdown: reproducible, updatable reports
+
+```{r rmd-openpubfest, out.width = '100%'}
+knitr::include_graphics("img/rmd-openpubfest.png")
+```
+
+.footnote[
+source: [Lowndes & Tierney 2020, Open Pub Fest](https://docs.google.com/presentation/d/1Jv0akRHEnjG_4t_9P7t93682BCBJskYnRu_7EnaeDQI/edit?usp=sharing)
+]
+
+---
+## RMarkdown for docs, publishing & websites
 ```{r workflow-ex-comm-wtext, out.width = '100%'}
 knitr::include_graphics("img/workflow-ex-comm-wtext.png")
 ```
@@ -366,7 +462,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## R + Github for interactive dashboards
+## Shiny for interactive dashboards
 
 ```{r shiny-ne, out.width = '90%', fig.align='center'}
 knitr::include_graphics("img/jafflerbach-shiny-ne.png") 
@@ -381,23 +477,9 @@ inspiration: [Imagine Boston](https://analytics.boston.gov/app/imagine-boston)
 
 And when we are working closely with partners who are engaged with data analysis decisions, we have been able to create dashboards as well. 
 
----
-exclude: TRUE
-## R + Github for fancier websites
-```{r openscapes-web, out.width = '80%', fig.align='center'}
-knitr::include_graphics("img/web-blogdown-openscapes.png") 
-```
-
-.footnote[
-web (blogdown): [openscapes.org](https://openscapes.org)
-]
-
-???
-
-Additionally, these tools have been amazing for blogging and sharing Openscapes stories
 
 ---
-## R + Github for slides!
+## RMarkdown for slides!
 ```{r user-xaringan, out.width = '80%', fig.align='center'}
 knitr::include_graphics("img/user-keynote-titleslide.png") 
 ```
@@ -412,13 +494,14 @@ And for fun, for creating talks at useR
 
 transition: 
 
----
-# Community showcase
 
 ---
-rOpenSci, rnoaa, noam gams, ggplot flipbook, R for Excel users
-Josh London
-Megsie?
+class: inverse, center, middle
+## The \#rstats community is incredible
+
+<br>
+
+### A few examples...
 
 ---
 ```{r ropensci-janitor-redoc, out.width = '100%', fig.align='center'}
@@ -436,8 +519,17 @@ These kinds of conversations and communities enable packages like these, from rO
 This is the kind of things we talk about in Openscapes: what are you doing, and what tools are available to help you?
 
 ---
+rOpenSci, rnoaa, noam gams, ggplot flipbook, R for Excel users
+Josh London
+Megsie?
+
+
+
+---
+## Open data science
+
 ```{r loop-wtext2, out.width = '100%'}
-knitr::include_graphics("img/horst-lowndes-loop-wtext.png")
+knitr::include_graphics("img/horst-lowndes-loop-w-esiptext.png")
 ```
 
 .footnote[
@@ -541,7 +633,9 @@ source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLt
 
 
 ---
-```{r loop-how-we-work, out.width = '100%', fig.align='center'}
+<br>
+
+```{r loop-how-we-work1, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_loop_how_we_work_esip.png") 
 ```
 
@@ -557,6 +651,8 @@ animate: The things that benefitted us the most was leadership and trust. A cult
 This investment paid off and we had time to focus on new innovation in our science and enable others to build off our work through these new channels. The OHI R package has supported 20 groups around the world that are tailoring our methods to do data-informed ocean management to their own waters, which was unimaginable in the way we worked previously. 
 
 transition: pause
+
+It's about kindness, inclusion, and belonging.
 
 
 ---
@@ -638,8 +734,8 @@ knitr::include_graphics("img/horst_grassland_text_esip.png")
 **trust** • **resilience** • **overlapping skillsets & interoperability** • **leadership • kindness**  
 
 ---
-class: center, middle
-##“If you want to learn to write, you read a lot, if you want to play music, you listen a lot. It’s hard to do this with data analysis.” 
+class: inverse, center, middle
+##“If you want to learn to write, you read a lot, <br>if you want to play music, you listen a lot. <br>It’s hard to do this with data analysis.” 
 
 **Hilary Parker & Roger Peng, RStudio::conf(2020) keynote & NSSD podcast episode 100**
 
