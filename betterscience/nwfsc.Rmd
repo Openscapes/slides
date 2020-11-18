@@ -56,12 +56,12 @@ background-position: bottom left
 
 ???
 
-Thank you so much. I'm 
+Thank you so much. I'm really excited to be here today to talk about R and teamwork for better science in less time. 
 
-NOAA PhD work
+As an aside before I dive in, 
 
 ---
-## PhD research with NOAA SWFSC
+## My PhD research with NOAA SWFSC
 ```{r sq-tag2, out.width = '40%', fig.align='center'}
 knitr::include_graphics("img/*JulieReleaseAugerIMG_9311-crop.png")
 # *JulieReleaseAugerIMG_9397.jpg # release to water
@@ -69,18 +69,14 @@ knitr::include_graphics("img/*JulieReleaseAugerIMG_9311-crop.png")
 ```
 
 .footnote[
-photo: Greg Auger 
+photo: Greg Auger. [reproducibility story](https://www.nature.com/articles/d41586-018-05990-5) 
 ]
 
 ???
 
-I am actually a squid ecologist, which is why many of you know me as juliesquid. 
+I did a lot of my PhD research with colleagues at NOAA Southwest Center. I did field work with John Field, who's pictured here, where we put electronic pop-up tags on Humboldt squid off the coast of California. And it was Steven Bograd and Dave Foley were helped me learn how to code so I could make sense of all the data we got back. 
 
-That is me on the right, holding a squid that can be nearly as big as I am. 
-
-We caught it and I am releasing it alive back into the ocean with a little electronic tag on it. The tag turns this squid little oceanographer, because it will collect data about it environment as it swims through the ocean. i collected data every second, which means I could actually see the squid breathe, since its breathing and movement are coupled through jet propulsion. 
-
-My whole PhD research group focused on squid. We were interested because squid have huge impact on ecosystems since they eat a lot and grow quickly and they also have huge impact on economies because globally there is such high consumption of calamari. In our lab some focused on ecology like me, others on locomotion, camouflage, or early life development. 
+This was the start of my data and coding journey, where I learned how importanting coding and reproducibility was. and it's been over eight years since I finished my PhD and have been at NCEAS. So what I want to talk about today:
 
 ---
 class: inverse
@@ -93,6 +89,9 @@ class: inverse
 ## A contributing solution
 ### Reframe data analysis as a collaborative effort. 
 ### Build for resilience, inclusion, teams, and community.
+
+???
+So I like to talk about this with star wars analogies.
 
 ---
 
@@ -108,11 +107,9 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 
 ???
 
-This is Luke Skywalker after he crashed his plane in the swamp on Dagobah.
+We've all felt like Luke Skywalker here with data analysis, when we can't solve the the challenge in front of us with the skillsets we have.
 
-He cannot solve the the challenge in front of him with the skillsets he has.
-
-He is demoralized and alone. And if you imagine him attempting to use whatever pulleys and ropes he might have with him, you know it wouldn't be pretty, it wouldn't be reproducible, and it probably wouldn't get him where he needs to be on time.
+It is demoralizing and lonely. And if you imagine Luke attempting to use whatever pulleys and ropes he might have with him, you know it wouldn't be pretty, it wouldn't be reproducible or reusable, and it probably wouldn't get him where he needs to be on time.
 
 transition: but luckily what happens next is that he meets Yoda
 
@@ -132,7 +129,7 @@ Yoda uses the Force to solve Luke's problem in a way Luke never imagined was pos
 
 This is going to open up Luke's whole world because he can learn from Yoda and not only solve his current but it will broaden his mind to what is possible in the future.
 
-transition: But Luke didn't go on to defeat the Empire himself, he had a whole community.
+transition: Luke didn't have to derive the Force on his own, and he didn't go on to defeat the Empire himself, he had a whole community.
 
 ---
 ```{r hands} 
@@ -163,29 +160,13 @@ background-position: bottom left
 
 ???
 
-R is the Force that enables us as scientists to do better science in less time.
+Open data science is the Force that enables us as scientists to do better science in less time. For me, R is a bit part of this as you'll see.
 
-It empowers us to get our own data out of the swamp.
+R and friends empowers us to get our own data out of the swamp.
 
-It empowers us and build off of our confidence and experiences and broaden the scope of scientific challenges that we can tackle, which is relevant whether you are at SCCWRP or anywhere else.
+It empowers us and build off of our confidence and experiences and broaden the scope of scientific challenges that we can tackle, which is relevant whether you are at NOAA or anywhere else.
 
 transition: so my talk will really be framed around these ideas: that the software and the teamwork go hand-in-hand.
-
----
-class: middle, center
-```{r nature-bsilt0, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/nature-screenshot-title.png")
-```
-
-.footnote[
-source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160); web: [ohi-science.org/betterscienceinlesstime](http://ohi-science.org/betterscienceinlesstime/)
-]
-
-???
-
-Figuring out was a big enough deal that we published this in Nature Ecology & Evolution. 
-
-What made it unique: we shared our struggles, and described the transition
 
 ---
 ## Open data science
@@ -203,6 +184,7 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 ]
 
 ???
+I define ODS>..
 
 So I have been thinking about this in terms of open data science tools and practices and teamwork & collaboration, and that they exist in feedback loop. 
 
@@ -210,83 +192,7 @@ So it's not only the tools like the Force or the anlyticcal power of R that lead
 
 Learning and using similar software promotes and streamlines teammwork. And also working as a team better equips you to learn open practices data science.
 
-So this is going to be my loose outline for the talk, trying to describe more about this. And I'll do that through 2 programs I've been involved in, which I will introduce briefly first. 
-
-We really felt the power of this feedback loop through OHI
-
-
-
----
-exclude:TRUE
-```{r ohi-banner, out.width = '80%', fig.align='center'}
-knitr::include_graphics("img/ohi-illustration-hex.png")
-```
-
-.pull-left[
-**A scientific method, tool, and community for channeling the best available scientific information into marine policy.**  
-<br>
-**Global assessments annually since 2012**  
-<br>
-**Independent OHI+ assessments in 20 geographies**
-
-<!---(example: Ecuador, Baltic, Northeast US) --->
-
-.footnote[
-source: [*Halpern et al. 2012*: An Index to assess the health and benefits of the global ocean](http://www.nature.com/nature/journal/v488/n7413/full/nature11397.html); web: [ohi-science.org](http://ohi-science.org)
-]
-]
-
-.pull-right[
-```{r teamx2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ohi-team-2018b-crop.jpeg") 
-```
-]
-
-???
-
-A scientific method, tool, and community for channeling the best available scientific information into marine policy.
-
-It is being used by the United Nations and by 20 groups around the world. 
-
-There is a lot to it but what is relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team.
-
-But we are marine scientists, and we were never trained to work responsibly with data. 
-
-So we found out the hard way that our default approaches were not reproducible by even ourselves. 
-
-Getting through this involved quite a reckoning, but when we got through it, we knew we had a story to tell. 
-
-transition: I like to talk about this with analogies from Star Wars 
-
----
-exclude:TRUE
-```{r openscapes grasslandx, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
-```
-
-.pull-left[
-**We champion open practices in science to help uncover data-driven solutions faster.**  
-<br>
-**Champions Program mentors research teams to help build mindsets and habits around open data science, and grow the community of practice.**  
-<br>
-**Operated by NCEAS and incubated by Mozilla** 
-
-]
-
-.pull-right[
-```{r zoom12, out.width = '85%', fig.align='center'}
-knitr::include_graphics("img/Cohort1_zoom.png") 
-```
-
-.footnote[
-web: [openscapes.org](https://openscapes); twitter: [@openscapes](https://twitter.com/openscapes)
-]
-]
-
-???
-So I developed Openscapes, 
-
-this builds from nearly 7 years of the OHI
+So let's talk about this
 
 ---
 ```{r OHI hex, out.width = '55%', fig.align='center'}
@@ -301,7 +207,6 @@ web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.co
 An example of this in action is with the Ocean Health Index, where open data science enabled us to do better science in less time and reimagine what is possible. I’ve worked with the Ocean Health Index since 2013 and there is a lot to say about it but what’s relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team. And, because we are a team of marine ecologists, we all came with varying levels of self-taught analytical experience. 
 
 ---
-exclude: TRUE
 class: middle, center
 ```{r nature-bsilt, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/nature-screenshot-title.png")
