@@ -58,7 +58,7 @@ background-position: bottom left
 
 Thank you so much. I'm really excited to be here today to talk about R and teamwork for better science in less time. 
 
-As an aside before I dive in, 
+I'm so happy to have the chance to speak with you all today because —
 
 ---
 ## My PhD research with NOAA SWFSC
@@ -74,7 +74,7 @@ photo: Greg Auger. [reproducibility story](https://www.nature.com/articles/d4158
 
 ???
 
-I did a lot of my PhD research with colleagues at NOAA Southwest Center. I did field work with John Field, who's pictured here, where we put electronic pop-up tags on Humboldt squid off the coast of California. And it was Steven Bograd and Dave Foley were helped me learn how to code so I could make sense of all the data we got back. 
+I did a lot of my PhD research with colleagues at NOAA Southwest Center. I did field work with John Field, who's pictured here, where we put electronic pop-up tags on Humboldt squid off the coast of California. And it was Steven Bograd and Dave Foley and Elliot Hazen were helped me learn how to code so I could make sense of all the data we got back. 
 
 This was the start of my data and coding journey, where I learned how importanting coding and reproducibility was. and it's been over eight years since I finished my PhD and have been at NCEAS. So what I want to talk about today:
 
@@ -88,7 +88,7 @@ class: inverse
 
 ## A contributing solution
 ### Reframe data analysis as a collaborative effort. 
-### Build for resilience, inclusion, teams, and community.
+### Build for efficiency, resilience, empowerment, &  inclusion.
 
 ???
 So I like to talk about this with star wars analogies.
@@ -204,7 +204,12 @@ web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.co
 ]
 
 ???
-An example of this in action is with the Ocean Health Index, where open data science enabled us to do better science in less time and reimagine what is possible. I’ve worked with the Ocean Health Index since 2013 and there is a lot to say about it but what’s relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team. And, because we are a team of marine ecologists, we all came with varying levels of self-taught analytical experience. 
+An example of this in action is with the Ocean Health Index, which is an assessment framework to quantify the benefits and impacts on oceans at different scales. I’ve worked with the Ocean Health Index since 2013 and there is a lot to say about it that I won't get into today. What’s relevant here is that we combine and model lots of data, we repeat our analyses every year, and we do it as a team. And, because we are a team of marine ecologists, we all came with varying levels of self-taught analytical experience. 
+
+So we found out the hard way that our default approaches for 
+data analysis were not reproducible by even ourselves.
+
+ Getting through this involved quite a reckoning, but when we got through it, we knew we had a story to tell.
 
 ---
 class: middle, center
@@ -235,14 +240,6 @@ source: [*Lowndes et al. 2017* Our path  to better science in less time using op
 
 ???
 
-It looks like this. 
-
-Shown here as the circles get smaller and moving up the y axis. It also go easier for us to collaborate each year, along the x axis. 
-
-We couldn't overhaul everything all at once, but focused on different pieces incrementally each year. 
-
-Having all of this coding infrastructure in place is what enables those 20 independent groups I mentioned to study ocean health in the places they care about. 
-
 ---
 ### More reproducibility & collaboration, less time
 .pull-left[
@@ -255,7 +252,7 @@ knitr::include_graphics("img/bsilt-fig1-simple.png")
 .pull-right[
 <br>
 <br>
-- **Motivated by reproducibility for "data preparation" aka data wrangling**
+- **Motivated by reproducibility for data "preparation" aka wrangling
 
 - **Found new frontiers for collaboration and communication**
 
@@ -274,17 +271,11 @@ source: [*Lowndes et al. 2017* Our path  to better science in less time using op
 ]
 
 ???
-An example of this in action is with the Ocean Health Index, where open data science enabled us to do better science in less time and reimagine what is possible. I’ve worked with the Ocean Health Index since 2013 and there is a lot to say about it but what’s relevant here is that we combine lots of data, we repeat our analyses every year, and we do it as a team. And, because we are a team of marine ecologists, we all came with varying levels of self-taught analytical experience. 
 
-Animate: This is what better science in less time looks like for us. Over 4 years we incrementally introduced the tooling like open source coding into our workflow and established team norms. It meant changing the ways that we had always worked during our whole careers, and it was intimidating, because before we started we were like Luke when he just crashed – we couldn’t imagine what was possible and didn’t have confidence that we could do it ourselves. 
+This fig shows that as we repeated our analyses each year, they were easier to reproduce and it was easier to collaborate, and it took less time each year. We introduced open data science tools and practices iteratively, first focused on repeatability, then collaboration, and now we're focused on training.
 
-But we were able to do this because we had several entryways. 
+And I wanted to highlight that we motivation was because of data prep
 
-animate: The things that benefitted us the most was leadership and trust. A culture of horizontal leadership enabled a team member who knew the tooling to champion it within our team, and for the rest of us to become comfortable with both the benefits and investment it required. We learned from the global R community, and established weekly team meetings where we would co-learn together.
-
-This investment paid off and we had time to focus on new innovation in our science and enable others to build off our work through these new channels. The OHI R package has supported 20 groups around the world that are tailoring our methods to do data-informed ocean management to their own waters, which was unimaginable in the way we worked previously. 
-
-transition: pause
 
 ---
 exclude: TRUE
@@ -400,7 +391,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## Shiny for interactive dashboards
+## R for dashboards & stakeholder engagement
 
 ```{r shiny-ne, out.width = '90%', fig.align='center'}
 knitr::include_graphics("img/jafflerbach-shiny-ne.png") 
@@ -437,7 +428,7 @@ A few examples from the RStats community...
 ---
 ## \#rstats Twitter
 
-```{r welcome-rstats, out.width = '50%', fig.align='center'}
+```{r welcome-rstats, out.width = '55%', fig.align='center'}
 knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")  
 ```
 
@@ -445,20 +436,33 @@ knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")
 art: [@allison_horst](https://twitter.com/allison_horst)
 ]
 
----
-```{r ropensci-janitor-redoc, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ropensci-janitor-redoc.png")  
-```
+???
+So much cool stuff available, how do you learn what's going on? Twitter. 
 
-.footnote[
-web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor); [redoc](https://twitter.com/noamross/status/1127273301443850240?lang=en)
+I was super skeptical
+
+---
+.pull-left[
+```{r ropensci-janitor, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ropensci-janitor.png")  
+```
+]
+.pull-right[
+<br>
+```{r rnoaa00, out.width = '100%'}
+knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
+```
 ]
 
+.footnote[
+web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor); [rnoaa](https://docs.ropensci.org/rnoaa/) <br>
+tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
+]
 
 ???
 These kinds of conversations and communities enable packages like these, from rOpenSci
 
-This is the kind of things we talk about in Openscapes: what are you doing, and what tools are available to help you?
+rOpenSci doing code review
 
 ---
 .pull-left[
@@ -473,6 +477,7 @@ tweet: [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/11406693399783915
 ]
 
 .pull-right[
+<br>
 ```{r oaggimenez, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/tweet-oaggimenez-sf-spatial.png")  
 ```
@@ -483,18 +488,6 @@ tweet: [@oaggimenez](https://twitter.com/oaggimenez/status/1093882504560414721)
 
 ---
 .pull-left[
-<br>
-```{r rnoaa00, out.width = '100%'}
-knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
-```
-
-.footnote[
-tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
-]
-]
-
-.pull-right[
-
 ```{r jomilo, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/tweet-jomilo75-rspatial-gif.png")  
 ```
@@ -504,6 +497,16 @@ tweet: [@jomilo75](https://twitter.com/jomilo75/status/1099044075158659072)
 ]
 ]
 
+.pull-right[
+```{r tbep, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/tweet-fawda123-tbep.png")  
+```
+
+.footnote[
+tweet: [@fawda123](https://twitter.com/jomilo75/status/1099044075158659072);
+blog: [openscapes](https://openscapes.org/blog/2020/11/16/tampa-bay-reporting/)
+]
+]
 
 ---
 class: center, middle
@@ -562,6 +565,7 @@ But remember, these tools are really most powerful with teams.
 And teams is about mindsets and behaviors of individuals and shared, sustainable culture 
 
 ---
+<br>
 ```{r community-logosx, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/ods-community-logos.png")
 ```
@@ -636,7 +640,7 @@ knitr::include_graphics("img/horst_tidy_workbenches.png")
 ```
 
 .footnote[
-art: [@allison_horst](https://twitter.com/allison_horst); [blog](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
+art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
 ]
 
 ???
@@ -648,7 +652,7 @@ knitr::include_graphics("img/horst_tidy_collab.png")
 ```
 
 .footnote[
-art: [@allison_horst](https://twitter.com/allison_horst); [blog](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
+art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
 ]
 
 
@@ -661,7 +665,7 @@ knitr::include_graphics("img/horst_tidy_datasets.png")
 ```
 
 .footnote[
-art: [@allison_horst](https://twitter.com/allison_horst); [blog](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
+art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
 ]
 
 ???
@@ -866,7 +870,8 @@ knitr::include_graphics("img/horst-seaside-chats.png")
 
 .footnote[
 **A 10-week plan for open data science: [*Lowndes et al. 2019* ](https://www.nature.com/articles/d41586-019-03335-4)**<br>
-**[openscapes.org](https://openscapes.org): [blog](https://www.openscapes.org/blog/), [media](https://openscapes.org/media)**
+**[openscapes.org](https://openscapes.org): [blog](https://www.openscapes.org/blog/), [media](https://openscapes.org/media);
+[resources](https://openscapes.org/resources)**
 
 ]
 
@@ -877,6 +882,12 @@ class: inverse, center, middle
 **Hilary Parker & Roger Peng, [RStudio::conf(2020) keynote](https://rstudio.com/resources/rstudioconf-2020/not-so-standard-deviations-episode-100/) & [NSSD podcast episode 100]( http://nssdeviations.com/100-live-from-rstudio-conf-2020)**
 
 ---
+```{r loop-entrywayyy2, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_loop_entryway2.png") 
+```
+
+---
+exclude: TRUE
 ```{r openscapes-grasslandss, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
 ```
