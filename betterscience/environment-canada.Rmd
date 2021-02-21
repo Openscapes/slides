@@ -1,5 +1,5 @@
 ---
-title: "R and teamwork <br>for better science in less time"
+title: "Open practices for<br>better science in less time"
 subtitle: 
 author: 'Julia Stewart Lowndes, PhD' 
 role: ''
@@ -61,7 +61,7 @@ Thank you so much. I'm really excited to be here today to talk about R and teamw
 I'm so happy to have the chance to speak with you all today because —
 
 ---
-## My PhD research with NOAA SWFSC
+## Hi, I'm a marine ecologist & open champion
 ```{r sq-tag2, out.width = '40%', fig.align='center'}
 knitr::include_graphics("img/*JulieReleaseAugerIMG_9311-crop.png")
 # *JulieReleaseAugerIMG_9397.jpg # release to water
@@ -74,9 +74,7 @@ photo: Greg Auger. [reproducibility story](https://www.nature.com/articles/d4158
 
 ???
 
-I did a lot of my PhD research with colleagues at NOAA Southwest Center. I did field work with John Field, who's pictured here, where we put electronic pop-up tags on Humboldt squid off the coast of California. And it was Steven Bograd and Dave Foley and Elliot Hazen were helped me learn how to code so I could make sense of all the data we got back. 
-
-This was the start of my data and coding journey, where I learned how importanting coding and reproducibility was. and it's been over eight years since I finished my PhD and have been at NCEAS. So what I want to talk about today:
+My PhD research studying Humboldt squid in the Pacific Ocean was the start of my data and coding journey, where I learned how important coding and reproducibility was. and it's been over eight years since I finished my PhD and have been at NCEAS. So what I want to talk about today:
 
 ---
 class: inverse
@@ -87,7 +85,7 @@ class: inverse
 <br>
 
 ## A contributing solution
-### Reframe data analysis as a collaborative effort. 
+### Reframe data analysis as a collaborative, open practice.
 ### Build for efficiency, resilience, empowerment, &  inclusion.
 
 ???

@@ -56,6 +56,15 @@ background-position: bottom left
 
 ---
 
+<!---
+TODO next time: 
+
+- addimg/tweet-grrrck-99problems
+  - https://twitter.com/grrrck/status/1252704601024999437
+- slide about RMarkdown and how it's literate programming like jupytr notebooks  
+--->
+
+
 ```{r luke}
 ```
 class: center, middle
