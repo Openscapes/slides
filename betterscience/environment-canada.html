@@ -1,40 +1,20 @@
----
-title: "Open practices for<br>better science in less time"
-subtitle: 
-author: 'Julia Stewart Lowndes, PhD' 
-role: ''
-institute: 'National Center for Ecological Analysis & Synthesis, UCSB'
-output:
-  xaringan::moon_reader:
-    seal: false
-    chakra: libs/remark-latest.js # with @bjungbogati tidyverse dev toulouse: need to save this file to knit offline!
-    lib_dir: libs 
-    nature:
-      slideNumberFormat: "" # comment out to disable
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: "16:10" # https://github.com/apreshill/talks/blob/master/sdss-blogdown/index.Rmd#L16, http://user2019.r-project.org/information_for_presenters/
-      output:
-    css: ["default", "css/my-fonts.css", "css/my-theme.css"] #https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7
-    includes:
-      in_header: header.html    
-      
-# http://arm.rbind.io/slides/xaringan.html#45: presenter mode:: press c then f then p
-# https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/static/slides/xaringan.Rmd      
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Open practices for better science in less time</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Julia Stewart Lowndes, PhD" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/my-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
 
-# TODO::::: replace ESIP loop for the "team traits" slides
 
----
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = FALSE)
-knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
-
-library(xaringan)
-#library(fontawesome) #devtools::install_github("rstudio/fontawesome")
-#library(icon) #devtools::install_github("ropenscilabs/icon")
-```
 
 class: title-slide, right, bottom
 background-image: url(img/horst-starwars-rey.png)
@@ -42,13 +22,13 @@ background-size: contain
 background-position: bottom left 
 
 
-## `r rmarkdown::metadata$title`
-### `r rmarkdown::metadata$author`
-### `r rmarkdown::metadata$institute`
+## Open practices for&lt;br&gt;better science in less time
+### Julia Stewart Lowndes, PhD
+### National Center for Ecological Analysis &amp; Synthesis, UCSB
 
 
-<img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
-<img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
+&lt;img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/&gt;
+&lt;img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/&gt;
 
 ???
 
@@ -57,12 +37,8 @@ Thank you so much. I'm really excited to be here today to talk about R and teamw
 I'm so happy to have the chance to speak with you all today because —
 
 ---
-## Hi, I'm a marine ecologist & open champion
-```{r sq-tag2, out.width = '40%', fig.align='center'}
-knitr::include_graphics("img/*JulieReleaseAugerIMG_9311-crop.png")
-# *JulieReleaseAugerIMG_9397.jpg # release to water
-# *IMG_9268.JPG # measure
-```
+## Hi, I'm a marine ecologist &amp; open champion
+&lt;img src="img/*JulieReleaseAugerIMG_9311-crop.png" width="40%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 photo: Greg Auger. [reproducibility story](https://www.nature.com/articles/d41586-018-05990-5) 
@@ -76,21 +52,20 @@ My PhD research studying Humboldt squid in the Pacific Ocean was the start of my
 class: inverse
 ## The problem
 ### We often approach data analysis as an individual burden.
-### This is slow, brittle, demoralizing, & perpetuates inequities.
+### This is slow, brittle, demoralizing, &amp; perpetuates inequities.
 
-<br>
+&lt;br&gt;
 
 ## A contributing solution
 ### Reframe data analysis as a collaborative, open practice.
-### Build for efficiency, resilience, empowerment, &  inclusion.
+### Build for efficiency, resilience, empowerment, &amp;  inclusion.
 
 ???
 So I like to talk about this with star wars analogies.
 
 ---
 
-```{r luke}
-```
+
 class: center, middle
 background-image: url(img/horst-starwars-luke.png)
 background-size: contain
@@ -109,9 +84,7 @@ transition: but luckily what happens next is that he meets Yoda
 
 ---
 class: top, center
-```{r yoda, out.width = '88%'}
-knitr::include_graphics("img/horst-starwars-yoda.png") 
-```
+&lt;img src="img/horst-starwars-yoda.png" width="88%" /&gt;
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)
@@ -126,8 +99,7 @@ This is going to open up Luke's whole world because he can learn from Yoda and n
 transition: Luke didn't have to derive the Force on his own, and he didn't go on to defeat the Empire himself, he had a whole community.
 
 ---
-```{r hands} 
-```
+
 class: center, middle
 background-image: url(img/horst-starwars-hands.png)  
 background-size: contain
@@ -144,8 +116,7 @@ And this community is powerful because of the diversity of backgrounds and exper
 transition: So just to recap, 
 
 ---
-```{r rey-toc-full}
-```
+
 class: title-slide, right, bottom
 background-image: url(img/horst-starwars-rey.png)
 background-size: contain
@@ -167,10 +138,7 @@ transition: so my talk will really be framed around these ideas: that the softwa
 
 **the tooling and people enabling reproducible, transparent, and inclusive practices for data analysis**
 
-```{r loop-wtext, out.width = '100%'}
-knitr::include_graphics("img/horst-lowndes-loop-w-esiptext.png")
-# https://docs.google.com/presentation/d/1DjrMaEOw1F7zAIEXq3ZjiiyaqVAjydLyYww7huGfch8/edit#slide=id.g8b762bd836_0_4884
-```
+&lt;img src="img/horst-lowndes-loop-w-esiptext.png" width="100%" /&gt;
 
 
 .footnote[
@@ -178,9 +146,9 @@ art: [@allison_horst](https://twitter.com/allison_horst)
 ]
 
 ???
-I define ODS>..
+I define ODS&gt;..
 
-So I have been thinking about this in terms of open data science tools and practices and teamwork & collaboration, and that they exist in feedback loop. 
+So I have been thinking about this in terms of open data science tools and practices and teamwork &amp; collaboration, and that they exist in feedback loop. 
 
 So it's not only the tools like the Force or the anlyticcal power of R that lead to better science in less time, it's also the fact that many other people can use or interplay with these tools. 
 
@@ -189,9 +157,7 @@ Learning and using similar software promotes and streamlines teammwork. And also
 So let's talk about this
 
 ---
-```{r OHI hex, out.width = '55%', fig.align='center'}
-knitr::include_graphics("img/OHI-hex.png")
-```
+&lt;img src="img/OHI-hex.png" width="55%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 web: [ohi-science.org](http://ohi-science.org); [@OHIscience](https://twitter.com/OHIscience)
@@ -207,9 +173,7 @@ data analysis were not reproducible by even ourselves.
 
 ---
 class: middle, center
-```{r nature-bsilt, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/nature-screenshot-title.png")
-```
+&lt;img src="img/nature-screenshot-title.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160); web: [ohi-science.org/betterscienceinlesstime](http://ohi-science.org/betterscienceinlesstime/)
@@ -217,16 +181,14 @@ source: [Lowndes *et al.* 2017](https://www.nature.com/articles/s41559-017-0160)
 
 ???
 
-Figuring out was a big enough deal that we published this in Nature Ecology & Evolution. 
+Figuring out was a big enough deal that we published this in Nature Ecology &amp; Evolution. 
 
 What made it unique: we shared our struggles, and described the transition
 
 ---
 exclude: TRUE
-### More reproducibility & collaboration, less time
-```{r fig 1-whiteout, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/bsilt-fig1-simple.png")
-```
+### More reproducibility &amp; collaboration, less time
+&lt;img src="img/bsilt-fig1-simple.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 source: [*Lowndes et al. 2017* Our path  to better science in less time using open data science tools](https://www.nature.com/articles/s41559-017-0160)
@@ -235,28 +197,26 @@ source: [*Lowndes et al. 2017* Our path  to better science in less time using op
 ???
 
 ---
-### More reproducibility & collaboration, less time
+### More reproducibility &amp; collaboration, less time
 .pull-left[
-<br>
-```{r fig 1-whiteoutss, out.width = '100%'}
-knitr::include_graphics("img/bsilt-fig1-simple.png")
-```
+&lt;br&gt;
+&lt;img src="img/bsilt-fig1-simple.png" width="100%" /&gt;
 ]
 
 .pull-right[
-<br>
-<br>
+&lt;br&gt;
+&lt;br&gt;
 - **Motivated by reproducibility for data wrangling** ("preparation")
 
 - **Found new frontiers for collaboration and communication**
 
-<!---
+&lt;!---
 
-- **Required new skillsets & mindsets**
+- **Required new skillsets &amp; mindsets**
 
-- **Possible because of trust, teamwork, & leadership**
+- **Possible because of trust, teamwork, &amp; leadership**
 
---->
+---&gt;
 
 - **Amazed continually by the \#rstats community**
 ]
@@ -273,9 +233,7 @@ And I wanted to highlight that we motivation was because of data prep
 
 ---
 exclude: TRUE
-```{r ohi-how-we-work2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ohi-how-we-work2.png")
-```
+&lt;img src="img/ohi-how-we-work2.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 source: [OHI slides — UW](https://docs.google.com/presentation/d/1LA4EcnRxD11rjwbRh0hrjPG5J0dmiiuCbNaoQrz0XHU/edit?usp=sharing)
@@ -287,9 +245,7 @@ source: [OHI slides — UW](https://docs.google.com/presentation/d/1LA4EcnRxD11r
 
 ---
 ## We worked openly within our team
-```{r workflow-repro-wtext, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/workflow-repro-wtext.png")
-```
+&lt;img src="img/workflow-repro-wtext.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -300,9 +256,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ---
 ## We worked openly within our team
 
-```{r workflow-full-wtext, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/workflow-full-wtext.png")
-```
+&lt;img src="img/workflow-full-wtext.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -311,10 +265,8 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## RStudio for R, text editing, Github sync, & more
-```{r workflow-ex-repro-wtext, out.width = '100%'}
-knitr::include_graphics("img/workflow-ex-repro-wtext.png")
-```
+## RStudio for R, text editing, Github sync, &amp; more
+&lt;img src="img/workflow-ex-repro-wtext.png" width="100%" /&gt;
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -324,9 +276,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 
 ---
 ## GitHub for archiving and bookkeeping
-```{r workflow-ex-collab-wtext, out.width = '100%'}
-knitr::include_graphics("img/workflow-ex-collab-wtext.png")
-```
+&lt;img src="img/workflow-ex-collab-wtext.png" width="100%" /&gt;
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -335,10 +285,8 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## Github for discussion & project mgmt
-```{r workflow-ex-collab2-wtext, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/workflow-ex-collab2-wtext.png")
-```
+## Github for discussion &amp; project mgmt
+&lt;img src="img/workflow-ex-collab2-wtext.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -349,35 +297,42 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ---
 ## RMarkdown: reproducible, updatable reports
 
-```{r rmd-openpubfest, out.width = '100%'}
-knitr::include_graphics("img/rmd-openpubfest.png")
-```
+&lt;img src="img/rmd-openpubfest.png" width="100%" /&gt;
 
 .footnote[
-source: [Lowndes & Tierney 2020, Open Pub Fest](https://docs.google.com/presentation/d/1Jv0akRHEnjG_4t_9P7t93682BCBJskYnRu_7EnaeDQI/edit?usp=sharing)
+source: [Lowndes &amp; Tierney 2020, Open Pub Fest](https://docs.google.com/presentation/d/1Jv0akRHEnjG_4t_9P7t93682BCBJskYnRu_7EnaeDQI/edit?usp=sharing)
 ]
 
 ---
 exclude: TRUE
 ## RMarkdown sidenote
 
-```{r, echo=TRUE}
+
+```r
 library(tidyverse) # install.packages(tidyverse)
 library(palmerpenguins) # install.packages(palmerpenguins)
-penguins %>%
+penguins %&gt;%
   count() 
-my_data <- 1:10
-median_my_data <- median(my_data)
+```
+
+```
+## # A tibble: 1 x 1
+##       n
+##   &lt;int&gt;
+## 1   344
+```
+
+```r
+my_data &lt;- 1:10
+median_my_data &lt;- median(my_data)
 ```
 
 
 We found that 
 
 ---
-## RMarkdown for docs, publishing & websites
-```{r workflow-ex-comm-wtext, out.width = '100%'}
-knitr::include_graphics("img/workflow-ex-comm-wtext.png")
-```
+## RMarkdown for docs, publishing &amp; websites
+&lt;img src="img/workflow-ex-comm-wtext.png" width="100%" /&gt;
 
 .footnote[
 source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8)
@@ -386,11 +341,9 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-## R for dashboards & stakeholder engagement
+## R for dashboards &amp; stakeholder engagement
 
-```{r shiny-ne, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/jafflerbach-shiny-ne.png") 
-```
+&lt;img src="img/jafflerbach-shiny-ne.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 dashboard (Shiny): [@jafflerbach](https://twitter.com/jafflerbach). 
@@ -405,9 +358,7 @@ And when we are working closely with partners who are engaged with data analysis
 ---
 exclude: TRUE
 ## RMarkdown for slides!
-```{r user-xaringan, out.width = '80%', fig.align='center'}
-knitr::include_graphics("img/user-keynote-titleslide.png") 
-```
+&lt;img src="img/user-keynote-titleslide.png" width="80%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 slides (xaringan): [jules32.github.io/useR-2019-keynote](https://jules32.github.io/useR-2019-keynote)
@@ -424,9 +375,7 @@ A few examples from the RStats community...
 ---
 ## Open data science
 
-```{r loop-wtext2, out.width = '100%'}
-knitr::include_graphics("img/horst-lowndes-loop-w-esiptext.png")
-```
+&lt;img src="img/horst-lowndes-loop-w-esiptext.png" width="100%" /&gt;
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)   
@@ -440,11 +389,9 @@ And teams is about mindsets and behaviors of individuals and shared, sustainable
 
 ---
 
-<br>
-<br>
-```{r community-logosx, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ods-community-logos.png")
-```
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src="img/ods-community-logos.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ???
 
@@ -454,19 +401,17 @@ So that was about the tools, and these are some of the communities that make the
 class: inverse, center, middle
 ## It’s like agreeing that we will all drive on the left or the right. A hallmark of civilization is following conventions that constrain your behavior a little, in the name of public safety.
 
-**Jenny Bryan & Jim Hester, [What They Forgot to Teach You About R](https://rstats.wtf/)**
+**Jenny Bryan &amp; Jim Hester, [What They Forgot to Teach You About R](https://rstats.wtf/)**
 
 
 ---
 ## Data science mindset
-<br>
-```{r data-science-r4ds, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/r4ds_data-science.png")
-```
+&lt;br&gt;
+&lt;img src="img/r4ds_data-science.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
-<br>
-[Wickham & Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)
+&lt;br&gt;
+[Wickham &amp; Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)
 ]  
 
 ???
@@ -477,14 +422,12 @@ First, it separates the Understand part. This is this science part. It's an iter
 
 ---
 ## Data science mindset
-<br>
-```{r data-science-r4ds-lohr, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/r4ds_data-science-lohr.png")
-```
+&lt;br&gt;
+&lt;img src="img/r4ds_data-science-lohr.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
-<br>
-[Wickham & Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)  
+&lt;br&gt;
+[Wickham &amp; Grolemund, 2016: "R for Data Science"](https://r4ds.had.co.nz/)  
 [Lohr, 2014 "For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights"](https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html)
 ]  
 
@@ -494,11 +437,9 @@ This graphic really changed they way we work and think.
 
 First, it separates the Understand part. This is this science part. It's an iterative process of transforming, subsetting, comparting data, vizulazing, modeling. And it's distinct from the import and tidying parts. This is critical. 
 ---
-## Data science mindset & tools
-<br>
-```{r tidyverse, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/r4ds_data-science-tidyverse.png")
-```
+## Data science mindset &amp; tools
+&lt;br&gt;
+&lt;img src="img/r4ds_data-science-tidyverse.png" width="60%" style="display: block; margin: auto;" /&gt;
   
 .footnote[
 source: [Hadley Wickham, 2019](https://speakerdeck.com/hadley/welcome-to-the-tidyverse?slide=28); web: [tidyverse.org](https://www.tidyverse.org/)
@@ -509,11 +450,9 @@ source: [Hadley Wickham, 2019](https://speakerdeck.com/hadley/welcome-to-the-tid
 Expect there's a better way
 
 ---
-<br>
-<br>
-```{r tidy_workbenches, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/horst_tidy_workbenches.png")
-```
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src="img/horst_tidy_workbenches.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
@@ -523,11 +462,9 @@ art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](h
 Working with tidy data you can use existing tools in familiar ways rather than hand-crafting one-time approaches that are hard to iterate, share, or reuse
 
 ---
-<br>
-<br>
-```{r tidy_collab, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_tidy_collab-automate.png")
-```
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src="img/horst_tidy_collab-automate.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
@@ -567,9 +504,7 @@ I'd  also add: Kindness
 exclude: TRUE
 ## Open mindset and tools
 
-```{r ods-software, out.width = '65%', fig.align='center'}
-knitr::include_graphics("img/screenshot-paur-talk-ods.png") 
-```
+&lt;img src="img/screenshot-paur-talk-ods.png" width="65%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLtj9u5E9wMxtYuP0T_HxoDnyKw/edit?usp=sharing)
@@ -578,11 +513,9 @@ source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLt
 ???
 
 ---
-<br>
+&lt;br&gt;
 
-```{r loop-how-we-work1, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_loop_how_we_work_esip.png") 
-```
+&lt;img src="img/horst_loop_how_we_work_esip.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ???
 
@@ -591,11 +524,9 @@ Animate: This is what better science in less time looks like for us. Over 4 year
 But we were able to do this because we had several entryways. 
 
 ---
-<br>
+&lt;br&gt;
 
-```{r loop-how-we-work-bold, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_loop_how_we_work_esip_bold.png") 
-```
+&lt;img src="img/horst_loop_how_we_work_esip_bold.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ???
 
@@ -609,28 +540,22 @@ we really worked like a team. It's about kindness, inclusion, and belonging.
 
 
 ---
-```{r loop-entryway1, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_loop_entryway1.png") 
-```
+&lt;img src="img/horst_loop_entryway1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
-```{r loop-entryway2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_loop_entryway2.png") 
-```
+&lt;img src="img/horst_loop_entryway2.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
-```{r openscapes-grassland, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_desert-text.png")
-```
+&lt;img src="img/horst_openscapes_desert-text.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 --
 
-### We empower teams to be more efficient, resilient, & inclusive
+### We empower teams to be more efficient, resilient, &amp; inclusive
 
-**Designed to onboard teams to collaborative skillsets & mindsets, focused on leadership & community**
+**Designed to onboard teams to collaborative skillsets &amp; mindsets, focused on leadership &amp; community**
 
 - **Operationalizing our experiences with the Ocean Health Index**
-- **Remote-by-design & cohort-based: 3 hrs/month for 2-4 months**
+- **Remote-by-design &amp; cohort-based: 3 hrs/month for 2-4 months**
 - **First cohorts: environmental scientists from academia and government**
 
 
@@ -641,28 +566,20 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 ---
 
 exclude: TRUE
-```{r loop-champions, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst-loop-champions-esip1.png")
-```
+&lt;img src="img/horst-loop-champions-esip1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
-```{r loop-champions2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst-loop-champions-esip2.png")
-```
+&lt;img src="img/horst-loop-champions-esip2.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 ---
 exclude:TRUE
-```{r loop-champions3, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst-loop-champions-esip3.png")
-```
+&lt;img src="img/horst-loop-champions-esip3.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: middle
 .pull-left[
-```{r pinskylab, out.width = '100%'}
-knitr::include_graphics("img/github-pinskylab-how_we_work.png")
-```
+&lt;img src="img/github-pinskylab-how_we_work.png" width="100%" /&gt;
 .footnote[
 github: [@pinskylab](https://github.com/pinskylab)
 ]
@@ -670,9 +587,7 @@ github: [@pinskylab](https://github.com/pinskylab)
 ]
 
 .pull-right[
-```{r froehlich-lab, out.width = '100%'}
-knitr::include_graphics("img/github-froehlichlab-anti-racism.png")
-```
+&lt;img src="img/github-froehlichlab-anti-racism.png" width="100%" /&gt;
 
 
 .footnote[
@@ -684,11 +599,9 @@ github: [@froehlich-lab](https://github.com/Froehlich-Lab/anti-racism)
 
 ---
 .pull-left[
-<br>
-<br>
-```{r baysidechat, out.width = '100%'}
-knitr::include_graphics("img/tweet-modubs11-bayside.png")
-```
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src="img/tweet-modubs11-bayside.png" width="100%" /&gt;
 
 .footnote[
 tweet: [@MoDubs11](https://twitter.com/MoDubs11/status/1204489227737550848)
@@ -696,10 +609,8 @@ tweet: [@MoDubs11](https://twitter.com/MoDubs11/status/1204489227737550848)
 ]
 
 .pull-right[
-<br>
-```{r faylab, out.width = '100%'}
-knitr::include_graphics("img/tweet-faylab-remote.png")
-```
+&lt;br&gt;
+&lt;img src="img/tweet-faylab-remote.png" width="100%" /&gt;
 
 .footnote[
 tweet: [@thefaylab](https://twitter.com/thefaylab/status/1239997719449665536)
@@ -709,9 +620,7 @@ tweet: [@thefaylab](https://twitter.com/thefaylab/status/1239997719449665536)
 ---
 exclude: TRUE 
 class: middle, center
-```{r noaa-seaside, out.width = '80%'}
-knitr::include_graphics("img/github-noaa-edab-seaside.png")
-```
+&lt;img src="img/github-noaa-edab-seaside.png" width="80%" /&gt;
 
 .footnote[
 github: [@NOAA-EDAB/seaside](https://github.com/NOAA-EDAB/seaside/projects/2)
@@ -728,18 +637,16 @@ background-size: contain
 .pull-left[
 ### 1. Normalize data discussions 
 ### 2. Identify and address shared needs
-### 3. Think ahead for Future You & Future Us
+### 3. Think ahead for Future You &amp; Future Us
 ]
 
 .pull-right[
-```{r supercharge-esip, out.width = '100%'}
-knitr::include_graphics("img/horst-seaside-chats.png")
-```
+&lt;img src="img/horst-seaside-chats.png" width="100%" /&gt;
 ]
 
 
 .footnote[
-**A 10-week plan for open data science: [*Lowndes et al. 2019* ](https://www.nature.com/articles/d41586-019-03335-4)**<br>
+**A 10-week plan for open data science: [*Lowndes et al. 2019* ](https://www.nature.com/articles/d41586-019-03335-4)**&lt;br&gt;
 **[openscapes.org](https://openscapes.org): [blog](https://www.openscapes.org/blog/), [media](https://openscapes.org/media);
 [resources](https://openscapes.org/resources)**
 
@@ -747,22 +654,18 @@ knitr::include_graphics("img/horst-seaside-chats.png")
 
 ---
 class: inverse, center, middle
-##“If you want to learn to write, you read a lot, <br>if you want to play music, you listen a lot. <br>It’s hard to do this with data analysis.” 
+##“If you want to learn to write, you read a lot, &lt;br&gt;if you want to play music, you listen a lot. &lt;br&gt;It’s hard to do this with data analysis.” 
 
-**Hilary Parker & Roger Peng, [RStudio::conf(2020) keynote](https://rstudio.com/resources/rstudioconf-2020/not-so-standard-deviations-episode-100/) & [NSSD podcast episode 100]( http://nssdeviations.com/100-live-from-rstudio-conf-2020)**
+**Hilary Parker &amp; Roger Peng, [RStudio::conf(2020) keynote](https://rstudio.com/resources/rstudioconf-2020/not-so-standard-deviations-episode-100/) &amp; [NSSD podcast episode 100]( http://nssdeviations.com/100-live-from-rstudio-conf-2020)**
 
 ---
-```{r loop-entrywayyy2, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_loop_entryway2.png") 
-```
+&lt;img src="img/horst_loop_entryway2.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 exclude: TRUE
-```{r openscapes-grasslandss, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/horst_openscapes_grassland_1500px-text-hex.png")
-```
+&lt;img src="img/horst_openscapes_grassland_1500px-text-hex.png" width="100%" style="display: block; margin: auto;" /&gt;
 
-### We welcome scientists to the open data science <br>and help grow the movement
+### We welcome scientists to the open data science &lt;br&gt;and help grow the movement
 
 **Engage: build awareness and excitement with empathy, art, and storytelling**  
 **Empower: connect with existing open software and communities**  
@@ -774,7 +677,7 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 
 
 ???
-**trust** • **resilience** • **overlapping skillsets & interoperability** • **leadership • kindness**  
+**trust** • **resilience** • **overlapping skillsets &amp; interoperability** • **leadership • kindness**  
 
 
 
@@ -783,9 +686,7 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 ---
 ## Thank you, and welcome to open data science!
 
-```{r horst-air, out.width = '75%', fig.align='center'}
-knitr::include_graphics("img/horst_tidy_datasets.png")
-```
+&lt;img src="img/horst_tidy_datasets.png" width="75%" style="display: block; margin: auto;" /&gt;
 
 .pull-left[
 **Special thanks to**:  
@@ -798,7 +699,7 @@ OHI • Mozilla • Openscapes • #rstats • Carpentries
 **Please get involved:**   
 [openscapes.org/contact](https://www.openscapes.org/contact/) • [@openscapes](https://openscapes.org)
 
-####  <img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/> <img src="img/ohi-hex.png" alt="" style="float:right;width:80px;"/>
+####  &lt;img src="img/openscapes-hex.png" alt="" style="float:right;width:80px;"/&gt; &lt;img src="img/ohi-hex.png" alt="" style="float:right;width:80px;"/&gt;
 
 ]
 
@@ -807,31 +708,28 @@ OHI • Mozilla • Openscapes • #rstats • Carpentries
 Thank you.
 
 ---
-```{r fin}
-```
+
 class: title-slide, right, bottom
 background-image: url(img/horst-starwars-rey.png)
 background-size: contain
 background-position: bottom left 
 
 
-## `r rmarkdown::metadata$title`
-### `r rmarkdown::metadata$author`
-### `r rmarkdown::metadata$institute`
+## Open practices for&lt;br&gt;better science in less time
+### Julia Stewart Lowndes, PhD
+### National Center for Ecological Analysis &amp; Synthesis, UCSB
 
 
 
-<img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
-<img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
+&lt;img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/&gt;
+&lt;img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/&gt;
 
 ---
 
 ---
 ## \#rstats Twitter
 
-```{r welcome-rstats, out.width = '55%', fig.align='center'}
-knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")  
-```
+&lt;img src="img/horst-welcome_to_rstats_twitter.png" width="55%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 art: [@allison_horst](https://twitter.com/allison_horst)
@@ -844,10 +742,8 @@ I was super skeptical
 
 ---
 .pull-left[
-<br>
-```{r rnoaa, out.width = '100%'}
-knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
-```
+&lt;br&gt;
+&lt;img src="img/tweet-Md_Harris-rnoaa.png" width="100%" /&gt;
 
 .footnote[
 tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)]
@@ -870,10 +766,8 @@ tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/pho
 
 ---
 .pull-left[
-<br>
-```{r rnoaa2, out.width = '100%'}
-knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
-```
+&lt;br&gt;
+&lt;img src="img/tweet-Md_Harris-rnoaa.png" width="100%" /&gt;
 
 .footnote[
 tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)]
@@ -890,9 +784,7 @@ tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/pho
 **- I'll share with Openscapes**
 
 
-```{r halley-rnoaa, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/tweet-docfroehlich-rnoaa-full.png")  
-```
+&lt;img src="img/tweet-docfroehlich-rnoaa-full.png" width="60%" style="display: block; margin: auto;" /&gt;
  
 .footnote[
 tweet: [@DocFroehlich](https://twitter.com/DocFroehlich/status/1085990833571020800)
@@ -909,14 +801,12 @@ Halley has a big science following already and now tweets also about open data s
 ---
 .pull-left[
 
-<br>
-<br>
-<br>
-<br>
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
 
-```{r rladies-sydney, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/tweet-apreshill-rladies-sydney.png")
-```
+&lt;img src="img/tweet-apreshill-rladies-sydney.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 twitter: [@apreshill](https://twitter.com/apreshill/status/1184660994007519232); 
@@ -926,12 +816,10 @@ web: [RLadies Sydney](https://rladiessydney.org/courses/ryouwithme/)
 
 .pull-right[
 
-<br>
-<br>
+&lt;br&gt;
+&lt;br&gt;
 
-```{r wearerladies-sydney, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/tweet-wearerladies-rladiesmelb-thread.png")
-```
+&lt;img src="img/tweet-wearerladies-rladiesmelb-thread.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 twitter: [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/1225028377280516096)
@@ -944,9 +832,7 @@ https://twitter.com/frau_dr_barber/status/1127189812308369408
 
 ---
 .pull-left[
-```{r ropensci-janitor, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ropensci-janitor.png")  
-```
+&lt;img src="img/ropensci-janitor.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor)
@@ -954,9 +840,7 @@ web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirk
 ]
 
 .pull-right[
-```{r tbep, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/tweet-fawda123-tbep.png")  
-```
+&lt;img src="img/tweet-fawda123-tbep.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 tweet: [@fawda123](https://twitter.com/jomilo75/status/1099044075158659072);
@@ -971,10 +855,8 @@ rOpenSci doing code review
 
 ---
 .pull-left[
-<br>
-```{r gam, out.width = '100%'}
-knitr::include_graphics("img/tweet-wearerladies-gam.png")
-```
+&lt;br&gt;
+&lt;img src="img/tweet-wearerladies-gam.png" width="100%" /&gt;
 
 .footnote[
 tweet: [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/1140669339978391552)
@@ -982,10 +864,8 @@ tweet: [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/11406693399783915
 ]
 
 .pull-right[
-<br>
-```{r oaggimenez, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/tweet-oaggimenez-sf-spatial.png")  
-```
+&lt;br&gt;
+&lt;img src="img/tweet-oaggimenez-sf-spatial.png" width="100%" style="display: block; margin: auto;" /&gt;
 .footnote[
 tweet: [@oaggimenez](https://twitter.com/oaggimenez/status/1093882504560414721)
 ]
@@ -999,13 +879,9 @@ RLadies. Gender diversity in R
 
 ---
 class: center, middle
-```{r grrrck, out.width = '70%', fig.align='center'}
-knitr::include_graphics("img/tweet-grrrck-99problems.png")
-```
+&lt;img src="img/tweet-grrrck-99problems.png" width="70%" style="display: block; margin: auto;" /&gt;
 
-```{r hadley-better, out.width = '70%', fig.align='center'}
-knitr::include_graphics("img/tweet-allimoberger-hadley.png")
-```
+&lt;img src="img/tweet-allimoberger-hadley.png" width="70%" style="display: block; margin: auto;" /&gt;
 
 .footnote[
 tweet: [@grrrck](https://twitter.com/grrrck/status/1252704601024999437), [@allimoberger](https://twitter.com/allimoberger/status/1085268564821585921)
@@ -1013,9 +889,7 @@ tweet: [@grrrck](https://twitter.com/grrrck/status/1252704601024999437), [@allim
 
 ---
 .pull-left[
-```{r blkindata, out.width = '100%'}
-knitr::include_graphics("img/tweet-blkindata-week.png")
-```
+&lt;img src="img/tweet-blkindata-week.png" width="100%" /&gt;
 
 .footnote[
 tweet: [@BlkInData](https://twitter.com/BlkInData/status/1328291205369749511)
@@ -1023,12 +897,10 @@ tweet: [@BlkInData](https://twitter.com/BlkInData/status/1328291205369749511)
 ]
 
 .pull-right[
-<br>
-<br>
-<br>
-```{r blkindata2, out.width = '100%'}
-knitr::include_graphics("img/tweet-stabdelraheem-blkindata.png")
-```
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src="img/tweet-stabdelraheem-blkindata.png" width="100%" /&gt;
 
 .footnote[
 tweet: [@stabdelraheem](https://twitter.com/stabdelraheem/status/1328399373470896128)
@@ -1036,3 +908,129 @@ tweet: [@stabdelraheem](https://twitter.com/stabdelraheem/status/132839937347089
 ]
 
 
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:10",
+"output": null
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
