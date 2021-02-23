@@ -32,8 +32,8 @@ options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = F
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
 
 library(xaringan)
-library(fontawesome) #devtools::install_github("rstudio/fontawesome")
-library(icon) #devtools::install_github("ropenscilabs/icon")
+#library(fontawesome) #devtools::install_github("rstudio/fontawesome")
+#library(icon) #devtools::install_github("ropenscilabs/icon")
 ```
 
 class: title-slide, right, bottom
@@ -45,10 +45,6 @@ background-position: bottom left
 ## `r rmarkdown::metadata$title`
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$institute`
-
-[`r icon::fa("twitter")` @juliesquid](https://twitter.com/juliesquid)  
-[`r icon::fa("paper-plane")` lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
-[`r icon::fa("desktop")` openscapes.org/media](http://openscapes.org/media)  
 
 
 <img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
@@ -250,7 +246,7 @@ knitr::include_graphics("img/bsilt-fig1-simple.png")
 .pull-right[
 <br>
 <br>
-- **Motivated by reproducibility for data "preparation" aka wrangling
+- **Motivated by reproducibility for data wrangling** ("preparation")
 
 - **Found new frontiers for collaboration and communication**
 
@@ -290,8 +286,8 @@ source: [OHI slides — UW](https://docs.google.com/presentation/d/1LA4EcnRxD11r
 
 
 ---
-class: center, middle
-```{r workflow-repro-wtext, out.width = '100%'}
+## We worked openly within our team
+```{r workflow-repro-wtext, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/workflow-repro-wtext.png")
 ```
 
@@ -302,8 +298,9 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
-class: center, middle
-```{r workflow-full-wtext, out.width = '100%'}
+## We worked openly within our team
+
+```{r workflow-full-wtext, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/workflow-full-wtext.png")
 ```
 
@@ -423,38 +420,56 @@ And for fun, for creating talks at useR
 transition: 
 A few examples from the RStats community...
 
----
-## \#rstats Twitter
 
-```{r welcome-rstats, out.width = '55%', fig.align='center'}
-knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")  
+---
+## Open data science
+
+```{r loop-wtext2, out.width = '100%'}
+knitr::include_graphics("img/horst-lowndes-loop-w-esiptext.png")
 ```
 
 .footnote[
-art: [@allison_horst](https://twitter.com/allison_horst)
+art: [@allison_horst](https://twitter.com/allison_horst)   
 ]
 
 ???
-So much cool stuff available, how do you learn what's going on? Twitter. 
 
-I was super skeptical
+But remember, these tools are really most powerful with teams.
+
+And teams is about mindsets and behaviors of individuals and shared, sustainable culture 
+
+---
+<br>
+```{r community-logosx, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/ods-community-logos.png")
+```
+
+???
+
+So that was about the tools, and these are some of the communities that make them. We've learned so much from these communities, that focus on inclusion and empowerment. And from them we've established shared norms and shared mindsets.
+
+So to share a few of the incredible things this open community is building and sharing online: 
 
 ---
 .pull-left[
 ```{r ropensci-janitor, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/ropensci-janitor.png")  
 ```
-]
-.pull-right[
-<br>
-```{r rnoaa00, out.width = '100%'}
-knitr::include_graphics("img/tweet-Md_Harris-rnoaa.png")
-```
-]
 
 .footnote[
-web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor); [rnoaa](https://docs.ropensci.org/rnoaa/) <br>
-tweet: [@Md_Harris](https://twitter.com/Md_Harris/status/1074469302974193665/photo/1)
+web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirke.github.io/janitor)
+]
+]
+
+.pull-right[
+```{r tbep, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/tweet-fawda123-tbep.png")  
+```
+
+.footnote[
+tweet: [@fawda123](https://twitter.com/jomilo75/status/1099044075158659072);
+blog: [openscapes](https://openscapes.org/blog/2020/11/16/tampa-bay-reporting/)
+]
 ]
 
 ???
@@ -484,93 +499,9 @@ tweet: [@oaggimenez](https://twitter.com/oaggimenez/status/1093882504560414721)
 ]
 ]
 
----
-.pull-left[
-```{r jomilo, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/tweet-jomilo75-rspatial-gif.png")  
-```
+??? 
 
-.footnote[
-tweet: [@jomilo75](https://twitter.com/jomilo75/status/1099044075158659072)
-]
-]
-
-.pull-right[
-```{r tbep, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/tweet-fawda123-tbep.png")  
-```
-
-.footnote[
-tweet: [@fawda123](https://twitter.com/jomilo75/status/1099044075158659072);
-blog: [openscapes](https://openscapes.org/blog/2020/11/16/tampa-bay-reporting/)
-]
-]
-
----
-class: center, middle
-```{r grrrck, out.width = '70%', fig.align='center'}
-knitr::include_graphics("img/tweet-grrrck-99problems.png")
-```
-
-```{r hadley-better, out.width = '70%', fig.align='center'}
-knitr::include_graphics("img/tweet-allimoberger-hadley.png")
-```
-
-.footnote[
-tweet: [@grrrck](https://twitter.com/grrrck/status/1252704601024999437), [@allimoberger](https://twitter.com/allimoberger/status/1085268564821585921)
-]
-
----
-.pull-left[
-```{r blkindata, out.width = '100%'}
-knitr::include_graphics("img/tweet-blkindata-week.png")
-```
-
-.footnote[
-tweet: [@BlkInData](https://twitter.com/BlkInData/status/1328291205369749511)
-]
-]
-
-.pull-right[
-<br>
-<br>
-<br>
-```{r blkindata2, out.width = '100%'}
-knitr::include_graphics("img/tweet-stabdelraheem-blkindata.png")
-```
-
-.footnote[
-tweet: [@stabdelraheem](https://twitter.com/stabdelraheem/status/1328399373470896128)
-]
-]
-
-
----
-## Open data science
-
-```{r loop-wtext2, out.width = '100%'}
-knitr::include_graphics("img/horst-lowndes-loop-w-esiptext.png")
-```
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst)   
-]
-
-???
-
-But remember, these tools are really most powerful with teams.
-
-And teams is about mindsets and behaviors of individuals and shared, sustainable culture 
-
----
-<br>
-```{r community-logosx, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/ods-community-logos.png")
-```
-
-???
-
-So that was about the tools, and these are some of the communities that make them. We've learned so much from these communities, that focus on inclusion and empowerment. And from them we've established shared norms and shared mindsets.
+RLadies. Gender diversity in R
 
 ---
 class: inverse, center, middle
@@ -645,21 +576,10 @@ art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](h
 Working with tidy data you can use existing tools in familiar ways rather than hand-crafting one-time approaches that are hard to iterate, share, or reuse
 
 ---
-```{r tidy_collab, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/horst_tidy_collab.png")
-```
-
-.footnote[
-art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
-]
-
-
----
 <br>
 <br>
-<br>
-```{r tidy_datasets, out.width = '90%', fig.align='center'}
-knitr::include_graphics("img/horst_tidy_datasets.png")
+```{r tidy_collab, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_tidy_collab-automate.png")
 ```
 
 .footnote[
@@ -668,6 +588,10 @@ art: [@allison_horst](https://twitter.com/allison_horst); [illustrated series](h
 
 ???
 
+Tidy data for easier collaboration! Whether collaborators are current teammates, Future You, or Future Us, organizing and sharing data in a consistent and predictable way means less adjustment, time, and effort for all.
+
+Tidy data for reproducibility and reuse! By using tools that all expect tidy data as 
+inputs, you can build and iterate powerful workflows that are easier to understand,  update, and reuse. 
 
 ---
 ## Open mindset
@@ -760,7 +684,7 @@ knitr::include_graphics("img/horst_openscapes_desert-text.png")
 
 - **Operationalizing our experiences with the Ocean Health Index**
 - **Remote-by-design & cohort-based: 3 hrs/month for 2-4 months**
-- **First cohorts: environmental scientists from academia and NOAA**
+- **First cohorts: environmental scientists from academia and government**
 
 
 .footnote[
@@ -836,6 +760,7 @@ tweet: [@thefaylab](https://twitter.com/thefaylab/status/1239997719449665536)
 ]
 
 ---
+exclude: TRUE 
 class: middle, center
 ```{r noaa-seaside, out.width = '80%'}
 knitr::include_graphics("img/github-noaa-edab-seaside.png")
@@ -909,7 +834,7 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 
 
 ---
-# Thank you all so much
+## Welcome to open 
 
 .pull-left[
 ###OHI team <br>Mozilla team<br>Openscapes Champions<br>#rstats community
@@ -924,8 +849,8 @@ web: [openscapes.org](https://www.openscapes.org); twitter: [@openscapes](https:
 
 .pull-right[
 ### Art by Allison Horst
-```{r horst-air, out.width = '60%', fig.align='center'}
-knitr::include_graphics("img/horst_rstudio_air.png")
+```{r horst-air, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/horst_tidy_datasets.png")
 ```
 
 <br>
@@ -950,9 +875,6 @@ background-position: bottom left
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$institute`
 
-[`r icon::fa("twitter")` @juliesquid](https://twitter.com/juliesquid)  
-[`r icon::fa("paper-plane")` lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
-[`r icon::fa("desktop")` openscapes.org/media](http://openscapes.org/media)  
 
 
 <img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
@@ -1059,5 +981,58 @@ twitter: [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/122502837728051
 https://twitter.com/WeAreRLadies/status/1087741684618809346
 https://twitter.com/frau_dr_barber/status/1127189812308369408
 
+---
+## \#rstats Twitter
+
+```{r welcome-rstats, out.width = '55%', fig.align='center'}
+knitr::include_graphics("img/horst-welcome_to_rstats_twitter.png")  
+```
+
+.footnote[
+art: [@allison_horst](https://twitter.com/allison_horst)
+]
+
+???
+So much cool stuff available, how do you learn what's going on? Twitter. 
+
+I was super skeptical
+
+---
+class: center, middle
+```{r grrrck, out.width = '70%', fig.align='center'}
+knitr::include_graphics("img/tweet-grrrck-99problems.png")
+```
+
+```{r hadley-better, out.width = '70%', fig.align='center'}
+knitr::include_graphics("img/tweet-allimoberger-hadley.png")
+```
+
+.footnote[
+tweet: [@grrrck](https://twitter.com/grrrck/status/1252704601024999437), [@allimoberger](https://twitter.com/allimoberger/status/1085268564821585921)
+]
+
+---
+.pull-left[
+```{r blkindata, out.width = '100%'}
+knitr::include_graphics("img/tweet-blkindata-week.png")
+```
+
+.footnote[
+tweet: [@BlkInData](https://twitter.com/BlkInData/status/1328291205369749511)
+]
+]
+
+.pull-right[
+<br>
+<br>
+<br>
+```{r blkindata2, out.width = '100%'}
+knitr::include_graphics("img/tweet-stabdelraheem-blkindata.png")
+```
+
+.footnote[
+tweet: [@stabdelraheem](https://twitter.com/stabdelraheem/status/1328399373470896128)
+]
+]
 
 
