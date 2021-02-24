@@ -57,6 +57,7 @@ Thank you so much. I'm really excited to be here today to talk about R and teamw
 I'm so happy to have the chance to speak with you all today because —
 
 ---
+exclude: TRUE
 ## Hi, I'm a marine ecologist & open champion
 ```{r sq-tag2, out.width = '40%', fig.align='center'}
 knitr::include_graphics("img/*JulieReleaseAugerIMG_9311-crop.png")
@@ -258,7 +259,7 @@ knitr::include_graphics("img/bsilt-fig1-simple.png")
 
 --->
 
-- **Amazed continually by the \#rstats community**
+- **Amazed continually by online communities of open practice**
 ]
 .footnote[
 source: [*Lowndes et al. 2017* Our path  to better science in less time using open data science tools](https://www.nature.com/articles/s41559-017-0160)
@@ -752,6 +753,7 @@ class: inverse, center, middle
 **Hilary Parker & Roger Peng, [RStudio::conf(2020) keynote](https://rstudio.com/resources/rstudioconf-2020/not-so-standard-deviations-episode-100/) & [NSSD podcast episode 100]( http://nssdeviations.com/100-live-from-rstudio-conf-2020)**
 
 ---
+exclude: TRUE
 ```{r loop-entrywayyy2, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/horst_loop_entryway2.png") 
 ```
@@ -791,7 +793,6 @@ knitr::include_graphics("img/horst_tidy_datasets.png")
 **Special thanks to**:  
 [Allison Horst](https://twitter.com/allison_horst) — all Openscapes artwork  
 OHI • Mozilla • Openscapes • #rstats • Carpentries  
-[Alison Hill](https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7) —  xaringan theme
 ]
 
 .pull-right[
@@ -805,6 +806,9 @@ OHI • Mozilla • Openscapes • #rstats • Carpentries
 ???
 
 Thank you.
+
+[Alison Hill](https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7) —  xaringan theme
+
 
 ---
 ```{r fin}
