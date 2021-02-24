@@ -315,6 +315,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
+exclude: TRUE
 ## RStudio for R, text editing, Github sync, & more
 ```{r workflow-ex-repro-wtext, out.width = '100%'}
 knitr::include_graphics("img/workflow-ex-repro-wtext.png")
@@ -327,6 +328,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
+exclude: TRUE
 ## GitHub for archiving and bookkeeping
 ```{r workflow-ex-collab-wtext, out.width = '100%'}
 knitr::include_graphics("img/workflow-ex-collab-wtext.png")
@@ -339,6 +341,7 @@ source: [OHI slides — WHOI](https://drive.google.com/open?id=1SHvJbBWrGVqzjAPo
 ???
 
 ---
+exclude: TRUE
 ## Github for discussion & project mgmt
 ```{r workflow-ex-collab2-wtext, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/workflow-ex-collab2-wtext.png")
@@ -378,7 +381,7 @@ median_my_data <- median(my_data)
 We found that 
 
 ---
-## RMarkdown for docs, publishing & websites
+## RMarkdown: reimagining communication
 ```{r workflow-ex-comm-wtext, out.width = '100%'}
 knitr::include_graphics("img/workflow-ex-comm-wtext.png")
 ```
@@ -404,6 +407,30 @@ inspiration: [Imagine Boston](https://analytics.boston.gov/app/imagine-boston)
 ???
 
 And when we are working closely with partners who are engaged with data analysis decisions, we have been able to create dashboards as well. 
+
+---
+.pull-left[
+```{r jomilo, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/tweet-jomilo75-rspatial-gif.png")  
+```
+
+.footnote[
+tweet: [@jomilo75](https://twitter.com/jomilo75/status/1099044075158659072)
+]
+]
+
+.pull-right[
+```{r tbep, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/tweet-fawda123-tbep.png")  
+```
+
+.footnote[
+tweet: [@fawda123](https://twitter.com/jomilo75/status/1099044075158659072);
+blog: [openscapes](https://openscapes.org/blog/2020/11/16/tampa-bay-reporting/)
+]
+]
+
+
 
 
 ---
@@ -453,6 +480,29 @@ knitr::include_graphics("img/ods-community-logos.png")
 ???
 
 So that was about the tools, and these are some of the communities that make them. We've learned so much from these communities, that focus on inclusion and empowerment. And from them we've established shared norms and shared mindsets.
+
+---
+.pull-left[
+<br>
+```{r gam, out.width = '100%'}
+knitr::include_graphics("img/tweet-wearerladies-gam.png")
+```
+
+.footnote[
+tweet: [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/1140669339978391552)
+]
+]
+
+.pull-right[
+<br>
+```{r oaggimenez, out.width = '100%', fig.align='center'}
+knitr::include_graphics("img/tweet-oaggimenez-sf-spatial.png")  
+```
+.footnote[
+tweet: [@oaggimenez](https://twitter.com/oaggimenez/status/1093882504560414721)
+]
+]
+
 
 ---
 class: inverse, center, middle
@@ -580,6 +630,7 @@ source: [OHI slides](https://docs.google.com/presentation/d/12m8dUpIOz16x1RlZWLt
 ]
 
 ???
+
 
 ---
 <br>
@@ -963,7 +1014,7 @@ web: [ropensci/packages](https://ropensci.org/packages); [janitor](https://sfirk
 ]
 
 .pull-right[
-```{r tbep, out.width = '100%', fig.align='center'}
+```{r tbepx, out.width = '100%', fig.align='center'}
 knitr::include_graphics("img/tweet-fawda123-tbep.png")  
 ```
 
@@ -977,34 +1028,6 @@ blog: [openscapes](https://openscapes.org/blog/2020/11/16/tampa-bay-reporting/)
 These kinds of conversations and communities enable packages like these, from rOpenSci
 
 rOpenSci doing code review
-
----
-.pull-left[
-<br>
-```{r gam, out.width = '100%'}
-knitr::include_graphics("img/tweet-wearerladies-gam.png")
-```
-
-.footnote[
-tweet: [@WeAreRLadies](https://twitter.com/WeAreRLadies/status/1140669339978391552)
-]
-]
-
-.pull-right[
-<br>
-```{r oaggimenez, out.width = '100%', fig.align='center'}
-knitr::include_graphics("img/tweet-oaggimenez-sf-spatial.png")  
-```
-.footnote[
-tweet: [@oaggimenez](https://twitter.com/oaggimenez/status/1093882504560414721)
-]
-]
-
-??? 
-
-RLadies. Gender diversity in R
-
-
 
 ---
 class: center, middle
