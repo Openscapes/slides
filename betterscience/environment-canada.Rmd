@@ -32,8 +32,8 @@ options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = F
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
 
 library(xaringan)
-#library(fontawesome) #devtools::install_github("rstudio/fontawesome")
-#library(icon) #devtools::install_github("ropenscilabs/icon")
+# library(fontawesome) #devtools::install_github("rstudio/fontawesome")
+# library(icon) #devtools::install_github("ropenscilabs/icon")
 ```
 
 class: title-slide, right, bottom
@@ -46,6 +46,9 @@ background-position: bottom left
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$institute`
 
+[@juliesquid](https://twitter.com/juliesquid)  
+[lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
+[openscapes.org/media](http://openscapes.org/media)  
 
 <img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
 <img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
@@ -823,7 +826,9 @@ background-position: bottom left
 ### `r rmarkdown::metadata$author`
 ### `r rmarkdown::metadata$institute`
 
-
+[@juliesquid](https://twitter.com/juliesquid)  
+[lowndes@nceas.ucsb.edu](mailto:lowndes@nceas.ucsb.edu)  
+[openscapes.org/media](http://openscapes.org/media)  
 
 <img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
 <img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
