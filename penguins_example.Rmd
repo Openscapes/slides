@@ -7,8 +7,6 @@ output: html_document
 
 # Palmer Penguins Example Code
 
-This lets me write like it's a **Google doc formatting**
-
 <https://allisonhorst.github.io/palmerpenguins/articles/examples.html>
 
 ```{r setup, include=FALSE}
@@ -21,6 +19,8 @@ library(ggplot2) # (install.packages("ggplot2")
 ```
 
 ## Penguin mass vs. flipper length
+
+[**`typakajflkdjfa dlkjfadkajfldk`**]{.ul}
 
 ```{r}
 mass_flipper <- ggplot(data = penguins,
