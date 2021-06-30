@@ -1,0 +1,107 @@
+---
+title: "Openscapes:<br>Better Science for Future Us"
+subtitle: "Open Problems Workshop"
+author: 'Julia Stewart Lowndes, PhD' 
+role: ''
+institute: 'National Center for Ecological Analysis & Synthesis, UCSB'
+output:
+  xaringan::moon_reader:
+    seal: false
+    chakra: libs/remark-latest.js # with @bjungbogati tidyverse dev toulouse: need to save this file to knit offline!
+    lib_dir: libs 
+    nature:
+      slideNumberFormat: "" # comment out to disable
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:10" # https://github.com/apreshill/talks/blob/master/sdss-blogdown/index.Rmd#L16, http://user2019.r-project.org/information_for_presenters/
+      output:
+    css: ["default", "css/my-fonts.css", "css/my-theme.css"] #https://github.com/apreshill/talks/blob/master/uo-sad-plot-better/index.Rmd#L7
+    includes:
+      in_header: header.html    
+      
+# http://arm.rbind.io/slides/xaringan.html#45: presenter mode:: press c then f then p
+# https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/static/slides/xaringan.Rmd      
+
+# TODO::::: replace ESIP loop for the "team traits" slides
+
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, warning=FALSE, message=FALSE, verbose = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+
+library(xaringan)
+# library(fontawesome) #devtools::install_github("rstudio/fontawesome")
+# library(icon) #devtools::install_github("ropenscilabs/icon")
+```
+
+class: title-slide, right, bottom
+
+
+
+## `r rmarkdown::metadata$title`
+### `r rmarkdown::metadata$author`
+### `r rmarkdown::metadata$institute`
+
+[@juliesquid](https://twitter.com/juliesquid)  
+[openscapes.org/media](http://openscapes.org/media)  
+
+<img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
+<img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
+
+???
+
+
+---
+name: r4ds
+class: top
+background-image: url(img/horst-eco-r4ds.png)
+background-size: contain
+
+.footnote[art: [@allison_horst](https://twitter.com/allison_horst); 
+updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)]
+
+
+---
+name: r4ds-bookends
+class: top
+background-image: url(img/horst-eco-r4ds-env-comm-only.png)
+background-size: contain
+
+.footnote[art: [@allison_horst](https://twitter.com/allison_horst); 
+updated from [Wickham & Grolemund](https://r4ds.had.co.nz/)]
+
+---
+
+class: inverse, center, middle
+##“If you want to learn to write, you read a lot, <br>if you want to play music, you listen a lot. <br>It’s hard to do this with data analysis.” 
+
+**Hilary Parker & Roger Peng, [RStudio::conf(2020) keynote](https://rstudio.com/resources/rstudioconf-2020/not-so-standard-deviations-episode-100/) & [NSSD podcast episode 100]( http://nssdeviations.com/100-live-from-rstudio-conf-2020)**
+
+---
+# First steps in open data science 
+
+<br>
+
+### You're not alone, it's not too late
+### Open data science communities are all around you
+### Scroll Twitter to find examples that interest you: 
+
+- [#rstats hashtag](https://twitter.com/hashtag/rstats?lang=en)
+- [@WeAreRLadies](https://twitter.com/wearerladies)
+- [@R4DScommunity](https://twitter.com/R4DScommunity)
+
+Data does not need to be the first step! I've made my slides with **RMarkdown** without any coding & [you can too](https://jules32.github.io/rmarkdown-website-tutorial/)!
+
+
+
+---
+name: champions
+class: top
+background-image: url(img/horst_champions.png)
+background-size: contain
+
+.footnote[art: [@allison_horst](https://twitter.com/allison_horst)]
+
+
