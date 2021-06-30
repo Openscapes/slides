@@ -1,5 +1,5 @@
 ---
-title: "Openscapes:<br>Better Science for Future Us"
+title: "Open Data Science: <br>Open Problems Workshop"
 subtitle: "Open Problems Workshop"
 author: 'Julia Stewart Lowndes, PhD' 
 role: ''
@@ -45,10 +45,6 @@ class: title-slide, right, bottom
 ### `r rmarkdown::metadata$institute`
 
 [@juliesquid](https://twitter.com/juliesquid)  
-[openscapes.org/media](http://openscapes.org/media)  
-
-<img src="img/mozilla.png" alt="mozilla" style="float:right;width:154px;"/>
-<img src="img/nceas.png" alt="nceas" style="float:right;width:150px;"/>
 
 ???
 
@@ -97,6 +93,7 @@ Data does not need to be the first step! I've made my slides with **RMarkdown** 
 
 
 ---
+exclude: TRUE
 name: champions
 class: top
 background-image: url(img/horst_champions.png)
