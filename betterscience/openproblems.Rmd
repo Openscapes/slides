@@ -75,6 +75,12 @@ class: inverse, center, middle
 
 **Hilary Parker & Roger Peng, [RStudio::conf(2020) keynote](https://rstudio.com/resources/rstudioconf-2020/not-so-standard-deviations-episode-100/) & [NSSD podcast episode 100]( http://nssdeviations.com/100-live-from-rstudio-conf-2020)**
 
+<br>
+
+--
+
+### This is why open data science communities are so key
+
 ---
 # First steps in open data science 
 
