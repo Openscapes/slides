@@ -3,7 +3,7 @@ title: "Open Data Science: <br>Open Problems Workshop"
 subtitle: "Open Problems Workshop"
 author: 'Julia Stewart Lowndes, PhD' 
 role: ''
-institute: 'Openscapes Co-Director,<br>National Center for Ecological Analysis & Synthesis, UCSB'
+institute: 'Openscapes Co-Director<br>National Center for Ecological Analysis & Synthesis, UCSB'
 output:
   xaringan::moon_reader:
     seal: false
