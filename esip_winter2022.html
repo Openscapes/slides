@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.3.8">
+  <meta name="author" content="All artwork by Allison Horst   slides: https://nasa-openscapes.github.io">
+  <title>Community Building: The NASA Openscapes Framework</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="esip_winter2022_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="esip_winter2022_files/libs/revealjs/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="esip_winter2022_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+
+  <script src="esip_winter2022_files/libs/clipboard/clipboard.min.js"></script>
+  <script src="esip_winter2022_files/libs/quarto-html/tabby.min.js"></script>
+  <script src="esip_winter2022_files/libs/quarto-html/popper.min.js"></script>
+  <script src="esip_winter2022_files/libs/quarto-html/tippy.umd.min.js"></script>
+  <link href="esip_winter2022_files/libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="esip_winter2022_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
+  <link href="esip_winter2022_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <link href="esip_winter2022_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="esip_winter2022_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="esip_winter2022_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="esip_winter2022_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="esip_winter2022_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="esip_winter2022_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal-references {
+      display: none;
+    }
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal #title-slide.center,
+    .reveal .title-slide.center,
+    .reveal .controls .navigate-left .controls-arrow,
+    .reveal .controls .navigate-right .controls-arrow {
+      margin-top: -15px;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <h1 class="title">Community Building: The NASA Openscapes Framework</h1>
+  <p class="subtitle"><strong>Erin Robinson, Julia Lowndes, NASA Openscapes Mentors</strong></p>
+  <p class="author">All artwork by Allison Horst <br> slides: <a href="https://nasa-openscapes.github.io" class="uri">https://nasa-openscapes.github.io</a></p>
+  <p class="date">ESIP Winter Meeting, January 18, 2022</p>
+</section>
+
+<section>
+<section id="section" class="title-slide slide level1 center" data-background-image="images/horst_champions_landscape.png">
+<h1></h1>
+<aside class="notes">
+<p>A mentorship program that helps researchers move from lonely science by exploring the open science landscape with their teams in a cohort of peers</p>
+</aside>
+</section>
+<section id="open-data-science" class="slide level2">
+<h2><span style="color:#45818e">Open data science</span></h2>
+<p><strong>The tooling and people enabling reproducible, transparent, and inclusive practices for data-intensive science</strong></p>
+
+<aside class="notes">
+<p>A beautiful feedback loop: Using similar tooling promotes and streamlines teamwork. And teamwork better equips you to learn new tooling. With this shared mindset, the idea of team becomes ever-broadening, along with your abilities to adapt to an evolving softwarescape.</p>
+</aside>
+<img data-src="images/horst_feedback_loop.png" style="width:90.0%" class="r-stretch quarto-figure-center"></section>
+<section id="create-space-for-discussions" class="slide level2">
+<h2><span style="color:#45818e">Create space for discussions</span></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/zoom_champions_inaugural.png" style="width:92.0%"></p>
+</figure>
+</div>
+<p><span style="color:#45818e"><strong>Champions Cohort Calls</strong></span></p>
+<p><span style="color:#5E696C">~7 research teams</span></p>
+<p><span style="color:#5E696C">2x/month</span></p>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/horst_seaside_chats.jpg" style="width:92.0%"></p>
+</figure>
+</div>
+<p><span style="color:#45818e"><strong>Seaside Chats</strong></span></p>
+<p><span style="color:#5E696C">Individual teams</span></p>
+<p><span style="color:#5E696C">2x/month</span></p>
+</div>
+</div>
+</section>
+<section id="open-data-science-in-action" class="slide level2">
+<h2><span style="color:#45818e">Open data science in action</span></h2>
+
+<img data-src="images/feedback_loop_ex_github.png" class="r-stretch"></section></section>
+<section>
+<section id="section-1" class="title-slide slide level1 center" data-background-color="#45818e">
+<h1></h1>
+<p><strong>“This isn’t just about coding &amp; GitHub, it’s about changing the way we do science”</strong> - Dr.&nbsp;Malin Pinsky, Rutgers*</p>
+<p><br></p>
+<p><strong>“Openscapes has created a new way of thinking about merging empathy and science. That’s an invaluable gift to me.”</strong> - Dr.&nbsp;Halley Froehlich, UCSB</p>
+<p><br></p>
+<p><strong>“Openscapes gave me a perspective of how all these open data science tools work together and can be used to bring natural resource conservation and ecology into the 21st century.”</strong> - Researcher, NOAA National Marine Fisheries Service</p>
+</section>
+<section id="working-more-openly-and-inclusively" class="slide level2">
+<h2><span style="color:#45818e">Working more openly and inclusively</span></h2>
+
+<aside class="notes">
+<p>Reframe data-intensive research as collaborative effort not an individual burden. students participate in research faster • grant money goes further • co-creating norms promoting diversity, equity &amp; inclusion • new collaborations • on/offboarding • leadership</p>
+<p>Biggest lesson: power of research teams &amp; data science to normalize open science</p>
+</aside>
+<img data-src="images/openscapes_theory_of_change.png" class="r-stretch quarto-figure-center"></section>
+<section id="openscapes-approach" class="slide level2">
+<h2><span style="color:#45818e">Openscapes approach</span></h2>
+<p>Researcher-centered, focused on teams. Practice and feel safe working openly with yourself and your team; then ease into more.</p>
+<p>Create space &amp; place to explore &amp; learn. Cohort Calls, Seaside Chats, Co-Working; GitHub, R, Python, Google Drive, Slack; Efficiency Tips &amp; Inclusion Tips.</p>
+<p>Cultivate relationships &amp; real connections. Welcoming folks with diverse backgrounds; meeting where they are; skills to empower immediate work; kinder science.</p>
+<p>Learning &amp; iterating, openly. Not a checklist but a continual practice. Messy.</p>
+<p><a href="https://openscapes.org/approach"><span style="color:#45818E"><em>https://openscapes.org/approach</em></span></a></p>
+</section>
+<section id="nasa-earthdata-openscapes" class="slide level2" style="color:#45818e">
+<h2>NASA Earthdata &amp; Openscapes</h2>
+<p><strong>Supporting Earthdata research teams’ migration to the cloud</strong></p>
+<p><br></p>
+<p><span style="color:#666666"><strong>The overarching vision</strong></span> <span style="color:#666666">is to support scientific researcher teams using NASA EOSDIS data as they migrate their workflows to the cloud. We are doing this working with NASA Distributed Active Archive Centers (DAACs) over three years by:</span></p>
+<ul>
+<li><span style="color:#666666"><strong>Develop a cross-DAAC Mentor community</strong></span></li>
+<li><span style="color:#666666"><strong>Empower science teams through the Champions program</strong></span></li>
+<li><span style="color:#666666"><strong>Scale the Champions program with DAAC Mentors</strong></span></li>
+</ul>
+<p><a href="https://nasa-openscapes.github.io"><span style="color:#45818E"><em>https://nasa-openscapes.github.io</em></span></a> <img data-src="images/nasa-openscapes.png" data-fig-align="right" style="width:10.0%"></p>
+<aside class="notes">
+<ul>
+<li>Develop a cross-DAAC Mentor community [of collaborative cloud data instructors, that co-create, curate, and use shared resources (“make once, use often”)</li>
+<li>Empower science teams through the Champions programto migrate their download- intensive data analysis workflows to the cloud and open, kinder science</li>
+<li>Scale the Openscapes Champions program with DAAC Mentorsto support more teams transforming their workflows towards open, kinder science and the cloud</li>
+</ul>
+</aside>
+</section>
+<section id="nasa-daac-openscapes-mentors" class="slide level2">
+<h2>NASA DAAC Openscapes Mentors</h2>
+
+<p><span style="color:#595959">Support Mentors towards establishing a common set of NASA Earthdata tutorials that they can then build off their DAAC-specific and science examples</span></p>
+<ul>
+<li><p><span style="color:#45818E"><strong>Create space &amp; place</strong></span></p></li>
+<li><p><span style="color:#45818E"><strong>Focus on the common</strong></span></p></li>
+<li><p><span style="color:#45818E"><strong>Reuse existing</strong></span></p></li>
+<li><p><span style="color:#45818E"><strong>Contribute to fill gaps - and do so openly</strong></span></p></li>
+</ul>
+<img data-src="images/horst_champions_mentors.png" style="width:70.0%" class="r-stretch"></section>
+<section id="cloud-hackathon---nov-15-19" class="slide level2">
+<h2><span style="color:#34495E"><strong>2021 Cloud Hackathon - Nov 15-19</strong></span></h2>
+<p><span style="color:#595959"></span></p>
+<p><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/"><span style="color:#45818E"><em>https://nasa-openscapes.github.io/2021-Cloud-Hackathon/</em></span></a></p>
+
+<img data-src="images/zoom_2021_nasa_cloud_hackathon.png" class="r-stretch"></section>
+<section id="cloud-hackathon" class="slide level2">
+<h2><span style="color:#34495E"><strong>2021 Cloud Hackathon</strong></span></h2>
+<p><img data-src="images/screenshot_2021_cloud_hackathon_book.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1830.png"></p>
+<p><span style="color:#45818E"><strong>65 Openscapes 2i2c JupyterHub AWS</strong></span> <span style="color:#45818E"><strong>instances</strong></span></p>
+<p><span style="color:#45818E"><strong>50 forks of the Cloud Hackathon GitHub repo</strong></span></p>
+<p><span style="color:#45818E"><strong>8 hack-team projects presented on Day 5</strong></span></p>
+<p>“It was a really great week. The tutorials were AMAZING. Everyone did a great job, and everyone was very nice. I really appreciated welcoming environment. I don’t have a strong python background. But i was supported in learning all around”</p>
+<p><span style="color:#595959"><strong>Blog summaries</strong></span> <span style="color:#595959">:</span></p>
+<p><a href="https://earthdata.nasa.gov/learn/articles/2021-cloud-hackathon"><span style="color:#45818E"><em>earthdata.nasa.gov/learn/articles/2021-cloud-hackathon</em></span></a></p>
+<p><a href="https://podaac.jpl.nasa.gov/announcements/2021-12-15-The-2021-Cloud-Hackathon"><span style="color:#45818E"><em>podaac.jpl.nasa.gov/announcements/2021-12-15-The-2021-Cloud-Hackathon</em></span></a></p>
+</section></section>
+<section id="support-from-participants" class="title-slide slide level1 center" style="color:#646363">
+<h1>Support from participants</h1>
+<p><span style="color:#646363"><em>It’s worth investing the extra time required to become familiar with cloud computing and the newer python libraries to access and manipulate satellite data. The few hundred lines of code I wrote this week will replace several thousand lines of old code using just numpy! It’s also a heck of a lot easier to read and use.</em></span></p>
+</section>
+
+<section>
+<section id="more-work-to-do" class="title-slide slide level1 center" style="color:#646363">
+<h1>More work to do</h1>
+<p><span style="color:#646363"><em>The tutorials were fantastic, but I struggled to figure out when to use the various methods we learned in the tutorials.</em></span></p>
+</section>
+<section id="tooling-norms-for-co-creating" class="slide level2 scrollable">
+<h2>Tooling &amp; norms for co-creating</h2>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1836.png"></p>
+<p><span style="color:#595959"><strong>Co-created teaching resources</strong></span></p>
+<p><strong>GitHub org: NASA-Openscapes</strong></p>
+<p><strong>Jupyter Hub: 2i2c</strong></p>
+<p><strong>Tutorial notebooks: python/jupyter</strong></p>
+<p><strong>Notebook collections: quarto</strong></p>
+<p><strong>Mentor Cohort</strong> <strong>norms</strong></p>
+<p><strong>Issues, branching &amp; pull requests</strong></p>
+<p><strong>Finding &amp; re-using common parts</strong></p>
+<p><strong>Notebook review &amp; teaching feedback</strong></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1837.png"></p>
+<p><span style="color:#45818E"><strong>Emerging themes:</strong></span></p>
+<p><span style="color:#45818E">A big time investment, very grateful for Mentors and DAAC Managers</span></p>
+<p><span style="color:#45818E">Open science is a critical piece of research in the Cloud</span></p>
+<p><span style="color:#45818E">Teaching-oriented d</span> <span style="color:#45818E">ocumentation: documentation is easier to prioritize when it’s for real people (Hackathon book vs Cookbook)</span></p>
+</section>
+<section id="open-science-as-part-of-the-climate-movement" class="slide level2">
+<h2>Open science as part of the climate movement</h2>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1838.png" style="width:60.0%"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1839.png" style="width:10.0%"></p>
+<p><span style="color:#45818E">Recurring themes</span></p>
+<p><span style="color:#45818E"><strong>Create space &amp; place</strong></span></p>
+<p><span style="color:#45818E"><strong>Focus on the common</strong></span></p>
+<p><span style="color:#45818E"><strong>Reuse existing</strong></span></p>
+<p><span style="color:#45818E"><strong>Contribute to fill gaps - and do so openly</strong></span></p>
+<p><a href="https://www.allwecansave.earth"><span style="color:#45818E"><em>www.allwecansave.earth</em></span></a></p>
+<p><span style="color:#45818E"><em>” ‘We’ speaks to the collective, to collaboration, to community, to the relational work at hand. Addressing the climate crisis…will take everyone.</em></span></p>
+<p><span style="color:#45818E"><em>‘We’ speaks to justice, to how we do the work that needs doing and whose contributions are valued. We cannot, we must not, go it alone”</em></span></p>
+<p><span style="color:#45818E">Ayana Elizabeth Johnson &amp; Katharine Wilkinson</span></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1840.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1841.png"></p>
+<p><span style="color:#45818E"><strong>NASA Champions Cohort March-April 2022.</strong></span></p>
+<p><span style="color:#45818E"><strong>Learn with your team with a cohort of peers</strong></span> <a href="https://nasa-openscapes.github.io/champions"><span style="color:#45818E"><em>nasa-openscapes.github.io/champions</em></span></a></p>
+<p><span style="color:#45818E">Nominate your team by February 1!</span></p>
+<p><span style="color:#45818E"><strong>ESIP Session: Better Science for Future Us</strong></span></p>
+<p><span style="color:#45818E"><strong>Join us! Friday, Jan 21, 2022 11-12:30 EST</strong></span></p>
+<p><span style="color:#45818E">Details:</span> <a href="https://sched.co/qkp5"><em>https://sched.co/qkp5</em></a></p>
+</section>
+<section id="thank-you-to-the-daac-mentors" class="slide level2" style="color:#D86D4C">
+<h2>Thank you to the DAAC Mentors!</h2>
+
+<img data-src="images/zoom_2021_nasa_mentors.png" class="r-stretch"></section></section>
+<section id="thank-you" class="title-slide slide level1 center">
+<h1>Thank you!</h1>
+<p>We’re looking forward to working together!</p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1850.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1851.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1852.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1853.png"></p>
+<p><span style="color:#5E696C"><strong>Erin Robinson, MSc</strong></span></p>
+<p><span style="color:#5E696C">Co-Director, Openscapes</span></p>
+<p><span style="color:#5E696C">Metadata Game Changers</span></p>
+<p><span style="color:#5E696C">erin@metadatagamechangers.com</span></p>
+<p><span class="citation" data-cites="connector">@connector [\_erin]</span>{style=“color:#5E696C”}</p>
+<p><span style="color:#5E696C"><strong>Julia Stewart Lowndes, PhD</strong></span></p>
+<p><span style="color:#5E696C">Co-Director, Openscapes</span></p>
+<p><span style="color:#5E696C">National Center for Ecological Analysis &amp; Synthesis (NCEAS), UC Santa Barbara (UCSB)</span></p>
+<p><span style="color:#5E696C">lowndes@nceas.ucsb.edu; <span class="citation" data-cites="juliesquid">@juliesquid</span></span></p>
+</section>
+
+<section id="join-us" class="title-slide slide level1 center">
+<h1>Join us:</h1>
+<p>Twitter: <span class="citation" data-cites="openscapes">@openscapes</span> Web: openscapes.org/contact openscapes.org/events Early 2022: NASA Champions nasa-openscapes.github.io</p>
+</section>
+
+<section id="further-background" class="title-slide slide level1 center">
+<h1>Further background:</h1>
+<p>Entryways to open data science and the power of welcome Lowndes 2020, plenary at Earth Science Information Partners (ESIP) Meeting</p>
+<p>Openscapes: Better Science for Future Us Lowndes, Robinson 2021, plenary at SORTEE Meeting</p>
+<p>Better Science for Future Us: Supporting NASA Earth science research teams’ migration to the cloud with Openscapes Robinson, Lowndes 2021, Pangeo Showcase, June 2021</p>
+</section>
+
+<section id="slides-httpsnasa-openscapes.github.ioabout" class="title-slide slide level1 center">
+<h1>slides: https://nasa-openscapes.github.io/about</h1>
+<p>Openscapes artwork by Allison Horst</p>
+
+<img data-src="images/Openscapes_ESIP10min_2022_01_1854.png" class="r-stretch"></section>
+
+<section id="nasa-earthdata-cloud-resources" class="title-slide slide level1 center">
+<h1>NASA Earthdata Cloud Resources</h1>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1855.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1856.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1857.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1858.png"></p>
+<p><span style="color:#34495E"><strong>Earthdata Cloud Cookbook</strong></span></p>
+<p><a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook"><em>https://nasa-openscapes.github.io/earthdata-cloud-cookbook</em></a></p>
+<p><span style="color:#34495E"><strong>2021 Cloud Hackathon</strong></span></p>
+<p><span style="color:#595959">November 15-19</span></p>
+<p><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/"><em>https://nasa-openscapes.github.io/2021-Cloud-Hackathon/</em></a></p>
+<p><span style="color:#34495E">__2021 Cloud Workshop <span class="citation" data-cites="AGU__">@AGU__</span></span></p>
+<p><strong>December</strong> <strong>12</strong></p>
+<p><a href="https://nasa-openscapes.github.io/2021-Cloud-Workshop-AGU/"><em>https://nasa-openscapes.github.io/2021-Cloud-Workshop-AGU/</em></a></p>
+<p><span style="color:#595959">Set up your own Jupyter Hub -&gt;</span> <a href="https://github.com/eeholmes/jupyterhub"><em>https://github.com/eeholmes/jupyterhub</em></a></p>
+<p><span style="color:#595959">NASA Workshop Environment -&gt;</span> <a href="https://github.com/NASA-Openscapes/corn"><em>https://github.com/NASA-Openscapes/corn</em></a></p>
+<p><strong>Invest</strong> <strong>in Champions Program curriculum</strong></p>
+<p><strong>Invest</strong> <strong>in Champions Program curriculum: NASA Earthdata cloud-specific materials</strong></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1859.png"></p>
+<p><strong>Develop</strong> <strong>Champions Mentor – professional development and leadership skills</strong></p>
+<p><strong>Attract</strong> <strong>research teams interested in better practices for data-intensive science</strong></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1860.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1861.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1862.png"></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_1863.png"></p>
+<p><span style="color:#45818E"><em>Empower</em></span></p>
+<p><span style="color:#45818E"><strong>research teams</strong></span></p>
+<p><strong>Deliver</strong> <strong>Champions Program for a Cohort of research teams</strong></p>
+<p><strong>Inspire</strong> <strong>broader scientific communities through visible examples and leaders – Open science shift</strong></p>
+<p><strong>Transform</strong> <strong>research teams workflows towards kinder, inclusive open science</strong></p>
+</section>
+
+<section id="identifying-the-common-parts-of-documentation" class="title-slide slide level1 center">
+<h1>Identifying the common parts of documentation</h1>
+
+<p><a href="https://documentation.divio.com/"><em>documentation.divio.com</em></a></p>
+<img data-src="images/Openscapes_ESIP10min_2022_01_1864.png" class="r-stretch"></section>
+
+<section id="if-you-had-to-pick-one-single-thing-that-youre-taking-away-from-the-cloud-hackathon-what-would-it-be-and-why" class="title-slide slide level1 center">
+<h1>If you had to pick one single thing that you’re taking away from the Cloud Hackathon, what would it be, and why?</h1>
+
+<img data-src="images/Openscapes_ESIP10min_2022_01_1865.png" class="r-stretch"></section>
+
+<section id="i-have-a-much-better-understanding-of-how-cloud-computing-works-and-could-be-used-in-the-future." class="title-slide slide level1 center">
+<h1>I have a much better understanding of how cloud computing works and could be used in the future.</h1>
+<p>It’s worth investing the extra time required to become familiar with cloud computing and the newer python libraries to access and manipulate satellite data. The few hundred lines of code I wrote this week will replace several thousand lines of old code using just numpy! It’s also a heck of a lot easier to read and use.</p>
+<p>I need to work at this consistently, not haphazardly, to make real progress in my skill set.</p>
+<p>All of the positive energy and excitement around collaboration, cloud computing, and developing shared resources - it’s exciting to see this work gaining broader momentum and adoption. Code wise - Amy’s function for reading specific variables from an hdf5 file on the cloud into xarray.</p>
+<p>Collaborators - there is a lot of knowledge within this group and it is nice to know that there are people working on similar problems and you have someone to talk to when creating code.</p>
+<p>There are many options for accessing data, and expertise/experience is needed to figure these out. But- it’s possible and I now have many tools to do so. I feel confident I can figure it out with the tools I learned this week.</p>
+<p>Using CMR and S3 FS to programmatically access data files on S3</p>
+</section>
+
+<section id="what-were-some-of-the-pain-points-youve-encountered-during-the-hackathon-or-what-are-some-concepts-that-you-would-want-to-revisit" class="title-slide slide level1 center">
+<h1>What were some of the pain points you’ve encountered during the hackathon, or what are some concepts that you would want to revisit?</h1>
+
+<img data-src="images/Openscapes_ESIP10min_2022_01_1866.png" class="r-stretch"></section>
+
+<section id="working-with-large-datasets-working-with-git-through-jupyter-hub." class="title-slide slide level1 center">
+<h1>Working with large datasets, working with GIT through Jupyter HUB.</h1>
+<p>There were a number of different workflows to different datasets, as outlined in the tutorials. A general flow diagram or cheatsheet of what workflow goes best with which dataset and why would be useful.</p>
+<p>The tutorials were fantastic, but I struggled to figure out when to use the various methods we learned in the tutorials.</p>
+<p>API’s were super cool, I’m not aware about all the API’s used in the hackathon.</p>
+<p>Cloud computing and git can be challenging to use if you don’t use them everyday. Without education and hackathons like this one, many scientists will have trouble transitioning to cloud computing unless they have the financial resources to support programmers.</p>
+<p>I was insufficiently prepared with python skills….I think the cloud searching was over emphasized, because most of us came knowing which data sets we intend to use (e.g., by searching the PO.DAAC catalog for cloud enabled data sets).</p>
+<p>I didn’t know what was meant by “On-Premise” data. I thought I knew. I thought it meant data on my local computer. The next day I needed to work with ‘On-premise’ data and then I figured out how I hadn’t really understood the whole ‘cloud’ computing framework. In fact I am still fuzzy but am now more aware of how fuzzy my understanding is.</p>
+<p>The spin-up was longer than expected to learn how to access the data. Help was essential to understanding why I couldn’t access some data using scripts written for another dataset. Eventually will need more help with accessing troublesome datasets in the future.</p>
+<p>I wish we had started at this very low level and had more emphasis on the basics (and less on what to do with the data after obtaining it): (1) Find the concept ID/short name for a given data set (could be via internet browsing) (2) Make a list of addresses to access the files in S3 (3) Access the files (ingest into python, perhaps with xarray)”</p>
+<p>lack of cloud knowledge and experience to better understand the codes, and discern which codes/services are better or preferable than others.</p>
+
+<img data-src="images/Openscapes_ESIP10min_2022_01_1867.png" class="r-stretch"></section>
+
+<section>
+<section id="success-stories" class="title-slide slide level1 center">
+<h1>Success Stories</h1>
+
+<p><span style="color:#595959">With less than one year into this 3-year funded effort, this list will surely continue to grow…</span></p>
+<p><span style="color:#595959">Cross-DAAC community with active collaboration across five DAACs and IMPACT</span></p>
+<p><span style="color:#595959">Learner-centered and more confident teachers which allows for feedback between developers and DAAC mentors</span></p>
+<p><span style="color:#595959">Lowered barrier to NASA Earthdata cloud entry - partnership with 2i2c</span></p>
+<p><span style="color:#595959">Building external collaboration (UW Hackweeks, Openscapes community, Carpentries, Pangeo, ESIP etc.)</span></p>
+<img data-src="images/Openscapes_ESIP10min_2022_01_1868.png" class="r-stretch"></section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/openscapes_fox.png" style="width:50.0%"></p>
+<p><span style="color:#5E696C"><strong>Erin Robinson, MSc</strong></span></p>
+<p><span style="color:#5E696C">Co-Director, Openscapes</span></p>
+<p><span style="color:#5E696C">Metadata Game Changers</span></p>
+<p><span style="color:#5E696C"><span class="citation" data-cites="connector_erin">@connector_erin</span></span></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_185.png" style="width:20.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/openscapes_hedgehog.png" style="width:50.0%"></p>
+<p><span style="color:#5E696C"><strong>Julia Stewart Lowndes, PhD</strong></span></p>
+<p><span style="color:#5E696C">Co-Director, Openscapes</span></p>
+<p><span style="color:#5E696C">NCEAS, UCSB</span></p>
+<p><span style="color:#5E696C"><span class="citation" data-cites="juliesquid">@juliesquid</span></span></p>
+<p><img data-src="images/Openscapes_ESIP10min_2022_01_183.png" style="width:12.0%"></p>
+</div>
+</div>
+<div class="footer footer-default">
+
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="esip_winter2022_files/libs/revealjs/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="esip_winter2022_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="esip_winter2022_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        setTimeout(function() {
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          let href = ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    });
+    </script>
+    
+
+<div class="reveal-references"></div></body></html>
