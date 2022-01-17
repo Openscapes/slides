@@ -23,7 +23,9 @@ A mentorship program that helps researchers move from lonely science by explorin
 ## [Open data science]{style="color:#45818e"}
 
 
-**The tooling and people enabling reproducible, transparent, and inclusive practices for data-intensive science**
+[**The tooling and people enabling reproducible, transparent, and inclusive practices for data-intensive science**]{style="color:#5E696C"}
+
+<br>
 
 ![](images/feedbackloop_w_text.png){width=90% fig-align="center"}
 
@@ -94,16 +96,16 @@ Biggest lesson: power of research teams & data science to normalize open science
 :::
 
 ## [Openscapes approach]{style="color:#45818e"}
-
-Researcher-centered, focused on teams. Practice and feel safe working openly with yourself and your team; then ease into more.
-
-Create space & place to explore & learn. Cohort Calls, Seaside Chats, Co-Working; GitHub, R, Python, Google Drive, Slack; Efficiency Tips & Inclusion Tips.
-
-Cultivate relationships & real connections. Welcoming folks with diverse backgrounds; meeting where they are; skills to empower immediate work; kinder science.
-
-Learning & iterating, openly. Not a checklist but a continual practice. Messy.
-
 [[*https://openscapes.org/approach*]{style="color:#45818E"}](https://openscapes.org/approach)
+
+[**Researcher-centered, focused on teams.** Practice and feel safe working openly w/ yourself & your team; then ease into more.]{style="color:#5E696C"}
+
+[**Create space & place to explore & learn.** Cohort Calls, Seaside Chats, Co-Working; GitHub, R, Python, Quarto, Google Drive, Slack; Efficiency Tips & Inclusion Tips.]{style="color:#5E696C"}
+
+[**Cultivate relationships & real connections.** Welcoming folks with diverse backgrounds; meeting where they are; skills to empower immediate work; kinder science.]{style="color:#5E696C"}
+
+[**Learning & iterating, openly.** Not a checklist but a continual practice. Imperfect and messy.]{style="color:#5E696C"}
+
 
 ## [NASA Earthdata & Openscapes]{style="color:#45818e"}
 
