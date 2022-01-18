@@ -65,6 +65,11 @@ A beautiful feedback loop: Using similar tooling promotes and streamlines teamwo
 ::::
 
 
+## [Create place for collaboration]{style="color:#45818e"}
+
+
+![](images/create_place_screenshot.png){width=92% fig-align="center"} 
+
 
 ## [Open data science in action]{style="color:#45818e"}
 
