@@ -14,7 +14,7 @@ format:
 ---
 
 
-# {background-image=images/openscapes_champions_landscape.png} 
+# {background-image=images/openscapes_champions_landscape.png background-size=contain}
 
 ::: {.notes}
 A mentorship program that helps researchers move from lonely science by exploring the open science landscape with their teams in a cohort of peers
@@ -204,7 +204,7 @@ The tutorials were fantastic, but I struggled to figure out **when** to use the 
 
 [*Ayana Elizabeth Johnson & Katharine Wilkinson*]{style="color:#45818E"}
 
-# {background-image=images/openscapes_champions_landscape.png} 
+# {background-image=images/openscapes_champions_landscape.png background-size=contain}
 
 ::: {.notes}
 
